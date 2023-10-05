@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login, signup } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import './SignupForm.css'
 
 export default function SignupFormPage () {
     const [email, setEmail] = useState("");
@@ -47,6 +48,7 @@ export default function SignupFormPage () {
                         type="text" 
                         value={email} 
                         onChange={e=> setEmail(e.target.value)}
+                        required
                     />
                 </label>
                 <label>Password
@@ -54,6 +56,7 @@ export default function SignupFormPage () {
                         type="password" 
                         value={password} 
                         onChange={e=> setPassword(e.target.value)}
+                        required
                     />
                 </label>
                 <label>Confirm Password
@@ -61,6 +64,7 @@ export default function SignupFormPage () {
                         type="password" 
                         value={passwordConfirm} 
                         onChange={e=> setPasswordConfirm(e.target.value)}
+                        required
                     />
                 </label>
                 <button type="submit">Sign Up</button>

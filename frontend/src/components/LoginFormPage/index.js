@@ -46,6 +46,7 @@ export default function LoginFormPage () {
                                 type="text" 
                                 value={email} 
                                 onChange={e=> setEmail(e.target.value)}
+                                required
                             />
                         </label>
                     </div>
@@ -55,6 +56,7 @@ export default function LoginFormPage () {
                                 type="password" 
                                 value={password} 
                                 onChange={e=> setPassword(e.target.value)}
+                                required
                             />
                         </label>
                     </div>
