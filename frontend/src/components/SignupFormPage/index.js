@@ -39,7 +39,7 @@ export default function SignupFormPage () {
     return (
         <div className='login'>
             <div className='credentials'>
-                <h1>Sign Up</h1>
+                <h1>SIGN UP</h1>
                 <form onSubmit={handleSubmit}>
                     <ul>
                         {errors.map(error=><li key={error}>{error}</li>)}
