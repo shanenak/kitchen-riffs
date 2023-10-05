@@ -33,28 +33,36 @@ export default function LoginFormPage () {
     }
 
     return (
-        <>
-            <h1>Log In</h1>
-            <form onSubmit={handleSubmit}>
-                <ul>
-                    {errors.map(error=><li key={error}>{error}</li>)}
-                </ul>
-                <label>Email
-                    <input 
-                        type="text" 
-                        value={email} 
-                        onChange={e=> setEmail(e.target.value)}
-                    />
-                </label>
-                <label>Password
-                    <input 
-                        type="text" 
-                        value={password} 
-                        onChange={e=> setPassword(e.target.value)}
-                    />
-                </label>
-                <button type="submit">Log In</button>
-            </form>
-        </>
+        <div className='login'>
+            <div className='credentials'>
+                <h1>LOG IN</h1>
+                <form onSubmit={handleSubmit}>
+                    <ul className='errors'>
+                        {errors.map(error=><li key={error}>{error}</li>)}
+                    </ul>
+                    <div className='form-card'>
+                        <label>Email
+                            <input 
+                                type="text" 
+                                value={email} 
+                                onChange={e=> setEmail(e.target.value)}
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <label>Password
+                            <input 
+                                type="password" 
+                                value={password} 
+                                onChange={e=> setPassword(e.target.value)}
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <button type="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     )
 }
