@@ -1,12 +1,12 @@
 import { Switch, Route } from "react-router-dom";
 import LoginFormPage from "./components/LoginFormPage";
 import SignupFormPage from "./components/SignupFormPage";
+import { Navigation } from "./components/Navigation";
 
 function App() {
   return (
     <>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Radley&display=swap" />
+      <Navigation />
         <Switch>
           <Route path="/login">
             <LoginFormPage />
