@@ -37,38 +37,49 @@ export default function SignupFormPage () {
     };
 
     return (
-        <>
-            <h1>Sign Up</h1>
-            <form onSubmit={handleSubmit}>
-                <ul>
-                    {errors.map(error=><li key={error}>{error}</li>)}
-                </ul>
-                <label>Email
-                    <input 
-                        type="text" 
-                        value={email} 
-                        onChange={e=> setEmail(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>Password
-                    <input 
-                        type="password" 
-                        value={password} 
-                        onChange={e=> setPassword(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>Confirm Password
-                    <input 
-                        type="password" 
-                        value={passwordConfirm} 
-                        onChange={e=> setPasswordConfirm(e.target.value)}
-                        required
-                    />
-                </label>
-                <button type="submit">Sign Up</button>
-            </form>
-        </>
+        <div className='login'>
+            <div className='credentials'>
+                <h1>Sign Up</h1>
+                <form onSubmit={handleSubmit}>
+                    <ul>
+                        {errors.map(error=><li key={error}>{error}</li>)}
+                    </ul>
+                    <div className='form-card'>
+                        <label>Email
+                            <input 
+                                type="text" 
+                                value={email} 
+                                onChange={e=> setEmail(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <label>Password
+                            <input 
+                                type="password" 
+                                value={password} 
+                                onChange={e=> setPassword(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <label>Confirm Password
+                            <input 
+                                type="password" 
+                                value={passwordConfirm} 
+                                onChange={e=> setPasswordConfirm(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     )
 }

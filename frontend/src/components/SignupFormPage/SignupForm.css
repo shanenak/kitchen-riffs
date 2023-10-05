@@ -1,0 +1,76 @@
+.login h1 {
+    /* font-family: 'Neonderthaw', cursive; */
+    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Tilt Neon', sans-serif; */
+    font-style: normal;
+    line-break: auto;
+    line-height: 1.3em;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+
+.credentials {
+    font-family: 'Radley', serif;
+    margin-top: 2.5rem;
+    min-height: 200px;
+    margin: 0px -2rem;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.form-card label {
+    font-family: 'Urbanist', sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    line-break: auto;
+    line-height: 1.25125em;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-wrap: normal;
+    color: rgb(102, 102, 102);
+    display: block;
+    margin: 0px 0px 0.25rem rem;
+}
+
+.form-card input {
+    font-family: 'Urbanist', sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    line-break: auto;
+    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: 400;
+    overflow-wrap: normal;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 0px 0px 0.25rem;
+    width: 50%;
+}
+
+.form-card button {
+    min-width: 2.5rem;
+    height: 50px;
+    background-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000;
+    line-height: 1.5em;
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50%;
+
+}

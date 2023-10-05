@@ -1,9 +1,8 @@
 .login h1 {
     /* font-family: 'Neonderthaw', cursive; */
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     /* font-family: 'Tilt Neon', sans-serif; */
     font-style: normal;
-    letter-spacing: 0.13em;
     line-break: auto;
     line-height: 1.3em;
     font-size: 20px;
@@ -30,10 +29,9 @@
     display: block;
 }
 .form-card label {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-feature-settings: normal;
     font-style: normal;
-    letter-spacing: normal;
     line-break: auto;
     line-height: 1.25125em;
     font-size: 16px;
@@ -45,10 +43,9 @@
 }
 
 .form-card input {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-feature-settings: normal;
     font-style: normal;
-    letter-spacing: 0.02em;
     line-break: auto;
     line-height: 1.4em;
     font-size: 20px;
@@ -68,8 +65,7 @@
     border-style: solid;
     border-color: #000;
     line-height: 1.5em;
-    letter-spacing: .0833333333em;
-    font-family: 'PT Sans',sans-serif;
+    font-family: 'Urbanist', sans-serif;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
