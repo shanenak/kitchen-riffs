@@ -1,14 +1,14 @@
 databases:
-  - name: authenticate-me
-    user: authenticate-me
+  - name: kitchen_riffs
+    user: kitchen_riffs
     plan: free
     region: oregon
 
 services:
   - type: web
-    name: authenticate-me
+    name: kitchen_riffs
     plan: free
-    region: ohio
+    region: oregon
     branch: main
     env: ruby
     buildCommand: "./bin/render-build.sh"
@@ -16,7 +16,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: authenticate-me
+          name: kitchen_riffs
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
