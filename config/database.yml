@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: kitchen_riffs_production
-  username: kitchen_riffs
-  password: <%= ENV["KITCHEN_RIFFS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

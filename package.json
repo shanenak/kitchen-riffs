@@ -1,0 +1,26 @@
+{
+  "name": "kitchen-riffs",
+  "version": "1.0.0",
+  "description": "This recipe website is a clone of Bon Appetit's website with some additional functionalities from Epicurious.",
+  "engines": {
+    "node": "16.x"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanenak/kitchen-riffs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanenak/kitchen-riffs/issues"
+  },
+  "homepage": "https://github.com/shanenak/kitchen-riffs#readme"
+}
