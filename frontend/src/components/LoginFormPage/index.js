@@ -32,6 +32,23 @@ export default function LoginFormPage () {
         
     }
 
+    const handleDemo = async (e) => {
+        e.preventDefault();
+        setErrors([]);
+        return dispatch(login({email: 'demo@user.io', password: 'password'}))
+            .catch(async (res) => {
+                let data;
+                try {
+                    data = await res.clone().json();
+                } catch {
+                    data = await res.text();
+                }
+                if (data?.errors) setErrors(data.errors);
+                else if (data) setErrors([data]);
+                else setErrors([res.statusText])
+            })
+    }
+
     return (
         <div className='login'>
             <div className='credentials'>
@@ -62,6 +79,9 @@ export default function LoginFormPage () {
                     </div>
                     <div className='form-card-button'>
                         <button type="submit">LOG IN</button>
+                    </div>
+                    <div className='form-card-button'>
+                        <button onClick={handleDemo}>LOG IN AS DEMO USER</button>
                     </div>
                 </form>
             </div>
