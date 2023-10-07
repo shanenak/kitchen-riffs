@@ -60,8 +60,8 @@ export default function LoginFormPage () {
                             />
                         </label>
                     </div>
-                    <div className='form-card'>
-                        <button type="submit">Log In</button>
+                    <div className='form-card-button'>
+                        <button type="submit">LOG IN</button>
                     </div>
                 </form>
             </div>

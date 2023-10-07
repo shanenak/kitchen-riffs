@@ -1,43 +1,35 @@
 import { useDispatch, useSelector } from "react-redux"
-import { logout } from "../../store/session";
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
 import './Navigation.css'
+import './cssReset.css'
 
 export function Navigation () {
     const sessionUser = useSelector(state => state.session.user)
-    const dispatch = useDispatch();
 
-    const handleLogout = async (e) => {
-        e.preventDefault();
-        dispatch(logout())
-    }
-
+    let navLinks;
     if (sessionUser) {
+        navLinks = (
+            <ProfileButton user={sessionUser} />
+        )
+    } else {
+        navLinks = (
+            <>
+                <li>
+                    <NavLink to='/signup'>SIGN UP</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/login'>LOG IN</NavLink>
+                </li>
+            </>
+        )
+    }
         return (
-            <div>
-                <ul id='nav-bar'>
-                    <li>
-                        <ProfileButton />
-                    </li>
-                    <li>
-                        <button onClick={handleLogout}>Log Out</button>
-                    </li>
+            <div id='nav'>
+                <ul id='nav-links'>
+                    {navLinks}
                 </ul>
             </div>
         )
-    } else {
-        return (
-            <div>
-                <ul id='nav-bar'>
-                    <li>
-                        <NavLink to='/signup'>Sign Up</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to='/login'>Log In</NavLink>
-                    </li>
-                </ul>
-            </div>
-            )
-    }
+    
 }

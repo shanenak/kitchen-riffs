@@ -1,1 +1,73 @@
-/* TODO Add site wide styles */
+.credentials {
+    width: 70vw;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.credentials h1 {
+    font-family: FuturaPT, helvetica, sans-serif;
+    font-style: normal;
+    line-break: auto;
+    letter-spacing: 0.13em;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    /* margin-block-start: 0.83em; */
+    /* margin-block-end: 0.83em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+
+.form-card label {
+    font-family: FuturaPT, helvetica, sans-serif;
+    line-break: auto;
+    line-height: 1.25em;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: normal;
+    overflow-wrap: normal;
+    color: rgb(102, 102, 102);
+    display: block;
+}
+
+.form-card input {
+    font-family: FuturaPT, helvetica, sans-serif;
+    line-break: auto;
+    line-height: 1.4em;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    overflow-wrap: normal;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 0.5rem 0px 0.75rem;
+    width: 100%;
+}
+
+.form-card-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-card-button button {
+    cursor: pointer;
+    min-width: 2.5rem;
+    background-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000;
+    line-height: 2em;
+    letter-spacing: 0.13em;
+    font-family: FuturaPT, helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    width: 50%;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}

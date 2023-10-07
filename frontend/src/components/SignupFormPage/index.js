@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login, signup } from "../../store/session";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { signup } from "../../store/session";
+import { Redirect } from "react-router-dom";
 import './SignupForm.css'
 
 export default function SignupFormPage () {
@@ -37,7 +37,7 @@ export default function SignupFormPage () {
     };
 
     return (
-        <div className='login'>
+        <div className='signup'>
             <div className='credentials'>
                 <h1>SIGN UP</h1>
                 <form onSubmit={handleSubmit}>
@@ -74,8 +74,8 @@ export default function SignupFormPage () {
                             />
                         </label>
                     </div>
-                    <div className='form-card'>
-                        <button type="submit">Sign Up</button>
+                    <div className='form-card-button'>
+                        <button type="submit">SIGN UP</button>
                     </div>
                 </form>
             </div>
