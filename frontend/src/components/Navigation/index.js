@@ -26,6 +26,9 @@ export function Navigation () {
     }
         return (
             <div id='nav'>
+                <div id='kitchen-riffs'>
+                    <NavLink to='/'>kitchen riffs</NavLink>
+                </div>
                 <ul id='nav-links'>
                     {navLinks}
                 </ul>

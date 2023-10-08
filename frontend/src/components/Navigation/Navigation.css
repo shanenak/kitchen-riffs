@@ -16,7 +16,7 @@ a {
     border-radius: 4px;
     padding: 2px;
 }
-a:hover {
+#nav-links a:hover {
     text-decoration: underline;
     color:rgb(255, 218, 8);
     cursor: pointer;
@@ -24,6 +24,23 @@ a:hover {
 
 #nav {
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 0px 10px 10px;
+}
+
+#kitchen-riffs {
+    font-family: "Source Serif Pro", serif;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    box-sizing: border-box;
+    z-index: 5;
 }
 
 .icon i {
@@ -44,6 +61,7 @@ a:hover {
     font-weight: 500;
     letter-spacing: 0.05em;
     padding: 5px;
+    z-index: 10;
 }
 
 #nav-links a {
