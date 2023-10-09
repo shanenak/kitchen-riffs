@@ -6,13 +6,16 @@ import { useEffect } from "react";
 const RecipeShow = () => {
     const { recipeId } = useParams();
     const dispatch = useDispatch();
-    const recipe = useSelector(getRecipe(recipeId))
 
     useEffect(()=> {
         dispatch(fetchRecipe(recipeId));
     }, [dispatch, recipeId])
+    
+    const recipe = useSelector(getRecipe(recipeId))
 
-    return (
+    let showPage;
+    if (recipe) {
+        showPage = (        
         <div>
             <h2>{recipe.name}</h2>
             <h3>{recipe.servings}</h3>
@@ -20,6 +23,17 @@ const RecipeShow = () => {
                 {recipe.directions.map(step=> <li>{step}</li>)}
             </ul>
         </div>
+        )
+    } else {
+        showPage = (
+            <div>
+                <h1>Loading</h1>
+            </div>
+        )
+    }
+    
+    return (
+        showPage
     )
 
 }
