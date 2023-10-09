@@ -24,7 +24,7 @@ class Recipe < ApplicationRecord
     class_name: :Ingredient,
     dependent: :destroy
 
-    belongs_to :user
+    # belongs_to :user
 
 
 end

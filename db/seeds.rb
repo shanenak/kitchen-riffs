@@ -9,6 +9,12 @@
 require 'csv'
 require 'json'
 
+def read_CSV(table)
+  text_table = File.read(Rails.root.join('lib', 'seeds', "#{table}.csv"))
+  df = CSV.parse(text_table, headers:true)
+  return df
+end
+
 ApplicationRecord.transaction do 
   puts "Destroying tables..."
   # Unnecessary if using `rails db:seed:replant`
@@ -18,28 +24,30 @@ ApplicationRecord.transaction do
   # For easy testing, so that after seeding, the first `User` has `id` of 1
   ApplicationRecord.connection.reset_pk_sequence!('users')
 
-  puts "Creating users..."
-  # Create one user with an easy to remember username, email, and password:
-  User.create!(
-    email: 'demo@user.io', 
-    name: 'Demo User',
-    password: 'password'
-  )
-
-  # More users
-  10.times do 
-    User.create!({
-      email: Faker::Internet.unique.email,
-      name: Faker::Name.name,
-      password: 'password'
-    }) 
-  end
+  # # More users
+  # 10.times do 
+  #   User.create!({
+  #     email: Faker::Internet.unique.email,
+  #     name: Faker::Name.name,
+  #     password: 'password'
+  #   }) 
+  # end
 
   # Read from CSVs (reference: https://warrenniu.medium.com/how-to-seed-a-rails-database-with-a-csv-file-6ac24e2bbd90)
-  recipe_text = File.read(Rails.root.join('lib', 'seeds', 'recipes.csv'))
-  recipes = CSV.parse(recipe_text, headers:true, encoding:'ISO-8859-1')
+  puts "Creating users..."
+  users = read_CSV('users')
+  users.each do |row|
+    t = User.new
+    t.id = row['user_id']
+    t.name = row['name']
+    t.email = Faker::Internet.unique.email
+    t.password = 'password'
+    t.save
+  end
+
+  puts "Creating recipes..."
+  recipes = read_CSV('recipes')
   recipes.each do |row|
-    puts row
     t = Recipe.new
     t.id = row['recipe_id']
     t.name = row['name']
@@ -53,6 +61,28 @@ ApplicationRecord.transaction do
     t.directions = row['directions']
     t.save
   end
+
+  puts "Creating ingredients..."
+  ingredients = read_CSV('ingredients')
+  ingredients.each do |row|
+    t = Ingredient.new
+    t.id = row['ingredient_id']
+    t.name = row['name']
+    t.recipe_id = row['recipe_id']
+    t.amount = row['amount']
+    t.metric = row['metric']
+  end
+
+  ActiveRecord::Base.connection.reset_pk_sequence!('users')
+
+
+  puts "Creating demo user to sign in..."
+  # Create one user with an easy to remember username, email, and password:
+  User.create!(
+    email: 'demo@user.io', 
+    name: 'Demo User',
+    password: 'password'
+  )
 
   puts "Done!"
 end
