@@ -45,3 +45,16 @@ export const fetchRecipe = recipeId => async(dispatch) => {
         return recipe
     }
 }
+
+const recipesReducer = (state= {}, action) => {
+    switch (action.type) {
+        case RECEIVE_RECIPE:
+            return {...state, [action.recipe.id]:action.recipe};
+        case RECEIVE_RECIPES:
+            return {...action.recipes};
+        default:
+            return state;
+    }
+}
+
+export default recipesReducer;
