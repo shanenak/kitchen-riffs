@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: recipes
+#
+#  id            :bigint           not null, primary key
+#  name          :string           not null
+#  user_id       :bigint
+#  meal          :string
+#  dish          :string
+#  cuisine       :string
+#  time_required :string           not null
+#  servings      :string           not null
+#  ingredients   :text             default([]), not null, is an Array
+#  directions    :text             default([]), not null, is an Array
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the "{}" from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+# column: value
