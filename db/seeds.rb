@@ -19,6 +19,7 @@ ApplicationRecord.transaction do
   # Create one user with an easy to remember username, email, and password:
   User.create!(
     email: 'demo@user.io', 
+    name: 'Demo User',
     password: 'password'
   )
 
@@ -26,6 +27,7 @@ ApplicationRecord.transaction do
   10.times do 
     User.create!({
       email: Faker::Internet.unique.email,
+      name: Faker::Name.name,
       password: 'password'
     }) 
   end

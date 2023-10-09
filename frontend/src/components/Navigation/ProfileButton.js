@@ -35,7 +35,7 @@ export default function ProfileButton ({user}) {
             <div className={`dropdown ${showMenu ? 'show' : 'hide'}`} visibility="hidden">
                 <ul>
                     <li>
-                        <p>Logged in as {user.email}</p>
+                        <p>Logged in as {user.name}</p>
                     </li>
                     <li>
                         <button onClick={handleLogout}>Log Out</button>
