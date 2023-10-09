@@ -48,6 +48,7 @@ ApplicationRecord.transaction do
   puts "Creating recipes..."
   recipes = read_CSV('recipes')
   recipes.each do |row|
+
     t = Recipe.new
     t.id = row['recipe_id']
     t.name = row['name']
@@ -58,7 +59,11 @@ ApplicationRecord.transaction do
     t.time_required = row['time_required']
     t.servings = row['servings']
     t.ingredients = JSON.parse(row['ingredients'])
-    t.directions = row['directions']
+    # additional processing needed for the combination of double quotes and single quotes
+    string_representation = row['directions'].gsub(/^'|'$/, "").gsub("\\'", "'")
+    directions_array = eval(string_representation)
+    t.directions = directions_array
+
     t.save
   end
 
