@@ -37,7 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_09_180922) do
     t.text "directions", default: [], null: false, array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_recipes_on_name", unique: true
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 

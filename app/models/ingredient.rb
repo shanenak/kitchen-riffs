@@ -14,6 +14,9 @@ class Ingredient < ApplicationRecord
 
     validates :name, :recipe_id, presence: true
 
-    belongs_to :recipe
-    
+    belongs_to :recipe, 
+    foreign_key: :recipe_id,
+    class_name: :Recipe
+
+
 end

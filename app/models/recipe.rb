@@ -19,7 +19,9 @@ class Recipe < ApplicationRecord
 
     validates :name, :time_required, :servings, :ingredients, :directions, presence: true
 
-    has_many :ingredients,
+    has_many :ingredient_list,
+    foreign_key: :recipe_id,
+    class_name: :Ingredient,
     dependent: :destroy
 
     belongs_to :user
