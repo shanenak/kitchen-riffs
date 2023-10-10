@@ -30,21 +30,17 @@ const RecipeIndex = () => {
     let recipeIndex;
     if (filtered_recipes) {
         recipeIndex = (
-        <div>
-            <ul id='recipe-list'>
+        <div id='recipe-list'>
                 {
                 Object.values(filtered_recipes).map(recipe => {
                     // console.log(recipe)
                     return(
-                        <li key={recipe.id}>
-                            <NavLink to={`/recipes/${recipe.id}`}>
-                                {recipe.name}
-                            </NavLink>
-                        </li>
+                        <NavLink to={`/recipes/${recipe.id}`}>
+                            {recipe.name}
+                        </NavLink>
                     )
                 })
                 }
-            </ul>
         </div>)
     } else {
         recipeIndex = (<div>

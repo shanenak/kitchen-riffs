@@ -48,12 +48,13 @@ const RecipeShow = () => {
                 <p id='servings'>{recipe.servings} servings</p>
                 <table>
                         { recipe.ingredients.map(ingredient=>{
-                            const metricString = ingredient.metric ? ingredient.metric.replace("_", " ") : ""
-                            const nameString = ingredient.name ? ingredient.name.replace("_", " ") : ""
+                            const metricFormatted = ingredient.metric ? ingredient.metric.replace("_", " ") : ""
+                            const nameFormatted = ingredient.name ? ingredient.name.replace("_", " ") : ""
+                            const ingredientFormatted = ingredient.amount ? (metricFormatted + " " + nameFormatted) : (nameFormatted+ ", " + metricFormatted)
                             return(
                                 <tr>
                                     <td>{ingredient.amount}</td>
-                                    <td>{metricString + " " + nameString}</td>
+                                    <td>{ingredientFormatted}</td>
                                 </tr>
                             ) 
                         })}
