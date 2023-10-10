@@ -1,0 +1,120 @@
+#show {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: FuturaPT, helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+#recipe-meal {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 12px;
+    margin: 30px 0px 20px 0px;
+}
+
+#recipe-meal > h3:hover {
+    text-decoration: underline;
+    color: rgb(255, 218, 8);
+    cursor: pointer;
+}
+
+#recipe-name {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 15px;
+}
+
+#recipe-author {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 10px;
+}
+
+#recipe-time {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#recipe-ave-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#stars {
+    margin:8px;
+}
+
+#ave-rating {
+    font-size: 24px;
+}
+
+#num-rating {
+    font-size:12px;
+}
+
+.section-style {
+    height: 10px;
+    line-height: 2em;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#recipe-ave-rating {
+    margin: 20px;
+}
+
+#ingredients {
+    width: 100%;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+#servings {
+    background-color: rgb(255, 218, 8);
+    padding: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: fit-content;
+}
+
+td {
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.step-title {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    margin-bottom:15px;
+    margin-top: 20px;
+}
+
+p.step-text  {
+    font-family: "Source Serif Pro", serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+}

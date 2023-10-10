@@ -1,0 +1,67 @@
+#index {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    font-family: FuturaPT, helvetica, sans-serif;
+}
+
+.page-title {
+    padding: 30px;
+    border-bottom: 2px solid black;
+    margin: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+#filter-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+#filter-dropdowns select {
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 10px;
+}
+
+#recipe-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 50px;
+    text-align: center;
+}
+
+#recipe-list li {
+    margin: 10px;
+    display: flex;
+
+}
+
+#recipe-list a {
+    background-color: rgb(248, 248, 248);
+    color: black;
+    margin-bottom: 20px;
+    
+}

@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchRecipes, getRecipes } from "../../store/recipe";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import './RecipeIndex.css'
 
 const RecipeIndex = () => {
     const dispatch = useDispatch();
@@ -28,7 +29,8 @@ const RecipeIndex = () => {
 
     let recipeIndex;
     if (filtered_recipes) {
-        recipeIndex = (<div>
+        recipeIndex = (
+        <div>
             <ul id='recipe-list'>
                 {
                 Object.values(filtered_recipes).map(recipe => {
