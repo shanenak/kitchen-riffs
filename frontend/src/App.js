@@ -19,6 +19,9 @@ function App() {
           <Route exact path="/recipes/:recipeId">
             <RecipeShow />
           </Route>
+          <Route path="/meal/:mealName">
+            <RecipeIndex />
+          </Route>
           <Route path="/">
             <RecipeIndex />
           </Route>

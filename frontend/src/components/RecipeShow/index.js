@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min"
 import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
 import './RecipeShow.css'
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
 
 const RecipeShow = () => {
     const { recipeId } = useParams();
@@ -12,14 +13,14 @@ const RecipeShow = () => {
         dispatch(fetchRecipe(recipeId));
     }, [dispatch, recipeId])
     
-    const recipe = useSelector(getRecipe(recipeId))
+    const recipe = useSelector(getRecipe(recipeId));
 
     let showPage;
     if (recipe) {
         showPage = (        
         <div id='show'>
                 <div id='recipe-meal'>
-                    <h3>{recipe.meal}</h3>
+                    <NavLink to={`/meal/${recipe.meal}`}>{recipe.meal}</NavLink>
                 </div>
                 <div id='recipe-name'>
                     <h1>{recipe.name}</h1>
@@ -30,8 +31,6 @@ const RecipeShow = () => {
                 <div id='recipe-time'>
                     <p>{recipe.timeRequired}</p>
                 </div>
-                {/* <div class='section-style'>
-                </div> */}
             <div id='recipe-ave-rating'>
                 <h1 id='ave-rating'>4.6</h1>
                 <div id='stars'>

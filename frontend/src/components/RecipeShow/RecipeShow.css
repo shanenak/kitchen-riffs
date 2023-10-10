@@ -20,7 +20,7 @@
     margin-bottom: 20px;
 }
 
-#recipe-meal > h3:hover {
+#recipe-meal > a:hover {
     text-decoration: underline;
     color: rgb(255, 218, 8);
     cursor: pointer;

@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import { fetchRecipes, getRecipes } from "../../store/recipe";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import './RecipeIndex.css'
 
 const RecipeIndex = () => {
+    let { mealName } = useParams();
+
     const dispatch = useDispatch();
     
     useEffect(()=> {
@@ -14,7 +16,7 @@ const RecipeIndex = () => {
     const recipes = useSelector(getRecipes);
 
     const [cuisine, setCuisine] = useState(false);
-    const [meal, setMeal] = useState(false);
+    const [meal, setMeal] = useState(mealName);
     const [dish, setDish] = useState(false);
 
     const filtered_recipes = recipes.filter(recipe => {
@@ -27,27 +29,6 @@ const RecipeIndex = () => {
         return cuisineCheck && mealCheck && dishCheck
     })
 
-    let recipeIndex;
-    if (filtered_recipes) {
-        recipeIndex = (
-        <div id='recipe-list'>
-                {
-                Object.values(filtered_recipes).map(recipe => {
-                    // console.log(recipe)
-                    return(
-                        <NavLink to={`/recipes/${recipe.id}`}>
-                            {recipe.name}
-                        </NavLink>
-                    )
-                })
-                }
-        </div>)
-    } else {
-        recipeIndex = (<div>
-            <h1>Loading</h1>
-        </div>
-        )
-    }
     let mealOptions = [];
     let cuisineOptions = [];
     let dishOptions = [];
@@ -71,6 +52,27 @@ const RecipeIndex = () => {
         resetSelect('dish')
     }
 
+    let recipeIndex;
+    if (filtered_recipes) {
+        recipeIndex = (
+        <div id='recipe-list'>
+                {
+                Object.values(filtered_recipes).map(recipe => {
+                    return(
+                        <NavLink to={`/recipes/${recipe.id}`}>
+                            {recipe.name}
+                        </NavLink>
+                    )
+                })
+                }
+        </div>)
+    } else {
+        recipeIndex = (<div>
+            <h1>Loading</h1>
+        </div>
+        )
+    }
+
     return (
         <div id='index'>
             <div className='page-title'>
@@ -83,31 +85,31 @@ const RecipeIndex = () => {
                 </div>
                 <div id='filter-dropdowns'>
                     <label>
-                        <select onChange={(e)=>setCuisine(e.target.value)} id="cuisine-select">
+                        <select onChange={(e)=>setCuisine(e.target.value)} id="cuisine-select" defaultValue={cuisine}>
                             <option value={false}>Cuisine</option>
                             {
-                                cuisineOptions.map(cuisine=>{
-                                    return <option value={cuisine} key={cuisine}>{cuisine}</option>
+                                cuisineOptions.map(cuisineOption=>{
+                                    return <option value={cuisineOption} key={cuisineOption}>{cuisineOption}</option>
                                 })
                             }
                         </select>
                     </label>
                     <label>
-                        <select onChange={(e)=>setMeal(e.target.value)} id="meal-select">
+                        <select onChange={(e)=>setMeal(e.target.value)} id="meal-select" defaultValue={meal}>
                             <option value={false}>Meal</option>
                             {
-                                mealOptions.map(meal=>{
-                                    return <option value={meal} key={meal}>{meal}</option>
+                                mealOptions.map(mealOption=>{
+                                    return <option value={mealOption} key={mealOption}>{mealOption}</option>
                                 })
                             }
                         </select>
                     </label>
                     <label>
-                        <select onChange={(e)=>setDish(e.target.value)} id="dish-select">
+                        <select onChange={(e)=>setDish(e.target.value)} id="dish-select" defaultValue={dish}>
                             <option value={false}>Dish</option>
                             {
-                                dishOptions.map(dish=>{
-                                    return <option value={dish} key={dish}>{dish}</option>
+                                dishOptions.map(dishOption=>{
+                                    return <option value={dishOption} key={dishOption}>{dishOption}</option>
                                 })
                             }
                         </select>
