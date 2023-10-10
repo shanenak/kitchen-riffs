@@ -114,7 +114,7 @@ const RecipeIndex = () => {
                             }
                         </select>
                     </label>
-                    <button onClick={resetFilter}>Reset</button>
+                    <button onClick={resetFilter}>RESET</button>
                 </div>
             </div>
             {recipeIndex}

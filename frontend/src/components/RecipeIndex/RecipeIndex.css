@@ -35,13 +35,28 @@
     margin: 14px;
 }
 
-#filter-dropdowns select {
+#filter-title p {
+    font-weight:400;
+}
+
+#filter-dropdowns select, button {
     margin: 16px;
     padding: 8px;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 0.03em;
     font-size: 16px;
+}
+
+#filter-dropdowns button {
+    background-color: black;
+    color: white;
+}
+
+#filter-dropdowns button:hover {
+    text-decoration: underline;
+    color: rgb(255, 218, 8);
+    cursor: pointer;
 }
 
 #recipe-list {
