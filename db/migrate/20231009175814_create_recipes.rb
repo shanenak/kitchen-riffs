@@ -8,7 +8,7 @@ class CreateRecipes < ActiveRecord::Migration[7.0]
       t.string :cuisine
       t.string :time_required, null: false
       t.string :servings, null: false
-      t.text :ingredients, array: true, default: [], null: false
+      t.text :ingredient_list, array: true, default: [], null: false
       t.text :directions, array: true, default: [], null: false
 
       t.timestamps

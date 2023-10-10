@@ -25,7 +25,7 @@ const RecipeIndex = () => {
         if (dish) {dishCheck = recipe.dish === dish}
         return cuisineCheck && mealCheck && dishCheck
     })
-    console.log(cuisine)
+
     let recipeIndex;
     if (filtered_recipes) {
         recipeIndex = (<div>
@@ -81,7 +81,7 @@ const RecipeIndex = () => {
             <div id='filter-section'>
                 <div id='filter-title'>
                     <h3>Filter Results</h3>
-                    <p>{recipes.length} items</p>
+                    <p>{filtered_recipes.length} items</p>
                 </div>
                 <div id='filter-dropdowns'>
                     <label>

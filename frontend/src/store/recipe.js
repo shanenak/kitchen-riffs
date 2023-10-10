@@ -41,6 +41,7 @@ export const fetchRecipe = recipeId => async(dispatch) => {
     const response = await fetch (`/api/recipes/${recipeId}`)
     if (response.ok) {
         const recipe = await response.json();
+        console.log(recipe)
         dispatch(receiveRecipe(recipe));
         return recipe
     }

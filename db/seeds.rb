@@ -42,13 +42,13 @@ ApplicationRecord.transaction do
     t.name = row['name']
     t.email = Faker::Internet.unique.email
     t.password = 'password'
-    t.save
+    t.save!
   end
 
   puts "Creating recipes..."
   recipes = read_CSV('recipes')
   recipes.each do |row|
-
+    puts row
     t = Recipe.new
     t.id = row['recipe_id']
     t.name = row['name']
@@ -58,13 +58,13 @@ ApplicationRecord.transaction do
     t.cuisine = row['cuisine']
     t.time_required = row['time_required']
     t.servings = row['servings']
-    t.ingredients = JSON.parse(row['ingredients'])
+    t.ingredient_list = JSON.parse(row['ingredients'])
     # additional processing needed for the combination of double quotes and single quotes
     string_representation = row['directions'].gsub(/^'|'$/, "").gsub("\\'", "'")
     directions_array = eval(string_representation)
     t.directions = directions_array
 
-    t.save
+    t.save!
   end
 
   puts "Creating ingredients..."
@@ -76,6 +76,7 @@ ApplicationRecord.transaction do
     t.recipe_id = row['recipe_id']
     t.amount = row['amount']
     t.metric = row['metric']
+    t.save!
   end
 
   ActiveRecord::Base.connection.reset_pk_sequence!('users')
