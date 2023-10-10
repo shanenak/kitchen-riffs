@@ -21,392 +21,545 @@
 19,19,1,garlic,2,"cloves, minced"
 20,20,1,salt,,to taste
 21,21,1,pepper,,to taste
-22,22,2,avocado,1,ripe
-23,23,2,oats,1,cup
-24,24,2,protein_powder,1/2,cup
-25,25,2,cocoa_powder,1/4,cup
-26,26,2,honey,1/4,cup
-27,27,2,almond_butter,1/4,cup
-28,28,2,dark_chocolate_chips,1/2,cup
-29,29,2,vanilla_extract,1,teaspoon
-30,30,2,coconut_flakes,1/4,cup
-31,31,2,chia_seeds,1,tablespoon
-32,32,3,lasagna_noodles,9,
-33,33,3,ground_beef,1,pound
-34,34,3,onion,1,chopped
-35,35,3,garlic,3,"cloves, minced"
-36,36,3,tomato_sauce,24,ounces
-37,37,3,crushed_tomatoes,14.5,ounces
-38,38,3,dried_basil,1,teaspoon
-39,39,3,dried_oregano,1,teaspoon
-40,40,3,salt,,to taste
-41,41,3,black_pepper,,to taste
-42,42,3,ricotta_cheese,15,ounces
-43,43,3,mozzarella_cheese,2,"cups, shredded"
-44,44,3,parmesan_cheese,1/2,"cup, grated"
-45,45,3,fresh_parsley,,for garnish
-46,46,4,whole_chicken,4,pounds
-47,47,4,lemons,2,halved
-48,48,4,garlic,6,"cloves, minced"
-49,49,4,fresh_thyme,4,sprigs
-50,50,4,fresh_rosemary,2,sprigs
-51,51,4,olive_oil,1/4,cup
-52,52,4,salt,,to taste
-53,53,4,black_pepper,,to taste
-54,54,5,lentils,1,"cup, dried and rinsed"
-55,55,5,onion,1,chopped
-56,56,5,garlic,3,"cloves, minced"
-57,57,5,ginger,1,"tablespoon, grated"
-58,58,5,tomatoes,2,chopped
-59,59,5,coconut_milk,1,can (400ml)
-60,60,5,curry_powder,2,tablespoons
-61,61,5,cumin,1,teaspoon
-62,62,5,coriander,1,teaspoon
-63,63,5,turmeric,1/2,teaspoon
-64,64,5,cayenne_pepper,1/2,teaspoon
-65,65,5,salt,,to taste
-66,66,5,black_pepper,,to taste
-67,67,5,fresh_cilantro,,for garnish
-68,68,6,lasagna_noodles,9,cooked and drained
-69,69,6,ground_beef,1,pound
-70,70,6,onion,1,chopped
-71,71,6,garlic,3,"cloves, minced"
-72,72,6,crushed_tomatoes,28,ounces
-73,73,6,tomato_paste,6,ounces
-74,74,6,sugar,2,teaspoons
-75,75,6,dried_basil,1,teaspoon
-76,76,6,dried_oregano,1,teaspoon
-77,77,6,salt,1,teaspoon
-78,78,6,black_pepper,1/2,teaspoon
-79,79,6,ricotta_cheese,15,ounces
-80,80,6,mozzarella_cheese,2,cups shredded
-81,81,6,parmesan_cheese,1/2,cup grated
-82,82,6,fresh_parsley,2,tablespoons chopped
-83,83,7,shrimp,1 pound,peeled and deveined
-84,84,7,red_curry_paste,2,tablespoons
-85,85,7,coconut_milk,14,ounces
-86,86,7,bell_pepper,1,sliced
-87,87,7,zucchini,1,sliced
-88,88,7,carrots,2,sliced
-89,89,7,fish_sauce,2,tablespoons
-90,90,7,brown_sugar,1,tablespoon
-91,91,7,lime_juice,2,tablespoons
-92,92,7,fresh_basil,1/4,cup chopped
-93,93,7,cooked_rice,4,cups
-94,94,8,cucumber,1,diced
-95,95,8,tomatoes,3,diced
-96,96,8,red_onion,1/2,"cup, thinly sliced"
-97,97,8,kalamata_olives,1/2,cup
-98,98,8,feta_cheese,1/2,"cup, crumbled"
-99,99,8,extra_virgin_olive_oil,1/4,cup
-100,100,8,red_wine_vinegar,2,tablespoons
-101,101,8,dried_oregano,1,teaspoon
-102,102,8,salt,1/2,teaspoon
-103,103,8,black_pepper,1/4,teaspoon
-104,104,8,fresh_parsley,1/4,cup chopped
-105,105,9,salmon_fillets,2,6-ounce
-106,106,9,lemon,1,zested and juiced
-107,107,9,garlic,3,"cloves, minced"
-108,108,9,olive_oil,2,tablespoons
-109,109,9,breadcrumbs,1/2,cup
-110,110,9,fresh_parsley,2,"tablespoons, chopped"
-111,111,9,salt,,to taste
-112,112,9,black_pepper,,to taste
-113,113,10,sausage,250,"grams, sliced"
-114,114,10,onion,1,chopped
-115,115,10,bell_pepper,1,chopped
-116,116,10,celery,2,"ribs, chopped"
-117,117,10,garlic,3,"cloves, minced"
-118,118,10,tomatoes,2,diced
-119,119,10,rice,1,"cup, uncooked"
-120,120,10,vegetable_broth,2,cups
-121,121,10,cajun_seasoning,2,tablespoons
-122,122,10,cayenne_pepper,1/2,teaspoon
-123,123,10,salt,,to taste
-124,124,10,black_pepper,,to taste
-125,125,10,green_onions,,for garnish
-126,126,11,cucumber,1,diced
-127,127,11,tomatoes,2,diced
-128,128,11,red_onion,1,"small, thinly sliced"
-129,129,11,kalamata_olives,1/2,cup
-130,130,11,feta_cheese,200,"grams, crumbled"
-131,131,11,extra_virgin_olive_oil,1/4,cup
-132,132,11,red_wine_vinegar,2,tablespoons
-133,133,11,dried_oregano,1,teaspoon
-134,134,11,salt,,to taste
-135,135,11,black_pepper,,to taste
-136,136,11,fresh_parsley,,for garnish
-137,137,12,pizza_dough,1,ball
-138,138,12,tomato_sauce,1/2,cup
-139,139,12,fresh_mozzarella,200,"grams, sliced"
-140,140,12,fresh_basil,,a handful leaves
-141,141,12,olive_oil,2,tablespoons
-142,142,12,salt,,to taste
-143,143,12,pepper,,to taste
-144,144,13,ground_beef,500,grams
-145,145,13,taco_seasoning,1,packet
-146,146,13,taco_shells,8,
-147,147,13,lettuce,1,"head, shredded"
-148,148,13,tomatoes,2,diced
-149,149,13,cheddar_cheese,1,"cup, grated"
-150,150,13,sour_cream,1/2,cup
-151,151,13,salsa,1/2,cup
-152,152,13,avocado,1,sliced
-153,153,13,fresh_cilantro,,for garnish
-154,154,14,whole_chicken,1,about 4 pounds
-155,155,14,lemons,2,halved
-156,156,14,garlic,6,minced cloves
-157,157,14,fresh_thyme,,a handful sprigs
-158,158,14,butter,1/2,"cup, melted"
-159,159,14,olive_oil,2,tablespoons
-160,160,14,salt,,to taste
-161,161,14,pepper,,to taste
-162,162,15,sushi_rice,1,"cup, cooked and seasoned"
-163,163,15,nori_sheets,4,
-164,164,15,cucumber,1,julienned
-165,165,15,carrot,1,julienned
-166,166,15,avocado,1,sliced
-167,167,15,sesame_seeds,2,tablespoons
-168,168,15,soy_sauce,1/4,cup
-169,169,15,pickled_ginger,,for serving
-170,170,15,wasabi,,for serving
-171,171,15,soy_sauce,,for dipping
-172,172,16,chicken_breasts,4,"boneless, skinless"
-173,173,16,eggs,2,beaten
-174,174,16,panko_breadcrumbs,1 1/2,cups
-175,175,16,all_purpose_flour,1/2,cup
-176,176,16,Japanese_curry_sauce,4,"cups, prepared"
-177,177,16,steamed_rice,4,cups
-178,178,16,vegetable_oil,1/4,cup
-179,179,16,salt,,to taste
-180,180,16,pepper,,to taste
-181,181,17,dashi_stock,4,cups
-182,182,17,misopaste,3,tablespoons
-183,183,17,tofu,1/2,"cup, diced"
-184,184,17,wakame_seaweed,2,tablespoons
-185,185,17,green_onions,2,"stalks, finely chopped"
-186,186,17,toasted_sesame_seeds,1,tablespoon
-187,187,17,soy_sauce,1,tablespoon
-188,188,17,mirin,1,tablespoon
-189,189,17,salt,,to taste
-190,190,18,sushi_rice,2,cups
-191,191,18,rice_vinegar,1/4,cup
-192,192,18,sugar,2,tablespoons
-193,193,18,salt,1,teaspoon
-194,194,19,chicken_thighs,8,pieces
-195,195,19,soy_sauce,1/2,cup
-196,196,19,vinegar,1/2,cup
-197,197,19,garlic,6,"cloves, minced"
-198,198,19,black_peppercorns,1,"teaspoon, crushed"
-199,199,19,bay_leaves,3,
-200,200,19,sugar,1,tablespoon
-201,201,19,cooking_oil,2,tablespoons
-202,202,19,salt,,to taste
-203,203,20,pancit_canton_noodles,400,grams
-204,204,20,chicken_breasts,2,"boneless, skinless, sliced"
-205,205,20,shrimp,200,"grams, peeled and deveined"
-206,206,20,carrots,2,julienned
-207,207,20,cabbage,1/2,"head, shredded"
-208,208,20,soy_sauce,1/4,cup
-209,209,20,oyster_sauce,2,tablespoons
-210,210,20,garlic,4,"cloves, minced"
-211,211,20,onion,1,chopped
-212,212,20,cooking_oil,2,tablespoons
-213,213,20,salt,,to taste
-214,214,20,pepper,,to taste
-215,215,21,shaved_ice,4,cups
-216,216,21,evaporated_milk,1/2,cup
-217,217,21,sweetened_red_mung_beans,1/2,cup
-218,218,21,jackfruit,1/2,"cup, sliced"
-219,219,21,sweet_potato,1/2,"cup, cooked and mashed"
-220,220,21,sago_pearls,1/2,"cup, cooked"
-221,221,21,coconut_gel,1/2,cup
-222,222,21,ube_jam,1/4,cup
-223,223,21,leche_flan,1/2,"cup, sliced"
-224,224,21,cornflakes,,for topping
-225,225,21,crushed_ice,,for serving
-226,226,22,rice_noodles,200,grams
-227,227,22,chicken_breasts,2,"boneless, skinless, thinly sliced"
-228,228,22,shrimp,200,"grams, peeled and deveined"
-229,229,22,tofu,200,"grams, cubed"
-230,230,22,bean_sprouts,1,cup
-231,231,22,eggs,2,
-232,232,22,peanuts,1/2,"cup, crushed"
-233,233,22,green_onions,4,"stalks, chopped"
-234,234,22,lime,2,cut into wedges
-235,235,22,vegetable_oil,2,tablespoons
-236,236,22,garlic,3,"cloves, minced"
-237,237,22,tamarind_paste,3,tablespoons
-238,238,22,fish_sauce,2,tablespoons
-239,239,22,sugar,1,tablespoon
-240,240,22,chili_powder,1/2,teaspoon
-241,241,22,salt,,to taste
-242,242,23,shrimp,300,"grams, peeled and deveined"
-243,243,23,mushrooms,200,"grams, sliced"
-244,244,23,lemongrass,2,"stalks, cut into pieces"
-245,245,23,galangal,3,slices
-246,246,23,kaffir_lime_leaves,4,
-247,247,23,bird's_eye_chilies,3,crushed
-248,248,23,cherry_tomatoes,200,grams
-249,249,23,onion,1,"small, quartered"
-250,250,23,coriander_leaves,,a handful
-251,251,23,lime,2,juiced
-252,252,23,fish_sauce,3,tablespoons
-253,253,23,sugar,1,tablespoon
-254,254,23,salt,,to taste
-255,255,23,water,4,cups
-256,256,24,chicken_thighs,500,"grams, boneless, skinless, cut into chunks"
-257,257,24,green_curry_paste,3,tablespoons
-258,258,24,coconut_milk,400,ml
-259,259,24,eggplant,1,"small, cut into wedges"
-260,260,24,bell_pepper,1,sliced
-261,261,24,bamboo_shoots,1/2,cup
-262,262,24,fish_sauce,2,tablespoons
-263,263,24,palm_sugar,1,tablespoon
-264,264,24,kaffir_lime_leaves,4,
-265,265,24,thai_basil_leaves,,a handful
-266,266,24,vegetable_oil,2,tablespoons
-267,267,24,salt,,to taste
-268,268,25,thin_rice_noodles,200,grams
-269,269,25,catfish,300,"grams, sliced"
-270,270,25,fish_cake,100,"grams, sliced"
-271,271,25,lemongrass,2,"stalks, cut into pieces"
-272,272,25,garlic,4,"cloves, minced"
-273,273,25,ginger,1,"inch, grated"
-274,274,25,onion,1,chopped
-275,275,25,chili_powder,2,teaspoons
-276,276,25,turmeric_powder,1,teaspoon
-277,277,25,fish_sauce,3,tablespoons
-278,278,25,chickpea_flour,4,"tablespoons, mixed with water to form a slurry"
-279,279,25,banana_stem,1/2,"cup, sliced"
-280,280,25,hard-boiled_eggs,4,
-281,281,25,coriander_leaves,,a handful
-282,282,25,lime,2,cut into wedges
-283,283,25,vegetable_oil,2,tablespoons
-284,284,25,salt,,to taste
-285,285,25,water,6,cups
-286,286,26,fermented_tea_leaves,200,grams
-287,287,26,cabbage,1/2,"head, thinly sliced"
-288,288,26,tomato,1,"large, sliced"
-289,289,26,roasted_peanuts,1/2,"cup, crushed"
-290,290,26,sesame_seeds,2,tablespoons
-291,291,26,garlic,3,"cloves, minced"
-292,292,26,green_chilies,2,sliced
-293,293,26,fish_sauce,3,tablespoons
-294,294,26,lime,2,juiced
-295,295,26,vegetable_oil,2,tablespoons
-296,296,26,salt,,to taste
-297,297,27,chicken,500,"grams, cut into pieces"
-298,298,27,onion,1,chopped
-299,299,27,potatoes,2,"medium, cut into chunks"
-300,300,27,garlic,4,"cloves, minced"
-301,301,27,ginger,1,"inch, grated"
-302,302,27,turmeric_powder,1,teaspoon
-303,303,27,paprika,2,teaspoons
-304,304,27,chili_powder,1,teaspoon
-305,305,27,cumin_powder,1,teaspoon
-306,306,27,coriander_powder,2,teaspoons
-307,307,27,coconut_milk,400,ml
-308,308,27,fish_sauce,3,tablespoons
-309,309,27,vegetable_oil,2,tablespoons
-310,310,27,fresh_coriander_leaves,,for garnish
-311,311,27,salt,,to taste
-312,312,28,cooked_rice,4,cups
-313,313,28,beef,300,"grams, thinly sliced"
-314,314,28,carrot,1,julienned
-315,315,28,spinach,200,grams
-316,316,28,zucchini,1,julienned
-317,317,28,bean_sprouts,1,cup
-318,318,28,eggs,4,
-319,319,28,soy_sauce,4,tablespoons
-320,320,28,sesame_oil,4,tablespoons
-321,321,28,garlic,4,"cloves, minced"
-322,322,28,sesame_seeds,2,tablespoons
-323,323,28,gochujang,4,tablespoons
-324,324,28,vegetable_oil,4,tablespoons
-325,325,28,salt,,to taste
-326,326,29,kimchi,2,"cups, chopped"
-327,327,29,pork_belly,300,"grams, thinly sliced"
-328,328,29,tofu,1,"block, cut into cubes"
-329,329,29,onion,1,sliced
-330,330,29,garlic,4,"cloves, minced"
-331,331,29,gochujang,2,tablespoons
-332,332,29,gochugaru,1,tablespoon
-333,333,29,sesame_oil,2,tablespoons
-334,334,29,green_onions,4,"stalks, chopped"
-335,335,29,water,4,cups
-336,336,29,salt,,to taste
-337,337,30,chicken_wings,800,grams
-338,338,30,potato_starch,1,cup
-339,339,30,garlic_powder,1,teaspoon
-340,340,30,ginger_powder,1/2,teaspoon
-341,341,30,soy_sauce,3,tablespoons
-342,342,30,gochujang,2,tablespoons
-343,343,30,gochugaru,1,tablespoon
-344,344,30,rice_syrup,2,tablespoons
-345,345,30,sesame_oil,1,tablespoon
-346,346,30,vegetable_oil,,for frying
-347,347,30,salt,,to taste
-348,348,31,beef_brisket,500,"grams, cut into chunks"
-349,349,31,beef_tendon,300,"grams, cut into chunks"
-350,350,31,Chinese_wheat_noodles,400,grams
-351,351,31,beef_broth,8,cups
-352,352,31,soy_sauce,1/4,cup
-353,353,31,dried_soybeans,1/2,cup
-354,354,31,scallions,4,"stalks, chopped"
-355,355,31,garlic,4,"cloves, minced"
-356,356,31,ginger,1,"inch, sliced"
-357,357,31,star_anise,2,
-358,358,31,cinnamon_stick,1,
-359,359,31,bay_leaves,2,
-360,360,31,sichuan_peppercorns,1,tablespoon
-361,361,31,vegetable_oil,2,tablespoons
-362,362,31,salt,,to taste
-363,363,32,oysters,200,grams
-364,364,32,potatoes,2,"medium, grated"
-365,365,32,eggs,4,
-366,366,32,sweet_potato_flour,1/2,cup
-367,367,32,garlic,4,"cloves, minced"
-368,368,32,sweet_potato_starch_syrup,3,tablespoons
-369,369,32,fish_sauce,2,tablespoons
-370,370,32,vegetable_oil,4,tablespoons
-371,371,32,salt,,to taste
-372,372,32,pepper,,to taste
-373,373,33,black_tea_leaves,2,teabags
-374,374,33,tapioca_pearls,1/2,cup
-375,375,33,milk,1,cup
-376,376,33,brown_sugar,1/4,cup
-377,377,33,water,1/4,cup
-378,378,33,ice,,for serving
-379,379,34,jasmine_rice,2,cups
-380,380,34,coconut_milk,1,cup
-381,381,34,pandan_leaves,2,
-382,382,34,anchovies,1,"cup, dried"
-383,383,34,peanuts,1/2,cup
-384,384,34,hard-boiled_eggs,4,
-385,385,34,cucumber,1,sliced
-386,386,34,sambal,1/2,cup
-387,387,34,onion,1,sliced
-388,388,34,cooking_oil,4,tablespoons
-389,389,34,salt,,to taste
-390,390,35,all-purpose_flour,3,cups
-391,391,35,condensed_milk,1,tablespoon
-392,392,35,egg,1,
-393,393,35,water,1,cup
-394,394,35,ghee,1/4,cup
-395,395,35,sugar,1,tablespoon
-396,396,35,salt,1/2,teaspoon
-397,397,35,cooking_oil,,for frying
-398,398,36,rice_vermicelli,200,grams
-399,399,36,shrimp,300,"grams, peeled and deveined"
-400,400,36,chicken_breast,300,"grams, sliced"
-401,401,36,tofu_puffs,200,grams
-402,402,36,bean_sprouts,1,cup
-403,403,36,hard-boiled_eggs,4,
-404,404,36,coconut_milk,400,ml
-405,405,36,laksa_paste,4,tablespoons
-406,406,36,fish_cake,200,"grams, sliced"
-407,407,36,coriander_leaves,,a handful
-408,408,36,lime,2,cut into wedges
-409,409,36,vegetable_oil,2,tablespoons
-410,410,36,salt,,to taste
+22,22,2,whole_chicken,4,pounds
+23,23,2,lemons,2,halved
+24,24,2,garlic,6,"cloves, minced"
+25,25,2,fresh_thyme,4,sprigs
+26,26,2,fresh_rosemary,2,sprigs
+27,27,2,olive_oil,1/4,cup
+28,28,2,salt,,to taste
+29,29,2,black_pepper,,to taste
+30,30,3,lentils,1,"cup, dried and rinsed"
+31,31,3,onion,1,chopped
+32,32,3,garlic,3,"cloves, minced"
+33,33,3,ginger,1,"tablespoon, grated"
+34,34,3,tomatoes,2,chopped
+35,35,3,coconut_milk,1,can (400ml)
+36,36,3,curry_powder,2,tablespoons
+37,37,3,cumin,1,teaspoon
+38,38,3,coriander,1,teaspoon
+39,39,3,turmeric,1/2,teaspoon
+40,40,3,cayenne_pepper,1/2,teaspoon
+41,41,3,salt,,to taste
+42,42,3,black_pepper,,to taste
+43,43,3,fresh_cilantro,,for garnish
+44,44,4,lasagna_noodles,9,cooked and drained
+45,45,4,ground_beef,1,pound
+46,46,4,onion,1,chopped
+47,47,4,garlic,3,"cloves, minced"
+48,48,4,crushed_tomatoes,28,ounces
+49,49,4,tomato_paste,6,ounces
+50,50,4,sugar,2,teaspoons
+51,51,4,dried_basil,1,teaspoon
+52,52,4,dried_oregano,1,teaspoon
+53,53,4,salt,1,teaspoon
+54,54,4,black_pepper,1/2,teaspoon
+55,55,4,ricotta_cheese,15,ounces
+56,56,4,mozzarella_cheese,2,cups shredded
+57,57,4,parmesan_cheese,1/2,cup grated
+58,58,4,fresh_parsley,2,tablespoons chopped
+59,59,5,shrimp,1,pound peeled and deveined
+60,60,5,red_curry_paste,2,tablespoons
+61,61,5,coconut_milk,14,ounces
+62,62,5,bell_pepper,1,sliced
+63,63,5,zucchini,1,sliced
+64,64,5,carrots,2,sliced
+65,65,5,fish_sauce,2,tablespoons
+66,66,5,brown_sugar,1,tablespoon
+67,67,5,lime_juice,2,tablespoons
+68,68,5,fresh_basil,1/4,cup chopped
+69,69,5,cooked_rice,4,cups
+70,70,6,salmon_fillets,2,6-ounce
+71,71,6,lemon,1,zested and juiced
+72,72,6,garlic,3,"cloves, minced"
+73,73,6,olive_oil,2,tablespoons
+74,74,6,breadcrumbs,1/2,cup
+75,75,6,fresh_parsley,2,"tablespoons, chopped"
+76,76,6,salt,,to taste
+77,77,6,black_pepper,,to taste
+78,78,7,sausage,250,"grams, sliced"
+79,79,7,onion,1,chopped
+80,80,7,bell_pepper,1,chopped
+81,81,7,celery,2,"ribs, chopped"
+82,82,7,garlic,3,"cloves, minced"
+83,83,7,tomatoes,2,diced
+84,84,7,rice,1,"cup, uncooked"
+85,85,7,vegetable_broth,2,cups
+86,86,7,cajun_seasoning,2,tablespoons
+87,87,7,cayenne_pepper,1/2,teaspoon
+88,88,7,salt,,to taste
+89,89,7,black_pepper,,to taste
+90,90,7,green_onions,,for garnish
+91,91,8,cucumber,1,diced
+92,92,8,tomatoes,2,diced
+93,93,8,red_onion,1,"small, thinly sliced"
+94,94,8,kalamata_olives,1/2,cup
+95,95,8,feta_cheese,200,"grams, crumbled"
+96,96,8,extra_virgin_olive_oil,1/4,cup
+97,97,8,red_wine_vinegar,2,tablespoons
+98,98,8,dried_oregano,1,teaspoon
+99,99,8,salt,,to taste
+100,100,8,black_pepper,,to taste
+101,101,8,fresh_parsley,,for garnish
+102,102,9,pizza_dough,1,ball
+103,103,9,tomato_sauce,1/2,cup
+104,104,9,fresh_mozzarella,200,"grams, sliced"
+105,105,9,fresh_basil,,a handful leaves
+106,106,9,olive_oil,2,tablespoons
+107,107,9,salt,,to taste
+108,108,9,pepper,,to taste
+109,109,10,ground_beef,500,grams
+110,110,10,taco_seasoning,1,packet
+111,111,10,taco_shells,8,
+112,112,10,lettuce,1,"head, shredded"
+113,113,10,tomatoes,2,diced
+114,114,10,cheddar_cheese,1,"cup, grated"
+115,115,10,sour_cream,1/2,cup
+116,116,10,salsa,1/2,cup
+117,117,10,avocado,1,sliced
+118,118,10,fresh_cilantro,,for garnish
+119,119,11,sushi_rice,1,"cup, cooked and seasoned"
+120,120,11,nori_sheets,4,
+121,121,11,cucumber,1,julienned
+122,122,11,carrot,1,julienned
+123,123,11,avocado,1,sliced
+124,124,11,sesame_seeds,2,tablespoons
+125,125,11,soy_sauce,1/4,cup
+126,126,11,pickled_ginger,,for serving
+127,127,11,wasabi,,for serving
+128,128,11,soy_sauce,,for dipping
+129,129,12,chicken_breasts,4,"boneless, skinless"
+130,130,12,eggs,2,beaten
+131,131,12,panko_breadcrumbs,1 1/2,cups
+132,132,12,all_purpose_flour,1/2,cup
+133,133,12,Japanese_curry_sauce,4,"cups, prepared"
+134,134,12,steamed_rice,4,cups
+135,135,12,vegetable_oil,1/4,cup
+136,136,12,salt,,to taste
+137,137,12,pepper,,to taste
+138,138,13,chicken_thighs,8,pieces
+139,139,13,soy_sauce,1/2,cup
+140,140,13,vinegar,1/2,cup
+141,141,13,garlic,6,"cloves, minced"
+142,142,13,black_peppercorns,1,"teaspoon, crushed"
+143,143,13,bay_leaves,3,
+144,144,13,sugar,1,tablespoon
+145,145,13,cooking_oil,2,tablespoons
+146,146,13,salt,,to taste
+147,147,14,pancit_canton_noodles,400,grams
+148,148,14,chicken_breasts,2,"boneless, skinless, sliced"
+149,149,14,shrimp,200,"grams, peeled and deveined"
+150,150,14,carrots,2,julienned
+151,151,14,cabbage,1/2,"head, shredded"
+152,152,14,soy_sauce,1/4,cup
+153,153,14,oyster_sauce,2,tablespoons
+154,154,14,garlic,4,"cloves, minced"
+155,155,14,onion,1,chopped
+156,156,14,cooking_oil,2,tablespoons
+157,157,14,salt,,to taste
+158,158,14,pepper,,to taste
+159,159,15,shaved_ice,4,cups
+160,160,15,evaporated_milk,1/2,cup
+161,161,15,sweetened_red_mung_beans,1/2,cup
+162,162,15,jackfruit,1/2,"cup, sliced"
+163,163,15,sweet_potato,1/2,"cup, cooked and mashed"
+164,164,15,sago_pearls,1/2,"cup, cooked"
+165,165,15,coconut_gel,1/2,cup
+166,166,15,ube_jam,1/4,cup
+167,167,15,leche_flan,1/2,"cup, sliced"
+168,168,15,cornflakes,,for topping
+169,169,15,crushed_ice,,for serving
+170,170,16,rice_noodles,200,grams
+171,171,16,chicken_breasts,2,"boneless, skinless, thinly sliced"
+172,172,16,shrimp,200,"grams, peeled and deveined"
+173,173,16,tofu,200,"grams, cubed"
+174,174,16,bean_sprouts,1,cup
+175,175,16,eggs,2,
+176,176,16,peanuts,1/2,"cup, crushed"
+177,177,16,green_onions,4,"stalks, chopped"
+178,178,16,lime,2,cut into wedges
+179,179,16,vegetable_oil,2,tablespoons
+180,180,16,garlic,3,"cloves, minced"
+181,181,16,tamarind_paste,3,tablespoons
+182,182,16,fish_sauce,2,tablespoons
+183,183,16,sugar,1,tablespoon
+184,184,16,chili_powder,1/2,teaspoon
+185,185,16,salt,,to taste
+186,186,17,shrimp,300,"grams, peeled and deveined"
+187,187,17,mushrooms,200,"grams, sliced"
+188,188,17,lemongrass,2,"stalks, cut into pieces"
+189,189,17,galangal,3,slices
+190,190,17,kaffir_lime_leaves,4,
+191,191,17,bird's_eye_chilies,3,crushed
+192,192,17,cherry_tomatoes,200,grams
+193,193,17,onion,1,"small, quartered"
+194,194,17,coriander_leaves,,a handful
+195,195,17,lime,2,juiced
+196,196,17,fish_sauce,3,tablespoons
+197,197,17,sugar,1,tablespoon
+198,198,17,salt,,to taste
+199,199,17,water,4,cups
+200,200,18,chicken_thighs,500,"grams, boneless, skinless, cut into chunks"
+201,201,18,green_curry_paste,3,tablespoons
+202,202,18,coconut_milk,400,ml
+203,203,18,eggplant,1,"small, cut into wedges"
+204,204,18,bell_pepper,1,sliced
+205,205,18,bamboo_shoots,1/2,cup
+206,206,18,fish_sauce,2,tablespoons
+207,207,18,palm_sugar,1,tablespoon
+208,208,18,kaffir_lime_leaves,4,
+209,209,18,thai_basil_leaves,,a handful
+210,210,18,vegetable_oil,2,tablespoons
+211,211,18,salt,,to taste
+212,212,19,thin_rice_noodles,200,grams
+213,213,19,catfish,300,"grams, sliced"
+214,214,19,fish_cake,100,"grams, sliced"
+215,215,19,lemongrass,2,"stalks, cut into pieces"
+216,216,19,garlic,4,"cloves, minced"
+217,217,19,ginger,1,"inch, grated"
+218,218,19,onion,1,chopped
+219,219,19,chili_powder,2,teaspoons
+220,220,19,turmeric_powder,1,teaspoon
+221,221,19,fish_sauce,3,tablespoons
+222,222,19,chickpea_flour,4,"tablespoons, mixed with water to form a slurry"
+223,223,19,banana_stem,1/2,"cup, sliced"
+224,224,19,hard-boiled_eggs,4,
+225,225,19,coriander_leaves,,a handful
+226,226,19,lime,2,cut into wedges
+227,227,19,vegetable_oil,2,tablespoons
+228,228,19,salt,,to taste
+229,229,19,water,6,cups
+230,230,20,fermented_tea_leaves,200,grams
+231,231,20,cabbage,1/2,"head, thinly sliced"
+232,232,20,tomato,1,"large, sliced"
+233,233,20,roasted_peanuts,1/2,"cup, crushed"
+234,234,20,sesame_seeds,2,tablespoons
+235,235,20,garlic,3,"cloves, minced"
+236,236,20,green_chilies,2,sliced
+237,237,20,fish_sauce,3,tablespoons
+238,238,20,lime,2,juiced
+239,239,20,vegetable_oil,2,tablespoons
+240,240,20,salt,,to taste
+241,241,21,chicken,500,"grams, cut into pieces"
+242,242,21,onion,1,chopped
+243,243,21,potatoes,2,"medium, cut into chunks"
+244,244,21,garlic,4,"cloves, minced"
+245,245,21,ginger,1,"inch, grated"
+246,246,21,turmeric_powder,1,teaspoon
+247,247,21,paprika,2,teaspoons
+248,248,21,chili_powder,1,teaspoon
+249,249,21,cumin_powder,1,teaspoon
+250,250,21,coriander_powder,2,teaspoons
+251,251,21,coconut_milk,400,ml
+252,252,21,fish_sauce,3,tablespoons
+253,253,21,vegetable_oil,2,tablespoons
+254,254,21,fresh_coriander_leaves,,for garnish
+255,255,21,salt,,to taste
+256,256,22,cooked_rice,4,cups
+257,257,22,beef,300,"grams, thinly sliced"
+258,258,22,carrot,1,julienned
+259,259,22,spinach,200,grams
+260,260,22,zucchini,1,julienned
+261,261,22,bean_sprouts,1,cup
+262,262,22,eggs,4,
+263,263,22,soy_sauce,4,tablespoons
+264,264,22,sesame_oil,4,tablespoons
+265,265,22,garlic,4,"cloves, minced"
+266,266,22,sesame_seeds,2,tablespoons
+267,267,22,gochujang,4,tablespoons
+268,268,22,vegetable_oil,4,tablespoons
+269,269,22,salt,,to taste
+270,270,23,kimchi,2,"cups, chopped"
+271,271,23,pork_belly,300,"grams, thinly sliced"
+272,272,23,tofu,1,"block, cut into cubes"
+273,273,23,onion,1,sliced
+274,274,23,garlic,4,"cloves, minced"
+275,275,23,gochujang,2,tablespoons
+276,276,23,gochugaru,1,tablespoon
+277,277,23,sesame_oil,2,tablespoons
+278,278,23,green_onions,4,"stalks, chopped"
+279,279,23,water,4,cups
+280,280,23,salt,,to taste
+281,281,24,chicken_wings,800,grams
+282,282,24,potato_starch,1,cup
+283,283,24,garlic_powder,1,teaspoon
+284,284,24,ginger_powder,1/2,teaspoon
+285,285,24,soy_sauce,3,tablespoons
+286,286,24,gochujang,2,tablespoons
+287,287,24,gochugaru,1,tablespoon
+288,288,24,rice_syrup,2,tablespoons
+289,289,24,sesame_oil,1,tablespoon
+290,290,24,vegetable_oil,,for frying
+291,291,24,salt,,to taste
+292,292,25,beef_brisket,500,"grams, cut into chunks"
+293,293,25,beef_tendon,300,"grams, cut into chunks"
+294,294,25,Chinese_wheat_noodles,400,grams
+295,295,25,beef_broth,8,cups
+296,296,25,soy_sauce,1/4,cup
+297,297,25,dried_soybeans,1/2,cup
+298,298,25,scallions,4,"stalks, chopped"
+299,299,25,garlic,4,"cloves, minced"
+300,300,25,ginger,1,"inch, sliced"
+301,301,25,star_anise,2,
+302,302,25,cinnamon_stick,1,
+303,303,25,bay_leaves,2,
+304,304,25,sichuan_peppercorns,1,tablespoon
+305,305,25,vegetable_oil,2,tablespoons
+306,306,25,salt,,to taste
+307,307,26,oysters,200,grams
+308,308,26,potatoes,2,"medium, grated"
+309,309,26,eggs,4,
+310,310,26,sweet_potato_flour,1/2,cup
+311,311,26,garlic,4,"cloves, minced"
+312,312,26,sweet_potato_starch_syrup,3,tablespoons
+313,313,26,fish_sauce,2,tablespoons
+314,314,26,vegetable_oil,4,tablespoons
+315,315,26,salt,,to taste
+316,316,26,pepper,,to taste
+317,317,27,black_tea_leaves,2,teabags
+318,318,27,tapioca_pearls,1/2,cup
+319,319,27,milk,1,cup
+320,320,27,brown_sugar,1/4,cup
+321,321,27,water,1/4,cup
+322,322,27,ice,,for serving
+323,323,28,jasmine_rice,2,cups
+324,324,28,coconut_milk,1,cup
+325,325,28,pandan_leaves,2,
+326,326,28,anchovies,1,"cup, dried"
+327,327,28,peanuts,1/2,cup
+328,328,28,hard-boiled_eggs,4,
+329,329,28,cucumber,1,sliced
+330,330,28,sambal,1/2,cup
+331,331,28,onion,1,sliced
+332,332,28,cooking_oil,4,tablespoons
+333,333,28,salt,,to taste
+334,334,29,all-purpose_flour,3,cups
+335,335,29,condensed_milk,1,tablespoon
+336,336,29,egg,1,
+337,337,29,water,1,cup
+338,338,29,ghee,1/4,cup
+339,339,29,sugar,1,tablespoon
+340,340,29,salt,1/2,teaspoon
+341,341,29,cooking_oil,,for frying
+342,342,30,rice_vermicelli,200,grams
+343,343,30,shrimp,300,"grams, peeled and deveined"
+344,344,30,chicken_breast,300,"grams, sliced"
+345,345,30,tofu_puffs,200,grams
+346,346,30,bean_sprouts,1,cup
+347,347,30,hard-boiled_eggs,4,
+348,348,30,coconut_milk,400,ml
+349,349,30,laksa_paste,4,tablespoons
+350,350,30,fish_cake,200,"grams, sliced"
+351,351,30,coriander_leaves,,a handful
+352,352,30,lime,2,cut into wedges
+353,353,30,vegetable_oil,2,tablespoons
+354,354,30,salt,,to taste
+355,355,31,chicken_thighs,500,"grams, cut into cubes"
+356,356,31,lemongrass,2,"stalks, chopped"
+357,357,31,garlic,4,cloves
+358,358,31,ginger,1,inch
+359,359,31,turmeric_powder,1,teaspoon
+360,360,31,coriander_powder,1,teaspoon
+361,361,31,cumin_powder,1,teaspoon
+362,362,31,brown_sugar,2,tablespoons
+363,363,31,soy_sauce,3,tablespoons
+364,364,31,vegetable_oil,2,tablespoons
+365,365,31,bamboo_skewers,20,
+366,366,31,peanut_sauce,,for serving
+367,367,31,salt,,to taste
+368,368,32,pork_ribs,500,grams
+369,369,32,tamarind_soup_base,1,packet
+370,370,32,radish,1,"medium, sliced"
+371,371,32,eggplant,2,"medium, sliced"
+372,372,32,tomato,2,"medium, quartered"
+373,373,32,onion,1,"medium, quartered"
+374,374,32,long_green_chili,3,
+375,375,32,water,8,cups
+376,376,32,fish_sauce,3,tablespoons
+377,377,32,salt,,to taste
+378,378,32,spinach,,a bunch
+379,379,32,vegetable_oil,1,tablespoon
+380,380,33,chicken_thighs,8,pieces
+381,381,33,pineapple_juice,1,cup
+382,382,33,soy_sauce,1/2,cup
+383,383,33,brown_sugar,1/2,cup
+384,384,33,ketchup,1/4,cup
+385,385,33,garlic,4,"cloves, minced"
+386,386,33,ginger,1,"tablespoon, grated"
+387,387,33,rice_vinegar,2,tablespoons
+388,388,33,vegetable_oil,2,tablespoons
+389,389,33,green_onions,4,"stalks, chopped"
+390,390,33,pineapple,,for garnish
+391,391,33,sesame_seeds,,for garnish
+392,392,33,salt,,to taste
+393,393,34,salmon,200,"grams, diced"
+394,394,34,tomato,2,"medium, diced"
+395,395,34,onion,1,"medium, diced"
+396,396,34,green_onions,4,"stalks, chopped"
+397,397,34,lime,1,juiced
+398,398,34,chili_pepper,1,"small, minced"
+399,399,34,sea_salt,1/2,teaspoon
+400,400,34,iceberg_lettuce,,for garnish
+401,401,34,cilantro,,for garnish
+402,402,34,avocado,,for garnish
+403,403,34,taro_chips,,for garnish
+404,404,35,pineapple,1/2,"small, chopped"
+405,405,35,coconut_milk,1,cup
+406,406,35,banana,1,
+407,407,35,honey,2,tablespoons
+408,408,35,yogurt,1/2,cup
+409,409,35,ice,1,cup
+410,410,35,mint_leaves,,for garnish
+411,411,36,shrimp,12,
+412,412,36,vegetables_of_choice,2,"cups, e.g., sweet potato, zucchini, bell pepper"
+413,413,36,all-purpose_flour,1,cup
+414,414,36,cornstarch,1/2,cup
+415,415,36,cold_water,1,cup
+416,416,36,ice,,a few cubes
+417,417,36,soy_sauce,,for dipping
+418,418,36,tempura_dipping_sauce,,for dipping
+419,419,36,vegetable_oil,,for frying
+420,420,37,dashi,4,cups
+421,421,37,miso_paste,4,tablespoons
+422,422,37,tofu,1/2,"block, cubed"
+423,423,37,wakame_seaweed,1,tablespoon
+424,424,37,green_onions,2,"stalks, chopped"
+425,425,37,mushrooms,4,sliced
+426,426,37,soy_sauce,1,tablespoon
+427,427,37,mirin,1,tablespoon
+428,428,37,salt,,to taste
+429,429,38,pork_loin,500,"grams, thinly sliced"
+430,430,38,pineapple,1,sliced
+431,431,38,corn_tortillas,8,
+432,432,38,achiote_paste,3,tablespoons
+433,433,38,white_vinegar,1/4,cup
+434,434,38,garlic,4,"cloves, minced"
+435,435,38,cumin,1,teaspoon
+436,436,38,oregano,1,teaspoon
+437,437,38,onion,1,"medium, finely chopped"
+438,438,38,fresh_cilantro,,for garnish
+439,439,38,lime,2,cut into wedges
+440,440,38,salt,,to taste
+441,441,39,avocados,2,
+442,442,39,tomato,1,diced
+443,443,39,onion,1/2,"small, finely chopped"
+444,444,39,jalapeno,1,deseeded and finely chopped
+445,445,39,cilantro,2,"tablespoons, chopped"
+446,446,39,lime,1,juiced
+447,447,39,garlic,1,"clove, minced"
+448,448,39,salt,,to taste
+449,449,39,tortilla_chips,,for serving
+450,450,40,corn_tortillas,8,
+451,451,40,cooked_chicken,2,"cups, shredded"
+452,452,40,enchilada_sauce,2,cups
+453,453,40,cheddar_cheese,1,"cup, shredded"
+454,454,40,onion,1,"medium, finely chopped"
+455,455,40,black_olives,1/2,"cup, sliced"
+456,456,40,fresh_cilantro,,for garnish
+457,457,40,sour_cream,,for serving
+458,458,40,lettuce,,for garnish
+459,459,40,vegetable_oil,2,tablespoons
+460,460,40,salt,,to taste
+461,461,41,beef_steak,500,"grams, thinly sliced"
+462,462,41,red_onion,1,"large, sliced"
+463,463,41,tomato,2,"medium, cut into wedges"
+464,464,41,yellow_pepper,1,sliced
+465,465,41,green_onions,4,"stalks, chopped"
+466,466,41,soy_sauce,3,tablespoons
+467,467,41,vinegar,2,tablespoons
+468,468,41,aji_amarillo_paste,1,tablespoon
+469,469,41,garlic,4,"cloves, minced"
+470,470,41,vegetable_oil,4,tablespoons
+471,471,41,fresh_cilantro,,for garnish
+472,472,41,french_fries,,for serving
+473,473,41,rice,,for serving
+474,474,41,salt,,to taste
+475,475,41,black_pepper,,to taste
+476,476,42,white_fish,400,"grams, cut into cubes"
+477,477,42,lime,6,juiced
+478,478,42,red_onion,1,"small, thinly sliced"
+479,479,42,aji_amarillo,1,chopped
+480,480,42,cilantro,1/2,"cup, chopped"
+481,481,42,corn,1/2,cup
+482,482,42,sweet_potato,1,sliced and boiled
+483,483,42,lettuce,,for serving
+484,484,42,salt,,to taste
+485,485,42,corn_nuts,,for garnish
+486,486,43,chicken_breasts,500,"grams, cooked and shredded"
+487,487,43,yellow_pepper,4,chopped
+488,488,43,aji_amarillo_paste,3,tablespoons
+489,489,43,bread,4,slices
+490,490,43,evaporated_milk,1,cup
+491,491,43,garlic,4,"cloves, minced"
+492,492,43,onion,1,chopped
+493,493,43,walnuts,1/2,"cup, ground"
+494,494,43,parmesan_cheese,1/2,"cup, grated"
+495,495,43,vegetable_oil,4,tablespoons
+496,496,43,hard-boiled_eggs,4,sliced
+497,497,43,olives,,for garnish
+498,498,43,rice,,for serving
+499,499,43,salt,,to taste
+500,500,43,black_pepper,,to taste
+501,501,44,chicken,1,"whole, cut into pieces"
+502,502,44,red_onions,2,"large, finely chopped"
+503,503,44,berbere_spice_blend,1/4,cup
+504,504,44,garlic,5,"cloves, minced"
+505,505,44,ginger,1,"inch, grated"
+506,506,44,tomato_paste,2,tablespoons
+507,507,44,oil,1/2,cup
+508,508,44,hard-boiled_eggs,4,
+509,509,44,jalapeno_peppers,2,sliced
+510,510,44,injera_bread,,for serving
+511,511,44,salt,,to taste
+512,512,45,teff_flour,2,cups
+513,513,45,water,3,cups
+514,514,45,salt,1/2,teaspoon
+515,515,45,baking_soda,1/4,teaspoon
+516,516,45,oil,,for cooking
+517,517,46,beef,200,"grams, minced"
+518,518,46,butter,2,"tablespoons, melted"
+519,519,46,mitmita_spice_blend,2,teaspoons
+520,520,46,cardamom_powder,1/2,teaspoon
+521,521,46,salt,,to taste
+522,522,46,injera_bread,,for serving
+523,523,46,jalapeno_pepper,1,"finely chopped, for garnish"
+524,524,46,fresh_cilantro,,"a few sprigs, for garnish"
+525,525,46,red_onion,1,"small, finely chopped, for garnish"
+526,526,47,kimchi,1,"cup, chopped"
+527,527,47,cooked_rice,2,"cups, preferably day-old"
+528,528,47,pork_belly,150,"grams, sliced"
+529,529,47,garlic,3,"cloves, minced"
+530,530,47,soy_sauce,2,tablespoons
+531,531,47,sesame_oil,1,tablespoon
+532,532,47,green_onions,4,"stalks, chopped"
+533,533,47,eggs,2,
+534,534,47,sesame_seeds,,for garnish
+535,535,47,vegetable_oil,2,tablespoons
+536,536,47,salt,,to taste
+537,537,47,black_pepper,,to taste
+538,538,48,chicken_thighs,500,"grams, boneless and cut into pieces"
+539,539,48,sweet_potato,1,"medium, thinly sliced"
+540,540,48,cabbage,1/2,"head, thinly sliced"
+541,541,48,carrot,1,julienned
+542,542,48,green_cabbage_leaves,,for wrapping
+543,543,48,green_onions,6,"stalks, cut into 2-inch pieces"
+544,544,48,rice_cakes,200,grams
+545,545,48,gochujang,1/4,cup
+546,546,48,soy_sauce,3,tablespoons
+547,547,48,mirin,2,tablespoons
+548,548,48,sugar,1,tablespoon
+549,549,48,garlic,3,"cloves, minced"
+550,550,48,sesame_oil,1,tablespoon
+551,551,48,vegetable_oil,2,tablespoons
+552,552,48,sesame_seeds,,for garnish
+553,553,48,salt,,to taste
+554,554,48,black_pepper,,to taste
+555,555,49,spinach,500,grams
+556,556,49,soy_sauce,2,tablespoons
+557,557,49,sesame_oil,1,tablespoon
+558,558,49,sesame_seeds,1,tablespoon
+559,559,49,garlic,2,"cloves, minced"
+560,560,49,green_chili,1,minced
+561,561,49,sugar,1,teaspoon
+562,562,49,vegetable_oil,1,tablespoon
+563,563,49,salt,,to taste

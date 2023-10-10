@@ -61,72 +61,9 @@
       ]
     },
     {
-      "name": "Chocolate Avocado Protein Balls",
-      "author": "Kylie Johnson",
-      "meal": "Snack",
-      "dish": "Protein Balls",
-      "cuisine": "Healthy",
-      "servings": "12",
-      "time_required": "20 minutes",
-      "ingredients": [
-        ["avocado", "1", "ripe"],
-        ["oats", "1", "cup"],
-        ["protein_powder", "1/2", "cup"],
-        ["cocoa_powder", "1/4", "cup"],
-        ["honey", "1/4", "cup"],
-        ["almond_butter", "1/4", "cup"],
-        ["dark_chocolate_chips", "1/2", "cup"],
-        ["vanilla_extract", "1", "teaspoon"],
-        ["coconut_flakes", "1/4", "cup"],
-        ["chia_seeds", "1", "tablespoon"]
-      ],
-      "directions": [
-        "In a food processor, combine ripe avocado, oats, protein powder, cocoa powder, honey, almond butter, dark chocolate chips, vanilla extract, coconut flakes, and chia seeds.",
-        "Pulse until the mixture is smooth and well combined.",
-        "Transfer the mixture to a bowl and refrigerate for 15 minutes to make it easier to handle.",
-        "Using your hands, roll the mixture into bite-sized balls.",
-        "Store the protein balls in an airtight container in the refrigerator.",
-        "Enjoy these Chocolate Avocado Protein Balls as a healthy snack!"
-      ]
-    },
-    {
-      "name": "Classic Beef Lasagna",
-      "author": "Olivia Anderson",
-      "meal": "Dinner",
-      "dish": "Pasta",
-      "cuisine": "Italian",
-      "servings": "6",
-      "time_required": "1 hour 30 minutes",
-      "ingredients": [
-        ["lasagna_noodles", "9", ""],
-        ["ground_beef", "1", "pound"],
-        ["onion", "1", "chopped"],
-        ["garlic", "3", "cloves, minced"],
-        ["tomato_sauce", "24", "ounces"],
-        ["crushed_tomatoes", "14.5", "ounces"],
-        ["dried_basil", "1", "teaspoon"],
-        ["dried_oregano", "1", "teaspoon"],
-        ["salt", "", "to taste"],
-        ["black_pepper", "", "to taste"],
-        ["ricotta_cheese", "15", "ounces"],
-        ["mozzarella_cheese", "2", "cups, shredded"],
-        ["parmesan_cheese", "1/2", "cup, grated"],
-        ["fresh_parsley", "", "for garnish"]
-      ],
-      "directions": [
-        "Preheat the oven to 190°C (375°F).",
-        "In a skillet, cook the ground beef, onion, and garlic over medium heat until meat is browned. Drain excess fat.",
-        "Stir in tomato sauce, crushed tomatoes, basil, oregano, salt, and pepper. Simmer for 15 minutes.",
-        "In a baking dish, layer lasagna noodles, meat sauce, ricotta cheese, and mozzarella cheese. Repeat layers, ending with a layer of mozzarella and parmesan cheese on top.",
-        "Bake in the preheated oven for 45 minutes.",
-        "Allow to cool for 15 minutes before serving.",
-        "Garnish with fresh parsley and enjoy this Classic Beef Lasagna!"
-      ]
-    },
-    {
       "name": "Lemon Herb Roasted Chicken",
       "author": "Daniel Walker",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Roasted Chicken",
       "cuisine": "American",
       "servings": "4",
@@ -155,7 +92,7 @@
     {
       "name": "Vegetarian Lentil Curry",
       "author": "Aisha Patel",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Curry",
       "cuisine": "Indian",
       "servings": "4",
@@ -188,7 +125,7 @@
     {
       "name": "Classic Beef Lasagna",
       "author": "Lucas Anderson",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Pasta",
       "cuisine": "Italian",
       "servings": "6",
@@ -224,13 +161,13 @@
     {
       "name": "Thai Red Curry with Shrimp",
       "author": "Samantha Roberts",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Curry",
       "cuisine": "Thai",
       "servings": "4",
       "time_required": "35 minutes",
       "ingredients": [
-        ["shrimp", "1 pound", "peeled and deveined"],
+        ["shrimp", "1", "pound peeled and deveined"],
         ["red_curry_paste", "2", "tablespoons"],
         ["coconut_milk", "14", "ounces"],
         ["bell_pepper", "1", "sliced"],
@@ -254,39 +191,9 @@
       ]
     },
     {
-      "name": "Greek Salad",
-      "author": "Alexandra Mitchell",
-      "meal": "Lunch",
-      "dish": "Salad",
-      "cuisine": "Greek",
-      "servings": "4",
-      "time_required": "15 minutes",
-      "ingredients": [
-        ["cucumber", "1", "diced"],
-        ["tomatoes", "3", "diced"],
-        ["red_onion", "1/2", "cup, thinly sliced"],
-        ["kalamata_olives", "1/2", "cup"],
-        ["feta_cheese", "1/2", "cup, crumbled"],
-        ["extra_virgin_olive_oil", "1/4", "cup"],
-        ["red_wine_vinegar", "2", "tablespoons"],
-        ["dried_oregano", "1", "teaspoon"],
-        ["salt", "1/2", "teaspoon"],
-        ["black_pepper", "1/4", "teaspoon"],
-        ["fresh_parsley", "1/4", "cup chopped"]
-      ],
-      "directions": [
-        "In a large mixing bowl, combine diced cucumber, diced tomatoes, thinly sliced red onion, kalamata olives, and crumbled feta cheese.",
-        "In a small bowl, whisk together extra virgin olive oil, red wine vinegar, dried oregano, salt, and black pepper.",
-        "Pour the dressing over the salad mixture and toss until well combined.",
-        "Garnish with chopped fresh parsley.",
-        "Chill in the refrigerator for at least 30 minutes before serving.",
-        "Enjoy this refreshing Greek Salad!"
-      ]
-    },
-    {
       "name": "Crispy Lemon Garlic Salmon",
       "author": "Olivia Anderson",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Seafood",
       "cuisine": "Mediterranean",
       "servings": "2",
@@ -314,7 +221,7 @@
     {
       "name": "Spicy Vegetable Jambalaya",
       "author": "Daniel Rodriguez",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Rice",
       "cuisine": "Creole",
       "servings": "4",
@@ -346,7 +253,7 @@
     {
       "name": "Greek Salad",
       "author": "Sophie Mitchell",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Salad",
       "cuisine": "Greek",
       "servings": "4",
@@ -377,7 +284,7 @@
     {
       "name": "Classic Margherita Pizza",
       "author": "Antonio Rossi",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Pizza",
       "cuisine": "Italian",
       "servings": "2-4",
@@ -406,7 +313,7 @@
     {
       "name": "Beef Tacos",
       "author": "Maria Hernandez",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Tacos",
       "cuisine": "Mexican",
       "servings": "4",
@@ -434,39 +341,9 @@
       ]
     },
     {
-      "name": "Lemon Garlic Roasted Chicken",
-      "author": "John Anderson",
-      "meal": "Dinner",
-      "dish": "Roasted Chicken",
-      "cuisine": "American",
-      "servings": "4-6",
-      "time_required": "1 hour and 30 minutes",
-      "ingredients": [
-        ["whole_chicken", "1", "about 4 pounds"],
-        ["lemons", "2", "halved"],
-        ["garlic", "6", "minced cloves"],
-        ["fresh_thyme", "", "a handful sprigs"],
-        ["butter", "1/2", "cup, melted"],
-        ["olive_oil", "2", "tablespoons"],
-        ["salt", "", "to taste"],
-        ["pepper", "", "to taste"]
-      ],
-      "directions": [
-        "Preheat the oven to 425°F (220°C).",
-        "Pat the whole chicken dry with paper towels, inside and out.",
-        "Season the chicken cavity with salt and pepper, then stuff with halved lemons and fresh thyme sprigs.",
-        "In a small bowl, mix minced garlic, melted butter, and olive oil.",
-        "Brush the chicken with the garlic-butter mixture, making sure to coat the entire surface.",
-        "Place the chicken on a rack in a roasting pan. Tie the chicken legs together with kitchen twine.",
-        "Roast the chicken in the preheated oven for about 1 hour and 15 minutes, or until the internal temperature reaches 165°F (74°C) and the skin is golden and crispy.",
-        "Let the chicken rest for 10-15 minutes before carving.",
-        "Serve this succulent Lemon Garlic Roasted Chicken for a delightful dinner!"
-      ]
-    },
-    {
       "name": "Vegetarian Sushi Rolls",
       "author": "Olivia Davis",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Sushi",
       "cuisine": "Japanese",
       "servings": "2",
@@ -497,7 +374,7 @@
     {
       "name": "Chicken Katsu Curry",
       "author": "Akira Tanaka",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Curry",
       "cuisine": "Japanese",
       "servings": "4",
@@ -523,61 +400,9 @@
       ]
     },
     {
-      "name": "Miso Soup",
-      "author": "Yumi Suzuki",
-      "meal": "Lunch",
-      "dish": "Soup",
-      "cuisine": "Japanese",
-      "servings": "2",
-      "time_required": "15 minutes",
-      "ingredients": [
-        ["dashi_stock", "4", "cups"],
-        ["misopaste", "3", "tablespoons"],
-        ["tofu", "1/2", "cup, diced"],
-        ["wakame_seaweed", "2", "tablespoons"],
-        ["green_onions", "2", "stalks, finely chopped"],
-        ["toasted_sesame_seeds", "1", "tablespoon"],
-        ["soy_sauce", "1", "tablespoon"],
-        ["mirin", "1", "tablespoon"],
-        ["salt", "", "to taste"]
-      ],
-      "directions": [
-        "In a pot, bring dashi stock to a gentle simmer.",
-        "Add miso paste and stir until fully dissolved.",
-        "Add diced tofu, wakame seaweed, and green onions. Simmer for a few minutes.",
-        "Stir in soy sauce and mirin. Taste and adjust salt if needed.",
-        "Serve the miso soup hot, garnished with toasted sesame seeds.",
-        "Enjoy this comforting Miso Soup!"
-      ]
-    },
-    {
-      "name": "Sushi Rice",
-      "author": "Ryuji Nakamura",
-      "meal": "Side Dish",
-      "dish": "Rice",
-      "cuisine": "Japanese",
-      "servings": "4",
-      "time_required": "25 minutes",
-      "ingredients": [
-        ["sushi_rice", "2", "cups"],
-        ["rice_vinegar", "1/4", "cup"],
-        ["sugar", "2", "tablespoons"],
-        ["salt", "1", "teaspoon"]
-      ],
-      "directions": [
-        "Wash the sushi rice in cold water until the water becomes clear. Drain well.",
-        "In a saucepan, combine the washed rice with the appropriate amount of water and cook according to the package instructions.",
-        "In a small bowl, mix rice vinegar, sugar, and salt until the sugar and salt are dissolved.",
-        "Once the rice is cooked, transfer it to a large mixing bowl and gently fold in the vinegar mixture while the rice is still hot.",
-        "Allow the sushi rice to cool to room temperature before using for sushi.",
-        "Use this seasoned Sushi Rice for making various sushi rolls.",
-        "Enjoy this perfectly seasoned Sushi Rice!"
-      ]
-    },
-    {
       "name": "Adobo Chicken",
       "author": "Elena Santos",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Main",
       "cuisine": "Filipino",
       "servings": "4",
@@ -607,7 +432,7 @@
     {
       "name": "Pancit Canton",
       "author": "Rico Hernandez",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Noodles",
       "cuisine": "Filipino",
       "servings": "6",
@@ -669,7 +494,7 @@
     {
       "name": "Pad Thai",
       "author": "Nina Phan",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Stir Fry",
       "cuisine": "Thai",
       "servings": "4",
@@ -707,7 +532,7 @@
     {
       "name": "Tom Yum Goong",
       "author": "Trevor Smith",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Soup",
       "cuisine": "Thai",
       "servings": "4",
@@ -742,7 +567,7 @@
     {
       "name": "Green Curry Chicken",
       "author": "Lana Wilson",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Curry",
       "cuisine": "Thai",
       "servings": "4",
@@ -844,7 +669,7 @@
     {
       "name": "Burmese Chicken Curry",
       "author": "Thida Htwe",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Curry",
       "cuisine": "Burmese",
       "servings": "4",
@@ -882,7 +707,7 @@
     {
       "name": "Bibimbap",
       "author": "Jiyoung Kim",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Rice Bowl",
       "cuisine": "Korean",
       "servings": "4",
@@ -918,7 +743,7 @@
     {
       "name": "Kimchi Jjigae",
       "author": "Hyejin Lee",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Stew",
       "cuisine": "Korean",
       "servings": "4",
@@ -952,7 +777,7 @@
     {
       "name": "Korean Fried Chicken",
       "author": "Minwoo Park",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Fried Chicken",
       "cuisine": "Korean",
       "servings": "4",
@@ -985,7 +810,7 @@
     {
       "name": "Beef Noodle Soup",
       "author": "Chen Wei",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Soup",
       "cuisine": "Taiwanese",
       "servings": "4",
@@ -1023,7 +848,7 @@
     {
       "name": "Oyster Omelette",
       "author": "Li Mei",
-      "meal": "Dinner",
+      "meal": "Main",
       "dish": "Seafood",
       "cuisine": "Taiwanese",
       "servings": "4",
@@ -1055,7 +880,7 @@
     {
       "name": "Bubble Milk Tea",
       "author": "Huang Ming",
-      "meal": "Beverage",
+      "meal": "Snack",
       "dish": "Drink",
       "cuisine": "Taiwanese",
       "servings": "2",
@@ -1144,7 +969,7 @@
     {
       "name": "Laksa",
       "author": "Aisyah Jamal",
-      "meal": "Lunch",
+      "meal": "Main",
       "dish": "Soup",
       "cuisine": "Malaysian",
       "servings": "4",
@@ -1176,6 +1001,612 @@
         "Garnish with bean sprouts, halved hard-boiled eggs, and coriander leaves.",
         "Serve the Laksa hot with lime wedges.",
         "Enjoy this flavorful Malaysian Laksa soup!"
+      ]
+    },
+    {
+      "name": "Satay",
+      "author": "Hassan Ahmad",
+      "meal": "Main",
+      "dish": "Skewers",
+      "cuisine": "Malaysian",
+      "servings": "4",
+      "time_required": "1 hour",
+      "ingredients": [
+        ["chicken_thighs", "500", "grams, cut into cubes"],
+        ["lemongrass", "2", "stalks, chopped"],
+        ["garlic", "4", "cloves"],
+        ["ginger", "1", "inch"],
+        ["turmeric_powder", "1", "teaspoon"],
+        ["coriander_powder", "1", "teaspoon"],
+        ["cumin_powder", "1", "teaspoon"],
+        ["brown_sugar", "2", "tablespoons"],
+        ["soy_sauce", "3", "tablespoons"],
+        ["vegetable_oil", "2", "tablespoons"],
+        ["bamboo_skewers", "20"],
+        ["peanut_sauce", "", "for serving"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a food processor, blend lemongrass, garlic, ginger, turmeric powder, coriander powder, cumin powder, brown sugar, soy sauce, and vegetable oil to make the marinade.",
+        "Marinate chicken cubes in the blended mixture for at least 1 hour, or preferably overnight in the refrigerator.",
+        "Thread marinated chicken cubes onto bamboo skewers.",
+        "Grill the skewers over medium-high heat until the chicken is cooked and slightly charred.",
+        "Season with salt to taste.",
+        "Serve Satay with peanut sauce and enjoy this classic Malaysian dish!"
+      ]
+    },
+    {
+      "name": "Sinigang",
+      "author": "Antonio Santos",
+      "meal": "Main",
+      "dish": "Soup",
+      "cuisine": "Filipino",
+      "servings": "4",
+      "time_required": "1.5 hours",
+      "ingredients": [
+        ["pork_ribs", "500", "grams"],
+        ["tamarind_soup_base", "1", "packet"],
+        ["radish", "1", "medium, sliced"],
+        ["eggplant", "2", "medium, sliced"],
+        ["tomato", "2", "medium, quartered"],
+        ["onion", "1", "medium, quartered"],
+        ["long_green_chili", "3"],
+        ["water", "8", "cups"],
+        ["fish_sauce", "3", "tablespoons"],
+        ["salt", "", "to taste"],
+        ["spinach", "", "a bunch"],
+        ["vegetable_oil", "1", "tablespoon"]
+      ],
+      "directions": [
+        "In a pot, bring water to a boil and add the pork ribs. Cook until the meat is tender.",
+        "Add the tamarind soup base and bring to a simmer.",
+        "Stir in the sliced radish, eggplant, tomato, and onion. Cook until the vegetables are tender.",
+        "Add long green chili, fish sauce, and salt to taste.",
+        "In a separate pan, heat vegetable oil and sauté spinach until wilted. Set aside.",
+        "Serve the Sinigang hot in bowls, topped with sautéed spinach.",
+        "Enjoy this sour and savory Filipino Sinigang soup!"
+      ]
+    },
+    {
+      "name": "Huli Huli Chicken",
+      "author": "Kai Williams",
+      "meal": "Main",
+      "dish": "Grilled",
+      "cuisine": "Hawaiian",
+      "servings": "4",
+      "time_required": "1 hour",
+      "ingredients": [
+        ["chicken_thighs", "8", "pieces"],
+        ["pineapple_juice", "1", "cup"],
+        ["soy_sauce", "1/2", "cup"],
+        ["brown_sugar", "1/2", "cup"],
+        ["ketchup", "1/4", "cup"],
+        ["garlic", "4", "cloves, minced"],
+        ["ginger", "1", "tablespoon, grated"],
+        ["rice_vinegar", "2", "tablespoons"],
+        ["vegetable_oil", "2", "tablespoons"],
+        ["green_onions", "4", "stalks, chopped"],
+        ["pineapple", "", "for garnish"],
+        ["sesame_seeds", "", "for garnish"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a bowl, mix pineapple juice, soy sauce, brown sugar, ketchup, minced garlic, grated ginger, rice vinegar, and vegetable oil to create the marinade.",
+        "Place chicken thighs in a shallow dish and pour the marinade over them. Refrigerate for at least 30 minutes to marinate.",
+        "Preheat the grill to medium-high heat.",
+        "Grill the marinated chicken thighs, turning occasionally, until the chicken is cooked through and has nice grill marks.",
+        "While grilling, baste the chicken with the reMaining marinade for added flavor.",
+        "Garnish with chopped green onions, pineapple slices, and sesame seeds.",
+        "Serve the Huli Huli Chicken hot with your favorite sides.",
+        "Enjoy this delicious and tender Hawaiian Huli Huli Chicken!"
+      ]
+    },
+    {
+      "name": "Lomi Lomi Salmon",
+      "author": "Leilani Wong",
+      "meal": "Appetizer",
+      "dish": "Salad",
+      "cuisine": "Hawaiian",
+      "servings": "4",
+      "time_required": "20 minutes",
+      "ingredients": [
+        ["salmon", "200", "grams, diced"],
+        ["tomato", "2", "medium, diced"],
+        ["onion", "1", "medium, diced"],
+        ["green_onions", "4", "stalks, chopped"],
+        ["lime", "1", "juiced"],
+        ["chili_pepper", "1", "small, minced"],
+        ["sea_salt", "1/2", "teaspoon"],
+        ["iceberg_lettuce", "", "for garnish"],
+        ["cilantro", "", "for garnish"],
+        ["avocado", "", "for garnish"],
+        ["taro_chips", "", "for garnish"]
+      ],
+      "directions": [
+        "In a large bowl, combine diced salmon, tomatoes, onions, chopped green onions, and minced chili pepper.",
+        "Squeeze lime juice over the mixture and toss gently to combine.",
+        "Season with sea salt.",
+        "Refrigerate the Lomi Lomi Salmon for about 10-15 minutes to chill.",
+        "Arrange iceberg lettuce leaves on a serving plate.",
+        "Spoon the chilled Lomi Lomi Salmon mixture onto the lettuce leaves.",
+        "Garnish with cilantro, avocado slices, and taro chips.",
+        "Serve the Lomi Lomi Salmon chilled and enjoy this traditional Hawaiian salad!"
+      ]
+    },
+    {
+      "name": "Pineapple Coconut Smoothie",
+      "author": "Kai Johnson",
+      "meal": "Snack",
+      "dish": "Smoothie",
+      "cuisine": "Hawaiian",
+      "servings": "2",
+      "time_required": "10 minutes",
+      "ingredients": [
+        ["pineapple", "1/2", "small, chopped"],
+        ["coconut_milk", "1", "cup"],
+        ["banana", "1"],
+        ["honey", "2", "tablespoons"],
+        ["yogurt", "1/2", "cup"],
+        ["ice", "1", "cup"],
+        ["mint_leaves", "", "for garnish"]
+      ],
+      "directions": [
+        "In a blender, combine chopped pineapple, coconut milk, banana, honey, yogurt, and ice.",
+        "Blend until smooth and creamy.",
+        "Pour the Pineapple Coconut Smoothie into glasses.",
+        "Garnish with mint leaves.",
+        "Serve the Pineapple Coconut Smoothie cold and enjoy this refreshing Hawaiian beverage!"
+      ]
+    },
+    {
+      "name": "Tempura",
+      "author": "Yuki Nakamura",
+      "meal": "Main",
+      "dish": "Tempura",
+      "cuisine": "Japanese",
+      "servings": "4",
+      "time_required": "45 minutes",
+      "ingredients": [
+        ["shrimp", "12"],
+        ["vegetables_of_choice", "2", "cups, e.g., sweet potato, zucchini, bell pepper"],
+        ["all-purpose_flour", "1", "cup"],
+        ["cornstarch", "1/2", "cup"],
+        ["cold_water", "1", "cup"],
+        ["ice", "", "a few cubes"],
+        ["soy_sauce", "", "for dipping"],
+        ["tempura_dipping_sauce", "", "for dipping"],
+        ["vegetable_oil", "", "for frying"]
+      ],
+      "directions": [
+        "Peel and devein the shrimp, leaving the tails intact.",
+        "Prepare the vegetables by slicing them into thin strips.",
+        "In a mixing bowl, combine all-purpose flour, cornstarch, and cold water. Mix well but leave it slightly lumpy.",
+        "Add ice cubes to keep the batter cold.",
+        "Heat vegetable oil in a deep pan or pot for frying.",
+        "Dip the shrimp and vegetables into the batter, ensuring they are fully coated.",
+        "Carefully place the battered items into the hot oil and fry until golden and crispy.",
+        "Remove the tempura from the oil and drain excess oil on paper towels.",
+        "Serve the Tempura with soy sauce and tempura dipping sauce for dipping.",
+        "Enjoy this crispy and delightful Japanese Tempura!"
+      ]
+    },
+    {
+      "name": "Miso Soup",
+      "author": "Hiroshi Tanaka",
+      "meal": "Appetizer",
+      "dish": "Soup",
+      "cuisine": "Japanese",
+      "servings": "4",
+      "time_required": "30 minutes",
+      "ingredients": [
+        ["dashi", "4", "cups"],
+        ["miso_paste", "4", "tablespoons"],
+        ["tofu", "1/2", "block, cubed"],
+        ["wakame_seaweed", "1", "tablespoon"],
+        ["green_onions", "2", "stalks, chopped"],
+        ["mushrooms", "4", "sliced"],
+        ["soy_sauce", "1", "tablespoon"],
+        ["mirin", "1", "tablespoon"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a pot, bring dashi to a gentle simmer.",
+        "Add sliced mushrooms and cubed tofu.",
+        "In a small bowl, mix miso paste with a little hot dashi to dissolve it.",
+        "Add the miso mixture to the pot and stir well.",
+        "Add wakame seaweed and let it simmer for a few minutes.",
+        "Stir in soy sauce and mirin.",
+        "Season with salt to taste.",
+        "Garnish with chopped green onions.",
+        "Serve the Miso Soup hot and enjoy this comforting Japanese appetizer!"
+      ]
+    },
+    {
+      "name": "Tacos al Pastor",
+      "author": "Luis Hernandez",
+      "meal": "Main",
+      "dish": "Tacos",
+      "cuisine": "Mexican",
+      "servings": "4",
+      "time_required": "1.5 hours",
+      "ingredients": [
+        ["pork_loin", "500", "grams, thinly sliced"],
+        ["pineapple", "1", "sliced"],
+        ["corn_tortillas", "8"],
+        ["achiote_paste", "3", "tablespoons"],
+        ["white_vinegar", "1/4", "cup"],
+        ["garlic", "4", "cloves, minced"],
+        ["cumin", "1", "teaspoon"],
+        ["oregano", "1", "teaspoon"],
+        ["onion", "1", "medium, finely chopped"],
+        ["fresh_cilantro", "", "for garnish"],
+        ["lime", "2", "cut into wedges"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a bowl, mix achiote paste, white vinegar, minced garlic, cumin, oregano, and salt to create the marinade.",
+        "Marinate the thinly sliced pork loin in the mixture for at least 1 hour.",
+        "Preheat a grill or stovetop griddle.",
+        "Grill the marinated pork slices until cooked through.",
+        "While grilling, grill the pineapple slices as well.",
+        "Warm corn tortillas on the grill.",
+        "Serve the grilled pork slices on warm tortillas, topped with grilled pineapple, chopped onions, and fresh cilantro.",
+        "Serve Tacos al Pastor with lime wedges.",
+        "Enjoy this authentic and flavorful Mexican street food!"
+      ]
+    },
+    {
+      "name": "Guacamole",
+      "author": "Elena Rodriguez",
+      "meal": "Appetizer",
+      "dish": "Dip",
+      "cuisine": "Mexican",
+      "servings": "4",
+      "time_required": "15 minutes",
+      "ingredients": [
+        ["avocados", "2"],
+        ["tomato", "1", "diced"],
+        ["onion", "1/2", "small, finely chopped"],
+        ["jalapeno", "1", "deseeded and finely chopped"],
+        ["cilantro", "2", "tablespoons, chopped"],
+        ["lime", "1", "juiced"],
+        ["garlic", "1", "clove, minced"],
+        ["salt", "", "to taste"],
+        ["tortilla_chips", "", "for serving"]
+      ],
+      "directions": [
+        "Cut the avocados in half, remove the pit, and scoop the flesh into a bowl.",
+        "Mash the avocados using a fork or potato masher until smooth with some chunks.",
+        "Add diced tomato, finely chopped onion, deseeded and finely chopped jalapeno, chopped cilantro, minced garlic, lime juice, and salt. Mix well.",
+        "Taste and adjust salt if needed.",
+        "Transfer the guacamole to a serving bowl.",
+        "Serve the Guacamole with tortilla chips.",
+        "Enjoy this classic Mexican dip!"
+      ]
+    },
+    {
+      "name": "Enchiladas Rojas",
+      "author": "Carlos Martinez",
+      "meal": "Main",
+      "dish": "Enchiladas",
+      "cuisine": "Mexican",
+      "servings": "4",
+      "time_required": "1 hour",
+      "ingredients": [
+        ["corn_tortillas", "8"],
+        ["cooked_chicken", "2", "cups, shredded"],
+        ["enchilada_sauce", "2", "cups"],
+        ["cheddar_cheese", "1", "cup, shredded"],
+        ["onion", "1", "medium, finely chopped"],
+        ["black_olives", "1/2", "cup, sliced"],
+        ["fresh_cilantro", "", "for garnish"],
+        ["sour_cream", "", "for serving"],
+        ["lettuce", "", "for garnish"],
+        ["vegetable_oil", "2", "tablespoons"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "In a pan, heat vegetable oil over medium heat. Briefly fry each corn tortilla to soften, then drain on paper towels.",
+        "In a bowl, mix the cooked shredded chicken, half of the chopped onions, and half of the enchilada sauce.",
+        "Fill each softened tortilla with the chicken mixture, roll them up, and place them seam side down in a baking dish.",
+        "Pour the reMaining enchilada sauce over the rolled tortillas.",
+        "Top with shredded cheddar cheese and sliced black olives.",
+        "Bake in the preheated oven for about 20 minutes, or until the enchiladas are heated through and the cheese is melted and bubbly.",
+        "Garnish with the reMaining chopped onions, fresh cilantro, and lettuce.",
+        "Serve the Enchiladas Rojas hot with a dollop of sour cream.",
+        "Enjoy this comforting and flavorful Mexican dish!"
+      ]
+    },
+    {
+      "name": "Lomo Saltado",
+      "author": "Alejandro Vargas",
+      "meal": "Main",
+      "dish": "Stir Fry",
+      "cuisine": "Peruvian",
+      "servings": "4",
+      "time_required": "30 minutes",
+      "ingredients": [
+        ["beef_steak", "500", "grams, thinly sliced"],
+        ["red_onion", "1", "large, sliced"],
+        ["tomato", "2", "medium, cut into wedges"],
+        ["yellow_pepper", "1", "sliced"],
+        ["green_onions", "4", "stalks, chopped"],
+        ["soy_sauce", "3", "tablespoons"],
+        ["vinegar", "2", "tablespoons"],
+        ["aji_amarillo_paste", "1", "tablespoon"],
+        ["garlic", "4", "cloves, minced"],
+        ["vegetable_oil", "4", "tablespoons"],
+        ["fresh_cilantro", "", "for garnish"],
+        ["french_fries", "", "for serving"],
+        ["rice", "", "for serving"],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
+      ],
+      "directions": [
+        "In a wok or large pan, heat vegetable oil over high heat.",
+        "Add thinly sliced beef steak and cook until browned. Remove and set aside.",
+        "In the same pan, add more oil if needed and sauté minced garlic until aromatic.",
+        "Add sliced red onion, yellow pepper, and green onions. Stir-fry until the vegetables are slightly tender.",
+        "Stir in aji amarillo paste, soy sauce, and vinegar.",
+        "Add the cooked beef slices back into the pan and mix well with the vegetables and sauce.",
+        "Toss in tomato wedges and cook briefly to retain their shape.",
+        "Season with salt and black pepper to taste.",
+        "Garnish with fresh cilantro.",
+        "Serve Lomo Saltado hot with rice and french fries.",
+        "Enjoy this delicious and classic Peruvian stir fry!"
+      ]
+    },
+    {
+      "name": "Ceviche",
+      "author": "Isabella Cruz",
+      "meal": "Appetizer",
+      "dish": "Ceviche",
+      "cuisine": "Peruvian",
+      "servings": "4",
+      "time_required": "20 minutes",
+      "ingredients": [
+        ["white_fish", "400", "grams, cut into cubes"],
+        ["lime", "6", "juiced"],
+        ["red_onion", "1", "small, thinly sliced"],
+        ["aji_amarillo", "1", "chopped"],
+        ["cilantro", "1/2", "cup, chopped"],
+        ["corn", "1/2", "cup"],
+        ["sweet_potato", "1", "sliced and boiled"],
+        ["lettuce", "", "for serving"],
+        ["salt", "", "to taste"],
+        ["corn_nuts", "", "for garnish"]
+      ],
+      "directions": [
+        "In a bowl, place the fish cubes and pour lime juice over them. Let it marinate in the lime juice for about 15 minutes or until the fish turns opaque.",
+        "Add thinly sliced red onion, chopped aji amarillo, and chopped cilantro to the marinated fish. Mix well.",
+        "Stir in corn and season with salt to taste.",
+        "To serve, place a portion of ceviche on a lettuce leaf.",
+        "Garnish with slices of sweet potato and corn nuts.",
+        "Serve Ceviche cold and enjoy this refreshing Peruvian appetizer!"
+      ]
+    },
+    {
+      "name": "Aji de Gallina",
+      "author": "Santiago Ramirez",
+      "meal": "Main",
+      "dish": "Stew",
+      "cuisine": "Peruvian",
+      "servings": "4",
+      "time_required": "1 hour",
+      "ingredients": [
+        ["chicken_breasts", "500", "grams, cooked and shredded"],
+        ["yellow_pepper", "4", "chopped"],
+        ["aji_amarillo_paste", "3", "tablespoons"],
+        ["bread", "4", "slices"],
+        ["evaporated_milk", "1", "cup"],
+        ["garlic", "4", "cloves, minced"],
+        ["onion", "1", "chopped"],
+        ["walnuts", "1/2", "cup, ground"],
+        ["parmesan_cheese", "1/2", "cup, grated"],
+        ["vegetable_oil", "4", "tablespoons"],
+        ["hard-boiled_eggs", "4", "sliced"],
+        ["olives", "", "for garnish"],
+        ["rice", "", "for serving"],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
+      ],
+      "directions": [
+        "In a pan, heat vegetable oil over medium heat. Sauté minced garlic and chopped onion until soft and translucent.",
+        "Stir in aji amarillo paste and chopped yellow peppers. Cook for a few minutes.",
+        "In a blender, combine the cooked mixture with bread slices, evaporated milk, ground walnuts, and grated parmesan cheese. Blend until smooth.",
+        "Return the mixture to the pan and add shredded chicken. Cook until the sauce thickens and coats the chicken.",
+        "Season with salt and black pepper to taste.",
+        "To serve, place a portion of Aji de Gallina on a plate.",
+        "Garnish with slices of hard-boiled eggs and olives.",
+        "Serve Aji de Gallina with rice.",
+        "Enjoy this creamy and flavorful Peruvian stew!"
+      ]
+    },
+    {
+      "name": "Doro Wat",
+      "author": "Aida Teferi",
+      "meal": "Main",
+      "dish": "Stew",
+      "cuisine": "Ethiopian",
+      "servings": "4",
+      "time_required": "2 hours",
+      "ingredients": [
+        ["chicken", "1", "whole, cut into pieces"],
+        ["red_onions", "2", "large, finely chopped"],
+        ["berbere_spice_blend", "1/4", "cup"],
+        ["garlic", "5", "cloves, minced"],
+        ["ginger", "1", "inch, grated"],
+        ["tomato_paste", "2", "tablespoons"],
+        ["oil", "1/2", "cup"],
+        ["hard-boiled_eggs", "4"],
+        ["jalapeno_peppers", "2", "sliced"],
+        ["injera_bread", "", "for serving"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a large pot, heat oil over medium heat and sauté finely chopped red onions until golden brown.",
+        "Add minced garlic and grated ginger. Sauté for a minute until fragrant.",
+        "Stir in berbere spice blend and tomato paste. Cook for a few minutes.",
+        "Add chicken pieces and cook until they are browned on all sides.",
+        "Pour in enough water to cover the chicken. Bring to a boil, then reduce the heat and let it simmer for about 1.5 hours or until the chicken is tender.",
+        "Season with salt to taste.",
+        "Garnish with hard-boiled eggs and sliced jalapeno peppers.",
+        "Serve the Doro Wat hot with injera bread.",
+        "Enjoy this flavorful and spicy Ethiopian Doro Wat!"
+      ]
+    },
+    {
+      "name": "Injera",
+      "author": "Yared Mulugeta",
+      "meal": "Main",
+      "dish": "Bread",
+      "cuisine": "Ethiopian",
+      "servings": "6",
+      "time_required": "12-48 hours (fermentation)",
+      "ingredients": [
+        ["teff_flour", "2", "cups"],
+        ["water", "3", "cups"],
+        ["salt", "1/2", "teaspoon"],
+        ["baking_soda", "1/4", "teaspoon"],
+        ["oil", "", "for cooking"]
+      ],
+      "directions": [
+        "In a large mixing bowl, combine teff flour and water. Stir well to form a smooth batter.",
+        "Let the batter ferment for at least 12-48 hours, allowing it to develop a slightly tangy flavor.",
+        "After fermentation, stir in baking soda and salt. Mix well.",
+        "Heat a non-stick skillet over medium heat. Lightly oil the skillet.",
+        "Pour a ladleful of the batter onto the skillet and quickly swirl it around to spread evenly, creating a thin pancake.",
+        "Cover the skillet and cook until the edges begin to curl and the surface is covered with tiny bubbles.",
+        "Remove the injera from the skillet and let it cool.",
+        "Repeat with the reMaining batter.",
+        "Serve the Injera with your favorite Ethiopian stews and dishes.",
+        "Enjoy this staple Ethiopian bread that complements various dishes!"
+      ]
+    },
+    {
+      "name": "Kitfo",
+      "author": "Lalibela Mengistu",
+      "meal": "Appetizer",
+      "dish": "Beef Tartare",
+      "cuisine": "Ethiopian",
+      "servings": "2",
+      "time_required": "30 minutes",
+      "ingredients": [
+        ["beef", "200", "grams, minced"],
+        ["butter", "2", "tablespoons, melted"],
+        ["mitmita_spice_blend", "2", "teaspoons"],
+        ["cardamom_powder", "1/2", "teaspoon"],
+        ["salt", "", "to taste"],
+        ["injera_bread", "", "for serving"],
+        ["jalapeno_pepper", "1", "finely chopped, for garnish"],
+        ["fresh_cilantro","", "a few sprigs, for garnish"],
+        ["red_onion", "1", "small, finely chopped, for garnish"]
+      ],
+      "directions": [
+        "In a mixing bowl, combine minced beef, mitmita spice blend, cardamom powder, and salt. Mix well.",
+        "Melt butter and pour it over the spiced minced beef mixture. Mix until well combined.",
+        "Serve the Kitfo on injera bread, garnished with chopped jalapeno pepper, fresh cilantro, and finely chopped red onion.",
+        "Enjoy this traditional and flavorful Ethiopian beef tartare!"
+      ]
+    },
+    {
+      "name": "Kimchi Fried Rice",
+      "author": "Seo Yeon",
+      "meal": "Main",
+      "dish": "Fried Rice",
+      "cuisine": "Korean",
+      "servings": "2",
+      "time_required": "20 minutes",
+      "ingredients": [
+        ["kimchi", "1", "cup, chopped"],
+        ["cooked_rice", "2", "cups, preferably day-old"],
+        ["pork_belly", "150", "grams, sliced"],
+        ["garlic", "3", "cloves, minced"],
+        ["soy_sauce", "2", "tablespoons"],
+        ["sesame_oil", "1", "tablespoon"],
+        ["green_onions", "4", "stalks, chopped"],
+        ["eggs", "2"],
+        ["sesame_seeds", "", "for garnish"],
+        ["vegetable_oil", "2", "tablespoons"],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
+      ],
+      "directions": [
+        "In a pan, heat vegetable oil over medium heat. Add sliced pork belly and cook until browned.",
+        "Add minced garlic and chopped kimchi. Stir-fry for a few minutes.",
+        "Add cooked rice and mix well with the pork and kimchi.",
+        "Season with soy sauce, sesame oil, salt, and black pepper.",
+        "Push the fried rice to one side of the pan and crack eggs into the other side. Scramble the eggs and mix them into the fried rice.",
+        "Stir in chopped green onions and cook for another minute.",
+        "Garnish with sesame seeds.",
+        "Serve the Kimchi Fried Rice hot and enjoy this Korean favorite!"
+      ]
+    },
+    {
+      "name": "Dak Galbi",
+      "author": "Min Jun",
+      "meal": "Main",
+      "dish": "Stir Fry",
+      "cuisine": "Korean",
+      "servings": "4",
+      "time_required": "40 minutes",
+      "ingredients": [
+        ["chicken_thighs", "500", "grams, boneless and cut into pieces"],
+        ["sweet_potato", "1", "medium, thinly sliced"],
+        ["cabbage", "1/2", "head, thinly sliced"],
+        ["carrot", "1", "julienned"],
+        ["green_cabbage_leaves", "", "for wrapping"],
+        ["green_onions", "6", "stalks, cut into 2-inch pieces"],
+        ["rice_cakes", "200", "grams"],
+        ["gochujang", "1/4", "cup"],
+        ["soy_sauce", "3", "tablespoons"],
+        ["mirin", "2", "tablespoons"],
+        ["sugar", "1", "tablespoon"],
+        ["garlic", "3", "cloves, minced"],
+        ["sesame_oil", "1", "tablespoon"],
+        ["vegetable_oil", "2", "tablespoons"],
+        ["sesame_seeds", "", "for garnish"],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
+      ],
+      "directions": [
+        "In a large mixing bowl, combine chicken pieces, gochujang, soy sauce, mirin, sugar, minced garlic, sesame oil, salt, and black pepper. Mix well and marinate for 20-30 minutes.",
+        "In a pan, heat vegetable oil over medium-high heat. Add marinated chicken and stir-fry until cooked.",
+        "Add sliced sweet potato, julienned carrot, and rice cakes. Continue stir-frying for a few more minutes.",
+        "Add thinly sliced cabbage and green onions. Stir-fry until the vegetables are tender.",
+        "Garnish with sesame seeds.",
+        "Serve the Dak Galbi with green cabbage leaves for wrapping.",
+        "Enjoy this flavorful and spicy Korean stir-fry!"
+      ]
+    },
+    {
+      "name": "Banchan - Spinach Namul",
+      "author": "Hye Jin",
+      "meal": "Appetizer",
+      "dish": "Namul",
+      "cuisine": "Korean",
+      "servings": "4",
+      "time_required": "15 minutes",
+      "ingredients": [
+        ["spinach", "500", "grams"],
+        ["soy_sauce", "2", "tablespoons"],
+        ["sesame_oil", "1", "tablespoon"],
+        ["sesame_seeds", "1", "tablespoon"],
+        ["garlic", "2", "cloves, minced"],
+        ["green_chili", "1", "minced"],
+        ["sugar", "1", "teaspoon"],
+        ["vegetable_oil", "1", "tablespoon"],
+        ["salt", "", "to taste"]
+      ],
+      "directions": [
+        "In a pot of boiling water, blanch the spinach for 1-2 minutes until wilted.",
+        "Drain the spinach and rinse under cold water. Squeeze out excess water and chop into bite-sized pieces.",
+        "In a bowl, mix chopped spinach with soy sauce, sesame oil, minced garlic, minced green chili, sugar, and salt.",
+        "Heat vegetable oil in a pan and stir-fry the seasoned spinach for 2-3 minutes.",
+        "Transfer to a serving plate and garnish with sesame seeds.",
+        "Serve the Spinach Namul as a Korean side dish (banchan).",
+        "Enjoy this healthy and tasty Korean namul!"
       ]
     }
   ]

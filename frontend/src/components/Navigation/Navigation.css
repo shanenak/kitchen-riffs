@@ -86,9 +86,15 @@ a {
 
 .dropdown li {
     text-align: left;
-    padding: 10px;
-    margin-top: 10px;
+    /* padding: 15px; */
     max-width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown p {
+    margin: 20px 5px 10px 5px;
+    padding: 10px;
 }
 
 .dropdown button {
@@ -98,9 +104,7 @@ a {
     border-style: solid;
     border-color: #000;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin: 10px;
 }
 
 .dropdown p {

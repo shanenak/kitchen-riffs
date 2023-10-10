@@ -48,7 +48,6 @@ ApplicationRecord.transaction do
   puts "Creating recipes..."
   recipes = read_CSV('recipes')
   recipes.each do |row|
-    puts row
     t = Recipe.new
     t.id = row['recipe_id']
     t.name = row['name']
