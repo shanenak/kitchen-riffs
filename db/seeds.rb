@@ -62,6 +62,9 @@ ApplicationRecord.transaction do
     string_representation = row['directions'].gsub(/^'|'$/, "").gsub("\\'", "'")
     directions_array = eval(string_representation)
     t.directions = directions_array
+    # add photo
+    file = File.open("/Users/shannonmillar/Documents/AppAcademy/kitchen-riffs/public/static/images/recipe_#{row['recipe_id']}.webp")
+    t.photo.attach(io: file, filename:"recipe_#{row['recipe_id']}.webp")
 
     t.save!
   end

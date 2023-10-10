@@ -7,6 +7,8 @@ gem 'bcrypt'
 gem 'jbuilder'
 gem "faker"
 
+gem "aws-sdk-s3"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.7", ">= 7.0.7.2"
 

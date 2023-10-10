@@ -6,6 +6,8 @@ end
 
 json.author @recipe.user.name
 
+json.photoUrl @recipe.photo.attached? ? @recipe.photo.url : nil
+
 
 # {
 #     "2": {

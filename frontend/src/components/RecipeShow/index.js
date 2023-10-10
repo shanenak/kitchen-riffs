@@ -42,6 +42,9 @@ const RecipeShow = () => {
                 </div>
                 <h3 id='num-rating'>(28)</h3>
             </div>
+            <div>
+                <img src={recipe.photoUrl} alt='recipe-result'></img>
+            </div>
             <div id='ingredients'>
                 <h2 className='section-title'>Ingredients</h2>
                 <p id='servings'>{recipe.servings} servings</p>
