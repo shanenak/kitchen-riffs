@@ -4,7 +4,7 @@
 #
 #  id         :bigint           not null, primary key
 #  rating     :integer          not null
-#  comments   :text
+#  comment    :text
 #  recipe_id  :bigint           not null
 #  user_id    :bigint           not null
 #  created_at :datetime         not null

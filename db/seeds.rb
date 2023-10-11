@@ -77,6 +77,18 @@ ingredients.each do |row|
   t.save!
 end
 
+puts "Creating ratings..."
+ratings = read_CSV('ratings')
+ratings.each do |row|
+  t = Rating.new
+  t.id = row['rating_id']
+  t.user_id = row['user_id']
+  t.recipe_id = row['recipe_id']
+  t.comment = row['comment']
+  t.rating = row['rating']
+  t.save!
+end
+
 ActiveRecord::Base.connection.reset_pk_sequence!('users')
 
 
