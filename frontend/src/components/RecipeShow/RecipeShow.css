@@ -1,5 +1,4 @@
 #show {
-    padding: 6rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,6 +8,39 @@
     font-family: FuturaPT, helvetica, sans-serif;
     color: black;
     box-sizing: border-box;
+}
+
+#show-head {
+    display: flex;
+    flex-direction: row;
+    /* margin: 6rem; */
+    padding: 0rem;
+    height: inherit;
+    background-color: white;
+}
+
+#show-body {
+    padding: 2rem 6rem 6rem 6rem;
+}
+
+#show-description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-image {
+    width: 100%;
+}
+
+#show-image img {
+    /* width: inherit; */
+    height: 100%;
+    object-fit: contain; /* consider doing cover */
+    max-width: 100%;
+    overflow: clip;
 }
 
 #recipe-meal {
@@ -110,6 +142,10 @@ td {
     line-height: 30px;
     font-size: 16px;
     letter-spacing: 0.03em;
+}
+
+#preparation {
+    width:inherit;
 }
 
 .step-title {

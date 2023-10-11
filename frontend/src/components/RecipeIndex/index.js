@@ -58,10 +58,22 @@ const RecipeIndex = () => {
         <div id='recipe-list'>
                 {
                 Object.values(filtered_recipes).map(recipe => {
+                    const time = recipe.timeRequired.replace(/[^0-9]/g, '');
+                    const quickTag = (<div id='tag'>
+                                    <p>Quick</p>
+                                </div>)
+                    const tagInclude = time < 30 ? quickTag : <></>;
                     return(
-                        <NavLink to={`/recipes/${recipe.id}`}>
-                            {recipe.name}
-                        </NavLink>
+                        <div id='recipe-item'>
+                            <div id='grid-image'>
+                                <img src={recipe.photoUrl} alt='recipe-result'></img>
+                                {tagInclude}
+                            </div>
+                            <NavLink to={`/recipes/${recipe.id}`}>
+                                {recipe.name}
+                            </NavLink>
+                        </div>
+                        
                     )
                 })
                 }
