@@ -23,6 +23,8 @@ class Recipe < ApplicationRecord
     class_name: :Ingredient,
     dependent: :destroy
 
+    has_many :ratings
+
     belongs_to :user
 
     has_one_attached :photo
