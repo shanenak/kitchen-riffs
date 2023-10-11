@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { getRecipe } from "../../store/recipe";
 
+import './Ratings.css'
+
 const Ratings = () => {
     const { recipeId } = useParams();
 
@@ -11,7 +13,7 @@ const Ratings = () => {
         return (
                 <div id='rating-wrapper' key={rating.id}>
                     <div id='comment'>
-                        <p>{rating.comment}</p>
+                        <p className='body-text' >{rating.comment}</p>
                     </div>
                     <div id='rating-footer'>
                         <h3 id='user-name'>{rating.user.name}</h3>
@@ -23,7 +25,7 @@ const Ratings = () => {
     })
     return (
         <div id='ratings'>
-            <h1>Reviews ({recipe.ratings.length})</h1>
+            <h1 id='reviews-title'>Reviews ({recipe.ratings.length})</h1>
             {ratingsElement}
         </div>
     )

@@ -1,0 +1,35 @@
+#ratings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 40px;
+    padding: 0rem 6rem 6rem 6rem;
+    box-sizing: inherit;
+}
+
+#reviews-title {
+    font-size: 24px;
+    padding: 60px 0px 20px 0px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+#rating-wrapper {
+    padding: 30px 0px 30px 0px;
+    border-bottom: 1px solid black;
+}
+
+#rating-footer {
+    font-size: 14px;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: row;
+}
+
+#rating-footer h3 {
+    padding: 20px 10px 0px 0px;
+}
+

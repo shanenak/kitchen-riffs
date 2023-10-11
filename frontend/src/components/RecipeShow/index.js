@@ -62,8 +62,8 @@ const RecipeShow = () => {
                                 const ingredientFormatted = ingredient.amount ? (metricFormatted + " " + nameFormatted) : (nameFormatted+ ", " + metricFormatted)
                                 return(
                                     <tr key={ingredient.name}>
-                                        <td>{ingredient.amount}</td>
-                                        <td>{ingredientFormatted}</td>
+                                        <td class='right-align'>{ingredient.amount}</td>
+                                        <td class='left-align'>{ingredientFormatted}</td>
                                     </tr>
                                 ) 
                             })}
@@ -74,9 +74,9 @@ const RecipeShow = () => {
                     <h2 className='section-title'>Preparation</h2>
                     { recipe.directions.map((step, index)=> {
                         return (
-                            <div key={index}>
+                            <div id='step-wrapper' key={index}>
                                 <h3 className='step-title'>Step {index+1}</h3>
-                                <p className='step-text'>{step}</p>
+                                <p className='body-text'>{step}</p>
                             </div>
                         )
                     })}
