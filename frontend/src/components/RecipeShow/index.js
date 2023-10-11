@@ -4,6 +4,7 @@ import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
 import './RecipeShow.css'
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
+import Ratings from "../Ratings";
 
 const RecipeShow = () => {
     const { recipeId } = useParams();
@@ -81,6 +82,7 @@ const RecipeShow = () => {
                     })}
                 </div>
             </div>
+            <Ratings />
         </div>
 
         )
