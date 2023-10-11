@@ -64,7 +64,7 @@ const RecipeIndex = () => {
                                 </div>)
                     const tagInclude = time < 30 ? quickTag : <></>;
                     return(
-                        <div id='recipe-item'>
+                        <div id='recipe-item' key={recipe.id}>
                             <div id='grid-image'>
                                 <img src={recipe.photoUrl} alt='recipe-result'></img>
                                 {tagInclude}

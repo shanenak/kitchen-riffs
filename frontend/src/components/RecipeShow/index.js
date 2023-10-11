@@ -36,11 +36,11 @@ const RecipeShow = () => {
                     <div id='recipe-ave-rating'>
                         <h1 id='ave-rating'>4.6</h1>
                         <div id='stars'>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
                         </div>
                         <h3 id='num-rating'>(28)</h3>
                     </div>
@@ -54,21 +54,23 @@ const RecipeShow = () => {
                     <h2 className='section-title'>Ingredients</h2>
                     <p id='servings'>{recipe.servings} servings</p>
                     <table>
+                        <tbody>
                             { recipe.ingredients.map(ingredient=>{
                                 const metricFormatted = ingredient.metric ? ingredient.metric.replace("_", " ") : ""
                                 const nameFormatted = ingredient.name ? ingredient.name.replace("_", " ") : ""
                                 const ingredientFormatted = ingredient.amount ? (metricFormatted + " " + nameFormatted) : (nameFormatted+ ", " + metricFormatted)
                                 return(
-                                    <tr>
+                                    <tr key={ingredient.name}>
                                         <td>{ingredient.amount}</td>
                                         <td>{ingredientFormatted}</td>
                                     </tr>
                                 ) 
                             })}
+                        </tbody>
                     </table>
                 </div>
                 <div id='preparation'>
-                    <h2 class='section-title'>Preparation</h2>
+                    <h2 className='section-title'>Preparation</h2>
                     { recipe.directions.map((step, index)=> {
                         return (
                             <div key={index}>
