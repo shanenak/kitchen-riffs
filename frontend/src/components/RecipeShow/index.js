@@ -16,6 +16,9 @@ const RecipeShow = () => {
     
     const recipe = useSelector(getRecipe(recipeId));
 
+    const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
+    const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
+
     let showPage;
     if (recipe) {
         showPage = (        
@@ -35,15 +38,20 @@ const RecipeShow = () => {
                         <p>{recipe.timeRequired}</p>
                     </div>
                     <div id='recipe-ave-rating'>
-                        <h1 id='ave-rating'>4.6</h1>
+                        <h1 id='ave-rating'>{avgRating}</h1>
                         <div id='stars'>
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
+                            {
+                                [1, 2, 3, 4, 5].map((i)=> {
+                                    if (i <= avgRating) {
+                                        return <p className="fa fa-star"></p>
+                                    } else {
+                                        return <p className="fa-regular fa-star"></p> 
+                                    }
+                                    
+                                })
+                            }
                         </div>
-                        <h3 id='num-rating'>(28)</h3>
+                        <h3 id='num-rating'>({recipe.ratings.length})</h3>
                     </div>
                 </div>
                 <div id='show-image'>

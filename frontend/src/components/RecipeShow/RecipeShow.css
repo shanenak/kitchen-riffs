@@ -50,6 +50,7 @@
     padding: 16px;
     font-size: 16px;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 #recipe-meal > a:hover {
@@ -88,16 +89,20 @@
 }
 
 #stars {
-    margin:8px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
 }
 
 #ave-rating {
     font-size: 24px;
     font-weight: 600;
+    margin-right: 10px;
 }
 
 #num-rating {
     font-size:12px;
+    margin-left: 10px;
 }
 
 .section-style {
