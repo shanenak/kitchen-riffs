@@ -1,151 +1,151 @@
-,comment_id,recipe_id,comment,rating,user_id
-0,0,0,Refreshing and packed with nutrients. A great way to start the day!,5,34
-1,1,0,Love the vibrant color and taste. A go-to detox recipe for me.,5,42
-2,2,0,"Not a fan of green smoothies, but this one pleasantly surprised me. Might become a part of my routine.",5,5
-3,3,1,A perfect balance of flavors and textures. A satisfying and wholesome meal.,5,33
-4,4,1,"Buddha bowls are my favorite, and this one exceeded my expectations. Will be a regular on my menu.",3,6
-5,5,1,"Simple, yet so flavorful. I'm impressed with the quinoa and chickpea combination.",4,10
-6,6,10,These beef tacos are a crowd-pleaser! The seasoning was on point.,5,2
-7,7,10,Tasty and easy to make. These tacos are a hit at family gatherings.,4,25
-8,8,10,Flavorful and satisfying. Definitely making these again for taco night!,3,33
-9,9,11,"Love making my own sushi, and this recipe made it a breeze. The taste was exceptional!",4,5
-10,10,11,Fresh and delicious. Making vegetarian sushi rolls at home is so rewarding!,3,27
-11,11,11,A fun and healthy recipe. These vegetarian sushi rolls were a hit with my friends.,4,21
-12,12,12,"A comforting and flavorful dish. The chicken was perfectly crispy, and the curry sauce was heavenly.",4,22
-13,13,12,"Chicken Katsu Curry is a favorite in my household, and this recipe lived up to our expectations. Simply amazing!",3,27
-14,14,12,"One of the best Chicken Katsu Curry recipes I've tried. The flavors are fantastic, and it's surprisingly easy to make.",4,33
-15,15,13,"Adobo chicken is a Filipino classic, and this recipe nailed it. The flavors were just right!",5,7
-16,16,13,"Being Filipino, I have high expectations for Adobo, and this recipe delivered. So tasty!",3,41
-17,17,13,"A delicious rendition of Adobo chicken. The marinade was perfect, and the chicken was tender and flavorful.",3,29
-18,18,14,A Filipino favorite that never disappoints. Packed with flavor and great for gatherings.,3,40
-19,19,14,"This Pancit Canton recipe is on point! The noodles were perfectly cooked, and the flavors were amazing.",4,23
-20,20,14,Loved the mix of flavors and textures. This Pancit Canton brought back memories of family gatherings.,3,37
-21,21,15,Halo-Halo is a refreshing and delightful dessert. Perfect for a hot day!,4,21
-22,22,15,A taste of the Philippines! Halo-Halo brings back childhood memories. So many different textures and flavors.,3,32
-23,23,15,A medley of flavors in one bowl. Halo-Halo is a unique and delicious treat. Highly recommend trying it!,5,36
-24,24,16,"A classic Thai dish that's always a hit. The balance of sweet, salty, and tangy was perfect.",3,19
-25,25,16,"Pad Thai is a favorite, and this recipe is top-notch. Better than takeout!",4,45
-26,26,16,Authentic and delicious. The flavors in this Pad Thai are exceptional. A definite must-try.,3,47
-27,27,17,Tom Yum Goong is one of my go-to Thai soups. This recipe was just what I needed. Spicy and flavorful!,4,48
-28,28,17,A burst of flavors in every spoonful. This Tom Yum Goong is an explosion of Thai taste.,5,14
-29,29,17,"Perfectly spicy and sour. Tom Yum Goong is a comfort food for me, and this recipe nailed it.",4,30
-30,30,18,"Green Curry Chicken is a staple in my household, and this recipe is a winner. Rich and aromatic!",3,35
-31,31,18,"Absolutely loved this green curry. The chicken was tender, and the flavors were authentic.",3,18
-32,32,18,"Green Curry Chicken is a personal favorite, and this recipe did not disappoint. Creamy and full of flavor.",4,47
-33,33,19,Mohinga is a Burmese gem. This recipe captured the essence of the dish perfectly. A must-try for anyone interested in Burmese cuisine.,3,24
-34,34,19,A taste of Burma! Mohinga is such a unique and flavorful dish. This recipe is the real deal.,4,7
-35,35,19,Authentic Mohinga that transported me back to my travels in Myanmar. The flavors were spot-on!,3,7
-36,36,2,Juicy and flavorful! The lemon herb marinade really makes a difference.,5,0
-37,37,2,The chicken was tender and had a nice citrusy kick. A hit with my family.,4,18
-38,38,2,"Easy to make, and the taste is outstanding. Will definitely make it again!",5,37
-39,39,20,A burst of flavors and textures in every bite. The Burmese Tea Leaf Salad is a refreshing delight.,3,16
-40,40,20,Loved the crunch of the tea leaves and the unique flavors. Burmese Tea Leaf Salad is now a favorite in my house!,4,24
-41,41,20,The Burmese Tea Leaf Salad is a must-try. The mix of flavors and textures is truly extraordinary.,5,30
-42,42,21,Burmese Chicken Curry is comfort food at its finest. The blend of spices and tender chicken is heavenly.,5,1
-43,43,21,A taste of Burma in my kitchen! This Burmese Chicken Curry is now a family favorite.,3,37
-44,44,21,Incredible flavors! The Burmese Chicken Curry was a hit. Definitely making it again.,3,29
-45,45,22,"Bibimbap is a Korean classic, and this recipe lived up to its reputation. So delicious and satisfying!",3,16
-46,46,22,"I love Korean cuisine, and this Bibimbap was exceptional. The combination of flavors and textures was perfect.",5,19
-47,47,22,"Bibimbap is always a treat, and this recipe did not disappoint. The spicy sauce really brought it all together.",4,21
-48,48,23,"Kimchi Jjigae is a comforting Korean stew, and this recipe was amazing. The flavors were authentic and bold.",4,25
-49,49,23,A bowl of warmth and flavor. The Kimchi Jjigae was comforting and had a nice kick.,5,47
-50,50,23,"Being a kimchi lover, this Kimchi Jjigae was a delight. Spicy and full of goodness.",5,28
-51,51,24,"Korean Fried Chicken is a guilty pleasure, and this recipe nailed it. Crispy, juicy, and oh-so-delicious!",3,22
-52,52,24,A taste of Korea! The Korean Fried Chicken was addictive. I couldn't stop eating it.,3,42
-53,53,24,The Korean Fried Chicken was a hit at my gathering. Crispy and packed with flavor.,4,16
-54,54,25,Beef Noodle Soup is a comfort food classic. This recipe hit the spot!,3,13
-55,55,25,Satisfying and hearty. The beef in this noodle soup was tender and delicious.,5,8
-56,56,25,A steaming bowl of goodness! This Beef Noodle Soup is a winner for me.,4,22
-57,57,26,"Oyster Omelette is a street food favorite, and this recipe brought back memories of my travels. Authentic and tasty!",5,21
-58,58,26,A taste of Asia! The Oyster Omelette was so flavorful and satisfying. A must-try street food experience at home.,4,35
-59,59,26,"Oyster Omelette is a unique dish, and this recipe was a hit. The mix of textures was amazing.",5,8
-60,60,27,Bubble Milk Tea is a delightful treat. This recipe is as good as the ones from my favorite bubble tea shop!,5,8
-61,61,27,Love the bubbles and the creamy tea. Making Bubble Milk Tea at home is a game-changer.,4,47
-62,62,27,"Bubble Milk Tea is a guilty pleasure, and this homemade version exceeded my expectations. Delicious!",5,22
-63,63,28,"Nasi Lemak is a Malaysian favorite, and this recipe was fantastic. The sambal was on point!",5,3
-64,64,28,A taste of Malaysia! The Nasi Lemak was a hit at my dinner table. The flavors were amazing.,5,44
-65,65,28,"Nasi Lemak is a dish close to my heart, and this recipe did it justice. Perfectly fragrant and tasty.",4,4
-66,66,29,"Roti Canai is a Malaysian delight, and this recipe captured its essence. Flaky, crispy, and so good!",3,22
-67,67,29,Authentic and delicious. The Roti Canai was a hit in my household. Will definitely make it again.,4,8
-68,68,29,"Roti Canai brings back memories of Malaysia. This recipe was a success, and the dipping sauce was amazing!",4,17
-69,69,3,A hearty and comforting dish. The lentils and spices blend so well together.,3,1
-70,70,3,"Being a vegetarian, this curry is a staple for me. Full of protein and absolutely delicious.",4,24
+,rating_id,recipe_id,comment,rating,user_id
+0,0,0,Refreshing and packed with nutrients. A great way to start the day!,3,32
+1,1,0,Love the vibrant color and taste. A go-to detox recipe for me.,3,11
+2,2,0,"Not a fan of green smoothies, but this one pleasantly surprised me. Might become a part of my routine.",5,46
+3,3,1,A perfect balance of flavors and textures. A satisfying and wholesome meal.,4,44
+4,4,1,"Buddha bowls are my favorite, and this one exceeded my expectations. Will be a regular on my menu.",3,11
+5,5,1,"Simple, yet so flavorful. I'm impressed with the quinoa and chickpea combination.",3,36
+6,6,10,These beef tacos are a crowd-pleaser! The seasoning was on point.,4,26
+7,7,10,Tasty and easy to make. These tacos are a hit at family gatherings.,5,47
+8,8,10,Flavorful and satisfying. Definitely making these again for taco night!,3,28
+9,9,11,"Love making my own sushi, and this recipe made it a breeze. The taste was exceptional!",3,34
+10,10,11,Fresh and delicious. Making vegetarian sushi rolls at home is so rewarding!,4,3
+11,11,11,A fun and healthy recipe. These vegetarian sushi rolls were a hit with my friends.,4,32
+12,12,12,"A comforting and flavorful dish. The chicken was perfectly crispy, and the curry sauce was heavenly.",4,0
+13,13,12,"Chicken Katsu Curry is a favorite in my household, and this recipe lived up to our expectations. Simply amazing!",3,31
+14,14,12,"One of the best Chicken Katsu Curry recipes I've tried. The flavors are fantastic, and it's surprisingly easy to make.",3,6
+15,15,13,"Adobo chicken is a Filipino classic, and this recipe nailed it. The flavors were just right!",3,48
+16,16,13,"Being Filipino, I have high expectations for Adobo, and this recipe delivered. So tasty!",4,38
+17,17,13,"A delicious rendition of Adobo chicken. The marinade was perfect, and the chicken was tender and flavorful.",4,12
+18,18,14,A Filipino favorite that never disappoints. Packed with flavor and great for gatherings.,3,0
+19,19,14,"This Pancit Canton recipe is on point! The noodles were perfectly cooked, and the flavors were amazing.",4,30
+20,20,14,Loved the mix of flavors and textures. This Pancit Canton brought back memories of family gatherings.,4,3
+21,21,15,Halo-Halo is a refreshing and delightful dessert. Perfect for a hot day!,3,4
+22,22,15,A taste of the Philippines! Halo-Halo brings back childhood memories. So many different textures and flavors.,5,31
+23,23,15,A medley of flavors in one bowl. Halo-Halo is a unique and delicious treat. Highly recommend trying it!,4,20
+24,24,16,"A classic Thai dish that's always a hit. The balance of sweet, salty, and tangy was perfect.",5,47
+25,25,16,"Pad Thai is a favorite, and this recipe is top-notch. Better than takeout!",5,15
+26,26,16,Authentic and delicious. The flavors in this Pad Thai are exceptional. A definite must-try.,5,3
+27,27,17,Tom Yum Goong is one of my go-to Thai soups. This recipe was just what I needed. Spicy and flavorful!,4,37
+28,28,17,A burst of flavors in every spoonful. This Tom Yum Goong is an explosion of Thai taste.,3,31
+29,29,17,"Perfectly spicy and sour. Tom Yum Goong is a comfort food for me, and this recipe nailed it.",3,13
+30,30,18,"Green Curry Chicken is a staple in my household, and this recipe is a winner. Rich and aromatic!",5,6
+31,31,18,"Absolutely loved this green curry. The chicken was tender, and the flavors were authentic.",4,13
+32,32,18,"Green Curry Chicken is a personal favorite, and this recipe did not disappoint. Creamy and full of flavor.",4,27
+33,33,19,Mohinga is a Burmese gem. This recipe captured the essence of the dish perfectly. A must-try for anyone interested in Burmese cuisine.,4,3
+34,34,19,A taste of Burma! Mohinga is such a unique and flavorful dish. This recipe is the real deal.,4,37
+35,35,19,Authentic Mohinga that transported me back to my travels in Myanmar. The flavors were spot-on!,4,48
+36,36,2,Juicy and flavorful! The lemon herb marinade really makes a difference.,4,41
+37,37,2,The chicken was tender and had a nice citrusy kick. A hit with my family.,4,2
+38,38,2,"Easy to make, and the taste is outstanding. Will definitely make it again!",5,42
+39,39,20,A burst of flavors and textures in every bite. The Burmese Tea Leaf Salad is a refreshing delight.,4,6
+40,40,20,Loved the crunch of the tea leaves and the unique flavors. Burmese Tea Leaf Salad is now a favorite in my house!,4,35
+41,41,20,The Burmese Tea Leaf Salad is a must-try. The mix of flavors and textures is truly extraordinary.,5,2
+42,42,21,Burmese Chicken Curry is comfort food at its finest. The blend of spices and tender chicken is heavenly.,3,7
+43,43,21,A taste of Burma in my kitchen! This Burmese Chicken Curry is now a family favorite.,5,43
+44,44,21,Incredible flavors! The Burmese Chicken Curry was a hit. Definitely making it again.,4,4
+45,45,22,"Bibimbap is a Korean classic, and this recipe lived up to its reputation. So delicious and satisfying!",3,26
+46,46,22,"I love Korean cuisine, and this Bibimbap was exceptional. The combination of flavors and textures was perfect.",4,42
+47,47,22,"Bibimbap is always a treat, and this recipe did not disappoint. The spicy sauce really brought it all together.",4,33
+48,48,23,"Kimchi Jjigae is a comforting Korean stew, and this recipe was amazing. The flavors were authentic and bold.",4,27
+49,49,23,A bowl of warmth and flavor. The Kimchi Jjigae was comforting and had a nice kick.,4,38
+50,50,23,"Being a kimchi lover, this Kimchi Jjigae was a delight. Spicy and full of goodness.",5,18
+51,51,24,"Korean Fried Chicken is a guilty pleasure, and this recipe nailed it. Crispy, juicy, and oh-so-delicious!",4,17
+52,52,24,A taste of Korea! The Korean Fried Chicken was addictive. I couldn't stop eating it.,5,11
+53,53,24,The Korean Fried Chicken was a hit at my gathering. Crispy and packed with flavor.,5,33
+54,54,25,Beef Noodle Soup is a comfort food classic. This recipe hit the spot!,4,27
+55,55,25,Satisfying and hearty. The beef in this noodle soup was tender and delicious.,4,39
+56,56,25,A steaming bowl of goodness! This Beef Noodle Soup is a winner for me.,5,13
+57,57,26,"Oyster Omelette is a street food favorite, and this recipe brought back memories of my travels. Authentic and tasty!",4,16
+58,58,26,A taste of Asia! The Oyster Omelette was so flavorful and satisfying. A must-try street food experience at home.,4,39
+59,59,26,"Oyster Omelette is a unique dish, and this recipe was a hit. The mix of textures was amazing.",5,40
+60,60,27,Bubble Milk Tea is a delightful treat. This recipe is as good as the ones from my favorite bubble tea shop!,3,10
+61,61,27,Love the bubbles and the creamy tea. Making Bubble Milk Tea at home is a game-changer.,5,12
+62,62,27,"Bubble Milk Tea is a guilty pleasure, and this homemade version exceeded my expectations. Delicious!",4,29
+63,63,28,"Nasi Lemak is a Malaysian favorite, and this recipe was fantastic. The sambal was on point!",4,0
+64,64,28,A taste of Malaysia! The Nasi Lemak was a hit at my dinner table. The flavors were amazing.,5,24
+65,65,28,"Nasi Lemak is a dish close to my heart, and this recipe did it justice. Perfectly fragrant and tasty.",4,40
+66,66,29,"Roti Canai is a Malaysian delight, and this recipe captured its essence. Flaky, crispy, and so good!",3,19
+67,67,29,Authentic and delicious. The Roti Canai was a hit in my household. Will definitely make it again.,4,0
+68,68,29,"Roti Canai brings back memories of Malaysia. This recipe was a success, and the dipping sauce was amazing!",5,9
+69,69,3,A hearty and comforting dish. The lentils and spices blend so well together.,3,30
+70,70,3,"Being a vegetarian, this curry is a staple for me. Full of protein and absolutely delicious.",5,3
 71,71,3,Fantastic flavors! I'll be making this often. It's become a favorite in our household.,3,34
-72,72,30,"Laksa is a Malaysian favorite, and this recipe nailed it. The creamy broth and the spice blend were perfect!",4,40
-73,73,30,"Deliciously spicy and creamy. Laksa is a favorite, and this recipe is now at the top of my list.",3,2
-74,74,30,Laksa is a must-try for anyone into Asian cuisine. This recipe was authentic and full of flavor.,3,38
-75,75,31,"Satay is a classic Indonesian dish, and this recipe did not disappoint. The peanut sauce was heavenly!",4,22
-76,76,31,"Absolutely loved the flavors. Satay is always a hit, and this recipe was a success.",5,26
-77,77,31,A taste of Indonesia! The Satay was tender and flavorful. The peanut sauce was the perfect accompaniment.,3,41
-78,78,32,"Sinigang is a Filipino favorite, and this recipe brought back memories of home. The perfect balance of sourness!",5,14
-79,79,32,"Sinigang is a comfort food for me, and this recipe did it justice. The sourness was just right.",5,27
-80,80,32,"Perfectly sour and savory. Sinigang is a dish I grew up with, and this recipe hit all the right notes.",4,44
-81,81,33,"Huli Huli Chicken is a Hawaiian delight, and this recipe captured the flavors beautifully. Sweet and tangy perfection!",3,47
-82,82,33,The marinade for the Huli Huli Chicken was amazing. It was a hit at our barbecue!,3,19
-83,83,33,A taste of Hawaii! The Huli Huli Chicken was flavorful and juicy. Definitely making this again.,5,48
-84,84,34,"Lomi Lomi Salmon is a Hawaiian classic, and this recipe was a hit. The flavors were spot-on!",4,32
-85,85,34,"A taste of Hawaii! Lomi Lomi Salmon is a favorite, and this recipe didn't disappoint.",5,36
-86,86,34,"Authentic and delicious. Lomi Lomi Salmon is a must-try, and this recipe was a success.",5,27
-87,87,35,Pineapple Coconut Smoothie is a tropical delight. Refreshing and perfect for a hot day!,4,40
-88,88,35,Love the combination of pineapple and coconut. This smoothie is now a staple in my morning routine.,5,30
-89,89,35,Pineapple Coconut Smoothie is a burst of tropical flavors. So delicious and refreshing!,4,12
-90,90,36,"Tempura is a guilty pleasure, and this recipe nailed the crispy perfection. Loved the dipping sauce!",5,14
-91,91,36,"Crispy and delightful! Tempura is a favorite, and this recipe hit the mark.",3,45
-92,92,36,"A taste of Japan. The Tempura was light, crispy, and full of flavor. Will definitely make it again.",4,1
-93,93,37,"Miso Soup is a staple in my diet, and this recipe was authentic and comforting. Love the umami!",4,8
-94,94,37,"Authentic and delicious. Miso Soup is a go-to, and this recipe delivered.",4,17
-95,95,37,"A bowl of warmth and flavor. Miso Soup is a must-have, and this recipe hit all the right notes.",4,29
-96,96,38,"Tacos al Pastor is a Mexican favorite, and this recipe did it justice. The flavors were incredible!",3,38
-97,97,38,"Tacos al Pastor is a hit in my household, and this recipe was spot-on. The pineapple added a great twist.",3,14
-98,98,38,"Authentic and mouthwatering. Tacos al Pastor is a must-try, and this recipe won't disappoint.",4,37
-99,99,39,"Guacamole is a classic dip, and this recipe was fantastic. Creamy and full of flavor!",5,15
-100,100,39,"Simple and delicious. Guacamole is always a crowd-pleaser, and this recipe was no exception.",5,48
-101,101,39,Perfectly ripe avocados and the right blend of ingredients. This Guacamole is a winner.,4,4
-102,102,4,A classic done right. Layers of rich flavors and cheesy goodness. A family favorite!,3,2
-103,103,4,Deliciously comforting. The perfect lasagna for a cozy dinner at home.,5,30
-104,104,4,Mouthwatering and filling. This recipe takes lasagna to a whole new level!,5,28
-105,105,40,"Enchiladas Rojas are a Mexican classic, and this recipe was fantastic. The sauce was the highlight!",5,10
-106,106,40,A taste of Mexico! The Enchiladas Rojas were flavorful and satisfying. Perfect for a family dinner.,5,38
-107,107,40,"Delicious and comforting. Enchiladas Rojas are a hit, and this recipe is one I'll keep coming back to.",4,1
-108,108,41,"Lomo Saltado is a favorite Peruvian dish, and this recipe captured the essence beautifully. The flavors were amazing!",3,24
-109,109,41,A taste of Peru! The Lomo Saltado was packed with flavor and had the right amount of kick.,5,17
-110,110,41,"Authentic and delicious. Lomo Saltado is a must-try, and this recipe did not disappoint.",5,1
-111,111,42,Ceviche is a refreshing and flavorful dish. This recipe was a hit at my summer party!,3,39
-112,112,42,Loved the freshness of the ingredients and the tangy marinade. Ceviche is now a regular on my menu.,3,14
-113,113,42,Ceviche is perfect for a light and refreshing appetizer. This recipe is a keeper.,3,7
-114,114,43,I made this because I already had aji amarillo paste sitting in my fridge from a different recipe and I wanted to try it a new way.,3,26
-115,115,43,This is indeed a creamy and flavorful stew! My family loved it.,5,12
-116,116,43,"I didn't have a blender, so I used a food processor instead. Really great recipe, thanks!",5,21
-117,117,44,"Doro Wat is a flavorful Ethiopian stew, and this recipe captured the traditional taste beautifully. A must-try for fans of Ethiopian cuisine!",5,8
-118,118,44,A taste of Ethiopia! The Doro Wat was rich and aromatic. The blend of spices was perfect.,5,3
-119,119,44,"Authentic and delicious. Doro Wat is a favorite, and this recipe lived up to my expectations.",4,32
-120,120,45,"Injera is a staple in Ethiopian cuisine, and this recipe was fantastic. The texture and taste were authentic and satisfying.",3,30
-121,121,45,A taste of Ethiopia! The Injera was just like the ones I had in Ethiopia. Fluffy and perfect for scooping up stews.,5,2
-122,122,45,"Authentic and delicious. Injera is a must-try, and this recipe is a winner.",5,6
-123,123,46,Kitfo is a unique and flavorful Ethiopian dish. This recipe nailed the taste and texture. A great introduction to Ethiopian cuisine!,4,0
-124,124,46,A taste of Ethiopia! The Kitfo was perfectly spiced and had a great balance of flavors. A culinary adventure for your taste buds.,4,40
-125,125,46,"Authentic and delicious. Kitfo is a must-try for adventurous eaters, and this recipe did not disappoint.",5,25
-126,126,47,"Kimchi Fried Rice is a Korean favorite, and this recipe delivered. The flavors were bold and delicious!",4,48
-127,127,47,"Spicy and satisfying. Kimchi Fried Rice is a go-to for me, and this recipe was exceptional.",5,48
-128,128,47,A taste of Korea! The Kimchi Fried Rice was packed with flavor and had the right amount of spice.,3,27
-129,129,48,"Dak Galbi is a Korean delight, and this recipe captured the flavors beautifully. The marinade was fantastic!",3,9
-130,130,48,A taste of Korea! The Dak Galbi was flavorful and had the perfect level of spice.,4,13
-131,131,48,"Delicious and satisfying. Dak Galbi is a must-try, and this recipe is one I'll be making again.",4,33
-132,132,49,"Banchan - Spinach Namul is a Korean side dish staple, and this recipe was spot-on. The flavors were perfect!",3,31
-133,133,49,A taste of Korea! The Banchan - Spinach Namul was simple and delicious. The sesame oil added a great depth of flavor.,5,7
-134,134,49,"Authentic and delicious. Banchan - Spinach Namul is a must-have, and this recipe delivered.",3,42
-135,135,5,"Spicy, savory, and the shrimp were cooked to perfection. A Thai cuisine lover's delight!",4,22
-136,136,5,Absolutely loved it! The balance of flavors and textures was amazing. Will be making it again soon.,5,10
-137,137,5,"Thai red curry is my go-to, and this recipe didn't disappoint. Restaurant-quality taste!",3,24
-138,138,6,"Crispy on the outside, tender on the inside. The lemon and garlic flavor was spot-on.",3,42
-139,139,6,A delightful salmon dish. The lemon and garlic combination is a winner!,4,17
-140,140,6,Perfectly crispy salmon with a burst of lemon and garlic. My taste buds are happy!,4,3
-141,141,7,A spicy and hearty dish that's now in my regular rotation. Love the medley of vegetables!,4,4
-142,142,7,This jambalaya has a great kick! The flavors are amazing and satisfying.,4,31
-143,143,7,A great way to spice up my meals. I'll definitely be making this again!,3,14
-144,144,8,Fresh and vibrant! The feta and olives really add a wonderful punch of flavor.,5,29
-145,145,8,"A classic Greek salad done right. Simple, yet so tasty. Perfect for a light lunch.",5,9
-146,146,8,Love the crunch of the cucumbers and the tanginess of the dressing. A refreshing salad!,5,26
-147,147,9,"A simple and classic favorite. The combination of tomato, basil, and mozzarella is always a winner.",3,6
-148,148,9,Authentic and delicious. This Margherita pizza reminds me of Italy. Definitely making it again!,4,34
-149,149,9,Perfectly balanced flavors. The basil really shines through. A pizza that never gets old.,3,21
+72,72,30,"Laksa is a Malaysian favorite, and this recipe nailed it. The creamy broth and the spice blend were perfect!",3,35
+73,73,30,"Deliciously spicy and creamy. Laksa is a favorite, and this recipe is now at the top of my list.",5,9
+74,74,30,Laksa is a must-try for anyone into Asian cuisine. This recipe was authentic and full of flavor.,4,2
+75,75,31,"Satay is a classic Indonesian dish, and this recipe did not disappoint. The peanut sauce was heavenly!",4,16
+76,76,31,"Absolutely loved the flavors. Satay is always a hit, and this recipe was a success.",3,25
+77,77,31,A taste of Indonesia! The Satay was tender and flavorful. The peanut sauce was the perfect accompaniment.,5,3
+78,78,32,"Sinigang is a Filipino favorite, and this recipe brought back memories of home. The perfect balance of sourness!",4,36
+79,79,32,"Sinigang is a comfort food for me, and this recipe did it justice. The sourness was just right.",4,12
+80,80,32,"Perfectly sour and savory. Sinigang is a dish I grew up with, and this recipe hit all the right notes.",4,32
+81,81,33,"Huli Huli Chicken is a Hawaiian delight, and this recipe captured the flavors beautifully. Sweet and tangy perfection!",3,32
+82,82,33,The marinade for the Huli Huli Chicken was amazing. It was a hit at our barbecue!,4,37
+83,83,33,A taste of Hawaii! The Huli Huli Chicken was flavorful and juicy. Definitely making this again.,3,41
+84,84,34,"Lomi Lomi Salmon is a Hawaiian classic, and this recipe was a hit. The flavors were spot-on!",4,9
+85,85,34,"A taste of Hawaii! Lomi Lomi Salmon is a favorite, and this recipe didn't disappoint.",3,44
+86,86,34,"Authentic and delicious. Lomi Lomi Salmon is a must-try, and this recipe was a success.",3,12
+87,87,35,Pineapple Coconut Smoothie is a tropical delight. Refreshing and perfect for a hot day!,5,42
+88,88,35,Love the combination of pineapple and coconut. This smoothie is now a staple in my morning routine.,3,34
+89,89,35,Pineapple Coconut Smoothie is a burst of tropical flavors. So delicious and refreshing!,3,31
+90,90,36,"Tempura is a guilty pleasure, and this recipe nailed the crispy perfection. Loved the dipping sauce!",5,6
+91,91,36,"Crispy and delightful! Tempura is a favorite, and this recipe hit the mark.",5,3
+92,92,36,"A taste of Japan. The Tempura was light, crispy, and full of flavor. Will definitely make it again.",4,48
+93,93,37,"Miso Soup is a staple in my diet, and this recipe was authentic and comforting. Love the umami!",3,41
+94,94,37,"Authentic and delicious. Miso Soup is a go-to, and this recipe delivered.",5,29
+95,95,37,"A bowl of warmth and flavor. Miso Soup is a must-have, and this recipe hit all the right notes.",5,13
+96,96,38,"Tacos al Pastor is a Mexican favorite, and this recipe did it justice. The flavors were incredible!",5,14
+97,97,38,"Tacos al Pastor is a hit in my household, and this recipe was spot-on. The pineapple added a great twist.",5,45
+98,98,38,"Authentic and mouthwatering. Tacos al Pastor is a must-try, and this recipe won't disappoint.",4,32
+99,99,39,"Guacamole is a classic dip, and this recipe was fantastic. Creamy and full of flavor!",5,23
+100,100,39,"Simple and delicious. Guacamole is always a crowd-pleaser, and this recipe was no exception.",4,44
+101,101,39,Perfectly ripe avocados and the right blend of ingredients. This Guacamole is a winner.,4,9
+102,102,4,A classic done right. Layers of rich flavors and cheesy goodness. A family favorite!,3,18
+103,103,4,Deliciously comforting. The perfect lasagna for a cozy dinner at home.,4,19
+104,104,4,Mouthwatering and filling. This recipe takes lasagna to a whole new level!,3,21
+105,105,40,"Enchiladas Rojas are a Mexican classic, and this recipe was fantastic. The sauce was the highlight!",3,21
+106,106,40,A taste of Mexico! The Enchiladas Rojas were flavorful and satisfying. Perfect for a family dinner.,5,27
+107,107,40,"Delicious and comforting. Enchiladas Rojas are a hit, and this recipe is one I'll keep coming back to.",3,30
+108,108,41,"Lomo Saltado is a favorite Peruvian dish, and this recipe captured the essence beautifully. The flavors were amazing!",4,0
+109,109,41,A taste of Peru! The Lomo Saltado was packed with flavor and had the right amount of kick.,4,11
+110,110,41,"Authentic and delicious. Lomo Saltado is a must-try, and this recipe did not disappoint.",4,27
+111,111,42,Ceviche is a refreshing and flavorful dish. This recipe was a hit at my summer party!,3,25
+112,112,42,Loved the freshness of the ingredients and the tangy marinade. Ceviche is now a regular on my menu.,3,44
+113,113,42,Ceviche is perfect for a light and refreshing appetizer. This recipe is a keeper.,4,42
+114,114,43,I made this because I already had aji amarillo paste sitting in my fridge from a different recipe and I wanted to try it a new way.,5,23
+115,115,43,This is indeed a creamy and flavorful stew! My family loved it.,4,25
+116,116,43,"I didn't have a blender, so I used a food processor instead. Really great recipe, thanks!",4,19
+117,117,44,"Doro Wat is a flavorful Ethiopian stew, and this recipe captured the traditional taste beautifully. A must-try for fans of Ethiopian cuisine!",5,36
+118,118,44,A taste of Ethiopia! The Doro Wat was rich and aromatic. The blend of spices was perfect.,5,45
+119,119,44,"Authentic and delicious. Doro Wat is a favorite, and this recipe lived up to my expectations.",5,14
+120,120,45,"Injera is a staple in Ethiopian cuisine, and this recipe was fantastic. The texture and taste were authentic and satisfying.",3,17
+121,121,45,A taste of Ethiopia! The Injera was just like the ones I had in Ethiopia. Fluffy and perfect for scooping up stews.,5,5
+122,122,45,"Authentic and delicious. Injera is a must-try, and this recipe is a winner.",3,14
+123,123,46,Kitfo is a unique and flavorful Ethiopian dish. This recipe nailed the taste and texture. A great introduction to Ethiopian cuisine!,5,41
+124,124,46,A taste of Ethiopia! The Kitfo was perfectly spiced and had a great balance of flavors. A culinary adventure for your taste buds.,4,30
+125,125,46,"Authentic and delicious. Kitfo is a must-try for adventurous eaters, and this recipe did not disappoint.",4,36
+126,126,47,"Kimchi Fried Rice is a Korean favorite, and this recipe delivered. The flavors were bold and delicious!",3,1
+127,127,47,"Spicy and satisfying. Kimchi Fried Rice is a go-to for me, and this recipe was exceptional.",3,9
+128,128,47,A taste of Korea! The Kimchi Fried Rice was packed with flavor and had the right amount of spice.,5,5
+129,129,48,"Dak Galbi is a Korean delight, and this recipe captured the flavors beautifully. The marinade was fantastic!",5,20
+130,130,48,A taste of Korea! The Dak Galbi was flavorful and had the perfect level of spice.,3,19
+131,131,48,"Delicious and satisfying. Dak Galbi is a must-try, and this recipe is one I'll be making again.",3,16
+132,132,49,"Banchan - Spinach Namul is a Korean side dish staple, and this recipe was spot-on. The flavors were perfect!",3,0
+133,133,49,A taste of Korea! The Banchan - Spinach Namul was simple and delicious. The sesame oil added a great depth of flavor.,5,47
+134,134,49,"Authentic and delicious. Banchan - Spinach Namul is a must-have, and this recipe delivered.",5,21
+135,135,5,"Spicy, savory, and the shrimp were cooked to perfection. A Thai cuisine lover's delight!",3,45
+136,136,5,Absolutely loved it! The balance of flavors and textures was amazing. Will be making it again soon.,4,36
+137,137,5,"Thai red curry is my go-to, and this recipe didn't disappoint. Restaurant-quality taste!",4,4
+138,138,6,"Crispy on the outside, tender on the inside. The lemon and garlic flavor was spot-on.",3,34
+139,139,6,A delightful salmon dish. The lemon and garlic combination is a winner!,3,6
+140,140,6,Perfectly crispy salmon with a burst of lemon and garlic. My taste buds are happy!,4,34
+141,141,7,A spicy and hearty dish that's now in my regular rotation. Love the medley of vegetables!,4,34
+142,142,7,This jambalaya has a great kick! The flavors are amazing and satisfying.,3,38
+143,143,7,A great way to spice up my meals. I'll definitely be making this again!,5,9
+144,144,8,Fresh and vibrant! The feta and olives really add a wonderful punch of flavor.,4,45
+145,145,8,"A classic Greek salad done right. Simple, yet so tasty. Perfect for a light lunch.",3,14
+146,146,8,Love the crunch of the cucumbers and the tanginess of the dressing. A refreshing salad!,5,28
+147,147,9,"A simple and classic favorite. The combination of tomato, basil, and mozzarella is always a winner.",4,44
+148,148,9,Authentic and delicious. This Margherita pizza reminds me of Italy. Definitely making it again!,5,37
+149,149,9,Perfectly balanced flavors. The basil really shines through. A pizza that never gets old.,3,20
