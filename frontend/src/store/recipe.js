@@ -30,7 +30,7 @@ const receiveRating = rating => {
 // selectors
 
 export const getRecipe = recipeId => state => {
-    return state?.recipes[recipeId] ? state.recipes[recipeId] : null;
+    return state?.recipes[recipeId] ? state.recipes[recipeId] : null
 }
 
 export const getRecipes = state => {

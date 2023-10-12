@@ -5,7 +5,51 @@
     border-top: 2px solid black;
     margin-top: 40px;
     padding: 0rem 6rem 6rem 6rem;
+    box-sizing: border-box;
+}
+
+#review-form-title {
+    padding-bottom: 40px;
+}
+
+form {
+    padding-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: inherit;
+}
+
+#comment-input {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    font-family: FuturaPT, helvetica, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+#submit-rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#submit-rating button {
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: black;
+    letter-spacing: 0.05em;
+    color: white;
+    cursor: pointer;
+}
+
+#submit-rating button:hover {
+    color: rgb(255, 218, 8);
 }
 
 #reviews-title {
@@ -33,3 +77,77 @@
     padding: 20px 10px 0px 0px;
 }
 
+/* .fa-star {
+    color: rgb(255, 218, 8);
+} */
+
+/* star input inspired from https: //codepen.io/neilpomerleau/pen/wzxzQM */
+.rating {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    padding-left: 15px; 
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: lightgray;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+    color: rgb(255, 218, 8);
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
+    color: white;
+    text-shadow: 0 0 5px rgb(255, 218, 8);
+}

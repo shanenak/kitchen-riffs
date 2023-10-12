@@ -16,11 +16,11 @@ const RecipeShow = () => {
     
     const recipe = useSelector(getRecipe(recipeId));
 
-    const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
-    const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
-
     let showPage;
     if (recipe) {
+        const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
+        const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
+        
         showPage = (        
         <div id='show'>
             <div id='show-head'>
@@ -70,8 +70,8 @@ const RecipeShow = () => {
                                 const ingredientFormatted = ingredient.amount ? (metricFormatted + " " + nameFormatted) : (nameFormatted+ ", " + metricFormatted)
                                 return(
                                     <tr key={ingredient.name}>
-                                        <td class='right-align'>{ingredient.amount}</td>
-                                        <td class='left-align'>{ingredientFormatted}</td>
+                                        <td className='right-align'>{ingredient.amount}</td>
+                                        <td className='left-align'>{ingredientFormatted}</td>
                                     </tr>
                                 ) 
                             })}
