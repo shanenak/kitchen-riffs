@@ -16,11 +16,15 @@
     /* margin: 6rem; */
     padding: 0rem;
     height: inherit;
+    width: inherit;
     background-color: white;
+    box-sizing: border-box;
 }
 
 #show-body {
     padding: 2rem 6rem 2rem 6rem;
+    width: inherit;
+    box-sizing: border-box;
 }
 
 #show-description{
