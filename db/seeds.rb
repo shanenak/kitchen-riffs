@@ -90,7 +90,9 @@ ratings.each do |row|
 end
 
 ActiveRecord::Base.connection.reset_pk_sequence!('users')
-
+ActiveRecord::Base.connection.reset_pk_sequence!('recipes')
+ActiveRecord::Base.connection.reset_pk_sequence!('ingredients')
+ActiveRecord::Base.connection.reset_pk_sequence!('ratings')
 
 puts "Creating demo user to sign in..."
 # Create one user with an easy to remember username, email, and password:
