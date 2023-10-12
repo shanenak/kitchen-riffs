@@ -6,7 +6,7 @@ class RatingsController < ApplicationController
 
         @rating.transaction do
             @rating.save!
-            render json: @rating
+            render :show
         end
     rescue
         render json: { errors: @rating.error_messages }, status: :unprocessable_entity
@@ -17,7 +17,7 @@ class RatingsController < ApplicationController
 
         @rating.transaction do
             @rating.update!(rating_params)
-            render json: @rating
+            render :show
         end
     rescue
         render json: { errors: @rating.error_messages }, status: :unprocessable_entity

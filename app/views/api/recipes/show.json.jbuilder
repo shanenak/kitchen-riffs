@@ -8,6 +8,4 @@ json.author @recipe.user.name
 
 json.photoUrl @recipe.photo.attached? ? @recipe.photo.url : nil
 
-json.ratings @recipe.ratings.each do |rating|
-    json.extract! rating, :comment, :rating, :user
-end
+json.partial! 'api/ratings/show', recipe: @recipe
