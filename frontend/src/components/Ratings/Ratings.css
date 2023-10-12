@@ -52,6 +52,30 @@ form {
     color: rgb(255, 218, 8);
 }
 
+.to-show {
+    display: none;
+}
+
+#confirm-submission {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    margin: 0px 0px 20px 0px;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#confirm-submission h3 {
+    font-size: 16px;
+}
+
+
 #reviews-title {
     font-size: 24px;
     padding: 60px 0px 20px 0px;

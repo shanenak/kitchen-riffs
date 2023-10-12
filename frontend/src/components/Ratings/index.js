@@ -41,48 +41,59 @@ const Ratings = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const rating = {
-            comment,
-            rating: 2, // document.querySelector('input[name="stars"]:checked').value, 
-            recipe_id: 2, //recipeId, 
-            user_id:2 //sessionUser.id
+        const rating = {'rating':
+            {
+                comment,
+                rating: document.querySelector('input[name="stars"]:checked').value, 
+                recipe_id: recipeId, 
+                user_id: sessionUser.id
+            }
         }
-        console.log(rating)
+        setComment("")
+        const eleStars = document.getElementsByName("stars");
+        for(var i=0;i<eleStars.length;i++) {
+            eleStars[i].checked = false;
+        }
+
+        document.getElementById('confirm-submission').className="";
+
+        document.getElementById('new-rating').className="to-show"
+
         return dispatch(createRating(rating))
     }
 
-    const formRating = (
-        <form onSubmit={handleSubmit}>
+    let formRating = (
+        <form onSubmit={handleSubmit} id='new-rating'>
             <div id='stars' className="rating">
                 <label>
                     <input type="radio" name="stars" value="1" />
-                    <span class="icon">★</span>
+                    <span className="icon">★</span>
                 </label>
                 <label>
                     <input type="radio" name="stars" value="2" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
                 </label>
                 <label>
                     <input type="radio" name="stars" value="3" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>   
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>   
                 </label>
                 <label>
                     <input type="radio" name="stars" value="4" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
                 </label>
                 <label>
                     <input type="radio" name="stars" value="5" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
+                    <span className="icon">★</span>
                 </label>
             </div>
             <label>
@@ -100,6 +111,10 @@ const Ratings = () => {
             <div className='section-title'>
                 <h1 id='review-form-title'>Leave a Review</h1>
                 {formRating}
+                <div id='confirm-submission' className='to-show'>
+                    <h1>Thank you for your feedback, {sessionUser.name}!</h1>
+                    <h3>Check out your review below.</h3>
+                </div>
             </div>
 
             <h1 id='reviews-title'>Reviews ({recipe.ratings.length})</h1>

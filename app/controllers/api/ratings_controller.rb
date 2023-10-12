@@ -3,6 +3,7 @@ class Api::RatingsController < ApplicationController
     
     def create
         @rating = Rating.new(rating_params)
+        puts @rating
         if @rating.save
             response = {}
             response[:comment] = @rating.comment
