@@ -107,13 +107,13 @@ const Ratings = () => {
                 </label>
             </div>
             <label>
-                <input type='text' placeholder='Tell us what you think' id='comment-input' value={comment} onChange={(e)=>setComment(e.target.value)}></input>
+                <input type='text' placeholder='Tell us what you think' id='comment-input' value={comment} onChange={(e)=>setComment(e.target.value)} disabled={sessionUser ? false : true}></input>
             </label>
             <div id='confirm-submission' className='to-show'>
-                <h1>Thanks for your feedback, {sessionUser.name}!</h1>
+                <h1>Thanks for your feedback, {sessionUser?.name}!</h1>
             </div>
             <div id='submit-rating'>
-                <button id='submit-rating-button' type='submit' disabled={starValue<1}>SUBMIT RATING</button>
+                <button id='submit-rating-button' type='submit' disabled={starValue<1 || !sessionUser}>SUBMIT RATING</button>
                 {/* <script> 
                     
                     console.log(starInput);
@@ -127,7 +127,7 @@ const Ratings = () => {
     return (
         <div id='ratings'>
             <div className='section-title'>
-                <h1 id='review-form-title'>Leave a Review</h1>
+                <h1 id='review-form-title'>{sessionUser ? "Leave a Review" : "Sign in to leave a review"}</h1>
                 {formRating}
             </div>
 

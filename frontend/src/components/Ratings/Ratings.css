@@ -68,9 +68,6 @@ form {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.05em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     margin-top: 40px;
     padding: 14px;
