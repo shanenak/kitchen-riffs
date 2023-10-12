@@ -3,13 +3,14 @@ class Api::RatingsController < ApplicationController
     
     def create
         @rating = Rating.new(rating_params)
-        puts @rating
         if @rating.save
             response = {
+                id: @rating.id,
                 comment: @rating.comment,
                 rating: @rating.rating,
                 user: @rating.user,
-                recipe_id: @rating.recipe_id
+                recipe_id: @rating.recipe_id,
+                updated_at: @rating.updated_at
             }
             render json: response
         else
@@ -22,7 +23,15 @@ class Api::RatingsController < ApplicationController
 
         @rating.transaction do
             @rating.update!(rating_params)
-            render json: @rating
+            response = {
+                id: @rating.id,
+                comment: @rating.comment,
+                rating: @rating.rating,
+                user: @rating.user,
+                recipe_id: @rating.recipe_id,
+                updated_at: @rating.updated_at
+            }
+            render json: response
         end
     rescue
         render json: { errors: @rating.errors.full_messages }, status: :unprocessable_entity

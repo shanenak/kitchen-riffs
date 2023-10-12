@@ -3,6 +3,6 @@ json.array! @recipes do |recipe|
     json.photoUrl recipe.photo.attached? ? recipe.photo.url : nil
 
     json.ratings recipe.ratings.each do |rating|
-        json.extract! rating, :comment, :rating, :user
+        json.extract! rating, :id, :comment, :rating, :user, :updated_at
     end
 end

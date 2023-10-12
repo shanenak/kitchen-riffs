@@ -1,22 +1,23 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { createRating, getRecipe } from "../../store/recipe";
+import { createRating, fetchRecipe, getRecipe } from "../../store/recipe";
 
 import './Ratings.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Ratings = () => {
     const dispatch = useDispatch();
     const [comment, setComment] = useState('');
     const [starValue, setStarValue] = useState(0);
+    const { recipeId } = useParams();
 
     const sessionUser = useSelector(state => state.session.user)
 
-    const { recipeId } = useParams();
-
     const recipe = useSelector(getRecipe(recipeId))
 
-    const ratingsWithComments = recipe.ratings.filter((rating)=> rating.comment)
+    const ratingsWithComments = recipe.ratings.filter((rating)=> rating.comment).sort(function(a,b){
+        return new Date(b.updatedAt) - new Date(a.updatedAt);
+    });
     
     const allRatings =  ratingsWithComments.map((rating)=> {
         const ratingElement = (
@@ -66,7 +67,8 @@ const Ratings = () => {
 
         document.getElementById('submit-rating-button').className="to-show"
 
-        return dispatch(createRating(rating))
+        dispatch(createRating(rating))
+        dispatch(fetchRecipe(recipeId));
     }
     const clickStar = (e)=>{
         setStarValue(e.target.value)
