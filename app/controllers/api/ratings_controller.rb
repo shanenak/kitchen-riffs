@@ -5,11 +5,12 @@ class Api::RatingsController < ApplicationController
         @rating = Rating.new(rating_params)
         puts @rating
         if @rating.save
-            response = {}
-            response[:comment] = @rating.comment
-            response[:rating] = @rating.rating
-            response[:user] = @rating.user
-            response[:recipe_id] = @rating.recipe_id
+            response = {
+                comment: @rating.comment,
+                rating: @rating.rating,
+                user: @rating.user,
+                recipe_id: @rating.recipe_id
+            }
             render json: response
         else
             render @rating.errors.full_messages

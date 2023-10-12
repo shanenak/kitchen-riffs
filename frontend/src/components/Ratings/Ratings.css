@@ -22,8 +22,9 @@ form {
 
 #comment-input {
     margin-top: 40px;
+    font-size: 14px;
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     box-sizing: border-box;
     border: 1px solid gray;
     font-family: FuturaPT, helvetica, sans-serif;
@@ -40,7 +41,7 @@ form {
 
 #submit-rating button {
     padding: 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     background-color: black;
     letter-spacing: 0.05em;
@@ -52,23 +53,27 @@ form {
     color: rgb(255, 218, 8);
 }
 
+#submit-rating button:disabled {
+    background-color: gray;
+    border-color: gray;
+    color: lightgray;
+    cursor: not-allowed;
+}
+
 .to-show {
     display: none;
 }
 
 #confirm-submission {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     letter-spacing: 0.05em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 40px;
-    margin: 0px 0px 20px 0px;
-    line-height: 30px;
-    background-color: black;
-    color: white;
+    margin-top: 40px;
+    padding: 14px;
 }
 
 #confirm-submission h3 {
