@@ -8,8 +8,6 @@ import Ratings from "../Ratings";
 import Preparation from "./Preparation";
 import Ingredients from "./Ingredients";
 import RecipeHead from "./RecipeHead";
-import { fetchSaves } from "../../store/saved";
-import { fetchUser } from "../../store/session";
 
 const RecipeShow = () => {
     const { recipeId } = useParams();

@@ -12,6 +12,15 @@ const removeCurrentUser = () => ({
   type: REMOVE_CURRENT_USER
 });
 
+// selectors
+
+export const getUser = state => {
+    return state?.session ? state.session.user : null
+}
+
+
+// set storage
+
 const storeCSRFToken = response => {
   const csrfToken = response.headers.get("X-CSRF-Token");
   if (csrfToken) sessionStorage.setItem("X-CSRF-Token", csrfToken);
@@ -22,8 +31,11 @@ const storeCurrentUser = user => {
   else sessionStorage.removeItem("currentUser");
 }
 
+
+// thunk
+
 export const fetchUser = () => async (dispatch) => {
-    const response = await csrfFetch(`/api/session`);
+    const response = await fetch(`/api/user`);
     if (response.ok) {
         const payload = await response.json();
         dispatch(setCurrentUser(payload.user));

@@ -1,13 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import { createSave } from "../../store/saved";
+import { createSave, deleteSave } from "../../store/saved";
+import { getUser } from "../../store/session";
 
-export default function RecipeHead ({recipe, sessionUser}) {
+export default function RecipeHead ({recipe}) {
     const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
     const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
     const dispatch = useDispatch();
-    console.log(Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id))
-    const saved = Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id)
+    
+    const sessionUser = useSelector(getUser)
+
+    const signedIn = sessionUser ? true : false;
+    const saved = (signedIn && sessionUser.savedRecipes) ? Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id) : false;
+
     const handleSave = () => {
         const payload = {
             save: {
@@ -18,6 +23,12 @@ export default function RecipeHead ({recipe, sessionUser}) {
             }
         } 
         dispatch(createSave(payload))
+    }
+
+    const handleRemove = () => {
+        const saveId = Object.values(sessionUser.savedRecipes).find(save=>save.recipeId===recipe.id).id
+        console.log(saveId)
+        dispatch(deleteSave(saveId))
     }
 
     return (
@@ -35,9 +46,9 @@ export default function RecipeHead ({recipe, sessionUser}) {
                 <p>{recipe.timeRequired}</p>
             </div>
             {/* TODO: ADD OPTION IF ALREADY SAVED */}
-            <div id='recipe-save' onClick={(handleSave)}>
-                <i className="fa-regular fa-bookmark"></i>
-                <p>{saved ? "SAVED" : "SAVE RECIPE"}</p>
+            <div id='recipe-save' onClick={saved ? handleRemove : handleSave} className={signedIn ? "" : "disable"}>
+                <i className={saved ? "fa fa-bookmark" : "fa-regular fa-bookmark"}></i>
+                <p>{signedIn ? (saved ? "SAVED" : "SAVE RECIPE") : "SIGN IN TO SAVE RECIPE"}</p>
             </div>
             <div id='recipe-ave-rating'>
                 <h1 id='ave-rating'>{avgRating}</h1>

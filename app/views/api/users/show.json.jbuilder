@@ -6,11 +6,11 @@ json.user do
   json.saved_recipes do 
     saved_recipes.each do |save|
       json.set! save.id do
-        json.extract! save, :recipe_id, :user_id, :notes, :tag
+        json.extract! save, :id, :recipe_id, :user_id, :notes, :tag
       end
     end
   end
-  
+
 end
 
 
