@@ -26,7 +26,7 @@ export const fetchUser = () => async (dispatch) => {
     const response = await csrfFetch(`/api/session`);
     if (response.ok) {
         const payload = await response.json();
-        dispatch(setCurrentUser(payload));
+        dispatch(setCurrentUser(payload.user));
     } else {
       return response.json()
     }

@@ -6,8 +6,8 @@ export default function RecipeHead ({recipe, sessionUser}) {
     const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
     const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
     const dispatch = useDispatch();
-    console.log(Object.values(sessionUser?.savedRecipes).find(save=>save.id===recipe.id))
-    const saved = Object.values(sessionUser?.savedRecipes).find(save=>save.id===recipe.id)
+    console.log(Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id))
+    const saved = Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id)
     const handleSave = () => {
         const payload = {
             save: {
