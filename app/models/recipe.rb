@@ -31,6 +31,11 @@ class Recipe < ApplicationRecord
 
     has_one_attached :photo
 
+    has_many :saved_by,
+    dependent: :destroy,
+    class_name: :SavedRecipe,
+    foreign_key: :recipe_id
+
     # before_save :attach_image
 
     # def attach_image

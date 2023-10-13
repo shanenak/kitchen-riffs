@@ -24,7 +24,7 @@ export default function ViewRating ({rating}) {
                         </div>
                     </div>
                     <div>
-                        <button id='edit-button' className={sessionUser.id===rating.user.id ? "show" : "hide"}>Edit</button>
+                        <button id='edit-button' className={sessionUser?.id===rating.user.id ? "show" : "hide"}>Edit</button>
                     </div>
                 </div>
             </div>

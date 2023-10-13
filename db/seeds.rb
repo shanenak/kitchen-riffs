@@ -19,11 +19,15 @@ end
 
 puts "Destroying tables..."
 # Unnecessary if using `rails db:seed:replant`
+Ingredient.destroy_all
+Recipe.destroy_all
 User.destroy_all
 
 puts "Resetting primary keys..."
 # For easy testing, so that after seeding, the first `User` has `id` of 1
 ApplicationRecord.connection.reset_pk_sequence!('users')
+ApplicationRecord.connection.reset_pk_sequence!('recipes')
+ApplicationRecord.connection.reset_pk_sequence!('ingredients')
 
 
 # Read from CSVs (reference: https://warrenniu.medium.com/how-to-seed-a-rails-database-with-a-csv-file-6ac24e2bbd90)

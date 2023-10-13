@@ -25,6 +25,11 @@ class User < ApplicationRecord
   has_many :recipes,
   dependent: :destroy
 
+  has_many :saved_recipes,
+  dependent: :destroy,
+  class_name: :SavedRecipe,
+  foreign_key: :user_id
+
   def self.find_by_email(email, password)
     user = User.find_by(email: email)
     if user && user.authenticate(password)
