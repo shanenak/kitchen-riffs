@@ -9,7 +9,7 @@ export default function ViewRating ({rating}) {
                     <p className='body-text' >{rating.comment}</p>
                 </div>
                 <div id='rating-footer'>
-                    <div class='left-align'>
+                    <div className='left-align'>
                         <h3 id='user-name'>{rating.user.name} </h3>
                         <div id='stars'>
                             {

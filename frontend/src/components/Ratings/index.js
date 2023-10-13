@@ -1,17 +1,15 @@
-import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { getRecipe } from "../../store/recipe";
 import ViewRating from "./ViewRating";
 
 import './Ratings.css'
 import FormRating from "./FormRating";
 
-export default function Ratings () {
+export default function Ratings ({recipe, sessionUser}) {
 
     const { recipeId } = useParams();
 
-    const sessionUser = useSelector(state => state.session.user)
-    const recipe = useSelector(getRecipe(recipeId))
+    // const sessionUser = useSelector(state => state.session.user)
+    // const recipe = useSelector(getRecipe(recipeId))
 
     const ratingsWithComments = recipe.ratings.filter((rating)=> rating.comment).sort(function(a,b){
         return new Date(b.updatedAt) - new Date(a.updatedAt);

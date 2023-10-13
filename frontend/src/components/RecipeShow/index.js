@@ -8,14 +8,19 @@ import Ratings from "../Ratings";
 import Preparation from "./Preparation";
 import Ingredients from "./Ingredients";
 import RecipeHead from "./RecipeHead";
+import { fetchSaves } from "../../store/saved";
 
 const RecipeShow = () => {
     const { recipeId } = useParams();
     const dispatch = useDispatch();
 
+    const sessionUser = useSelector(state => state.session.user)
+
+
     useEffect(()=> {
         dispatch(fetchRecipe(recipeId));
-    }, [dispatch, recipeId])
+        if (sessionUser) dispatch(fetchSaves());
+    }, [dispatch, recipeId, sessionUser])
     
     const recipe = useSelector(getRecipe(recipeId));
 
@@ -24,7 +29,7 @@ const RecipeShow = () => {
         showPage = (        
         <div id='show'>
             <div id='show-head'>
-                <RecipeHead recipe={recipe}/>
+                <RecipeHead recipe={recipe} sessionUser={sessionUser}/>
                 <div id='show-image'>
                     <img src={recipe.photoUrl} alt='recipe-result'></img>
                 </div>
@@ -33,7 +38,7 @@ const RecipeShow = () => {
                 <Ingredients recipe={recipe}/>
                 <Preparation recipe={recipe}/>
             </div>
-            <Ratings />
+            <Ratings recipe={recipe} sessionUser={sessionUser}/>
         </div>
 
         )

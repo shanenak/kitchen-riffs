@@ -83,8 +83,8 @@ export const updateRating = rating => async(dispatch) => {
         body: JSON.stringify(rating)
     });
     if (response.ok) {
-        const rating = await response.json();
-        dispatch(editRating(rating));
+        const payload = await response.json();
+        dispatch(editRating(payload));
     } else {
         return response.json();
     }
