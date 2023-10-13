@@ -84,6 +84,27 @@
     font-weight: 500;
 }
 
+#recipe-save {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 20px 0px;
+    padding: 10px;
+    background-color: lightgray;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#recipe-save i {
+    padding: 5px;
+}
+
+#recipe-save p {
+    padding: 5px;
+    
+}
+
 #recipe-ave-rating {
     display: flex;
     flex-direction: row;

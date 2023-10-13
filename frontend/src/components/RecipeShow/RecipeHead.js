@@ -18,6 +18,11 @@ export default function RecipeHead ({recipe}) {
             <div id='recipe-time'>
                 <p>{recipe.timeRequired}</p>
             </div>
+            {/* TODO: ADD OPTION IF ALREADY SAVED */}
+            <div id='recipe-save'>
+                <i class="fa-regular fa-bookmark"></i>
+                <p>SAVE RECIPE</p>
+            </div>
             <div id='recipe-ave-rating'>
                 <h1 id='ave-rating'>{avgRating}</h1>
                 <div id='stars'>
