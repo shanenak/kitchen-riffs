@@ -1,8 +1,8 @@
 class Api::SavedRecipesController < ApplicationController
 
     def index
-        @saved = SavedRecipe.where(user_id:params[:user_id]) 
-
+        @saved = SavedRecipe.all 
+        render :index
     end
     
     def create
@@ -39,7 +39,6 @@ class Api::SavedRecipesController < ApplicationController
 
     private
     def saved_params
-        puts params
         params.require(:save).permit(:user_id, :recipe_id, :notes, :tag)
     end
 

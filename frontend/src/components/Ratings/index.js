@@ -8,9 +8,6 @@ export default function Ratings ({recipe, sessionUser}) {
 
     const { recipeId } = useParams();
 
-    // const sessionUser = useSelector(state => state.session.user)
-    // const recipe = useSelector(getRecipe(recipeId))
-
     const ratingsWithComments = recipe.ratings.filter((rating)=> rating.comment).sort(function(a,b){
         return new Date(b.updatedAt) - new Date(a.updatedAt);
     });

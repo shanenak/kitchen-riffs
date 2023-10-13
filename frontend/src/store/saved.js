@@ -1,8 +1,11 @@
 import csrfFetch from "./csrf";
+import { fetchUser } from "./session";
 
 export const RECEIVE_SAVE = 'saved/RECEIVE_SAVE';
 export const RECEIVE_SAVES = 'saved/RECEIVE_SAVES';
 export const REMOVE_SAVE = 'saved/REMOVE_SAVE';
+
+
 
 // actions
 
@@ -29,8 +32,8 @@ const removeSave = saveId => {
 
 // selectors
 
-export const getSave = saveId => state => {
-    return state?.saves[saveId] ? state.saves[saveId] : null
+export const getSave = recipeId => state => {
+    return Object.keys(state?.saves).length ? Object.values(state.saves).find(save=> save.recipe_id===recipeId) : null;
 }
 
 export const getSaves = state => {
@@ -62,8 +65,8 @@ export const createSave = save => async(dispatch) => {
         body: JSON.stringify(save)
     });
     if (response.ok) {
-        const payload = await response.json();
-        dispatch(receiveSave(payload))
+        dispatch(fetchUser())
+        // dispatch(receiveSave(payload))
     } else {
         return response.json();
     }

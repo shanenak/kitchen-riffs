@@ -7,7 +7,7 @@ import savedRecipesReducer from './saved';
 const rootReducer = combineReducers({
     session: sessionReducer,
     recipes: recipesReducer,
-    saves: savedRecipesReducer
+    // saves: savedRecipesReducer
 })
 
 let enhancer;

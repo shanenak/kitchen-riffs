@@ -9,19 +9,17 @@ import Preparation from "./Preparation";
 import Ingredients from "./Ingredients";
 import RecipeHead from "./RecipeHead";
 import { fetchSaves } from "../../store/saved";
+import { fetchUser } from "../../store/session";
 
 const RecipeShow = () => {
     const { recipeId } = useParams();
     const dispatch = useDispatch();
-
-    const sessionUser = useSelector(state => state.session.user)
-
-
+    
     useEffect(()=> {
         dispatch(fetchRecipe(recipeId));
-        if (sessionUser) dispatch(fetchSaves());
-    }, [dispatch, recipeId, sessionUser])
+    }, [dispatch, recipeId])
     
+    const sessionUser = useSelector(state => state.session.user)
     const recipe = useSelector(getRecipe(recipeId));
 
     let showPage;
