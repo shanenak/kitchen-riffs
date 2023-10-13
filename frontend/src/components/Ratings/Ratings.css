@@ -117,9 +117,15 @@ form {
     font-size: 14px;
     padding: 7px;
     margin: 0px 0px 0px 10px;
-    background-color: black;
-    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border: 0px none white;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+#edit-button:hover {
+    font-weight: 600;
 }
 
 /* .fa-star {
