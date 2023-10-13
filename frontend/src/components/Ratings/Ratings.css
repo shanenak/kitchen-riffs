@@ -60,7 +60,7 @@ form {
     cursor: not-allowed;
 }
 
-.to-show {
+.hide {
     display: none;
 }
 
@@ -97,10 +97,29 @@ form {
     letter-spacing: 0.05em;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+}
+
+.left-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #rating-footer h3 {
-    padding: 20px 10px 0px 0px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+#edit-button {
+    font-size: 14px;
+    padding: 7px;
+    margin: 0px 0px 0px 10px;
+    background-color: black;
+    color: white;
+
 }
 
 /* .fa-star {

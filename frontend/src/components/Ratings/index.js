@@ -11,17 +11,11 @@ export default function Ratings () {
     const { recipeId } = useParams();
 
     const sessionUser = useSelector(state => state.session.user)
-
     const recipe = useSelector(getRecipe(recipeId))
 
     const ratingsWithComments = recipe.ratings.filter((rating)=> rating.comment).sort(function(a,b){
         return new Date(b.updatedAt) - new Date(a.updatedAt);
     });
-    
-    const allRatings =  ratingsWithComments.map((rating)=> {
-        return <ViewRating rating={rating}/>
-    })
-
 
     return (
         <div id='ratings'>
@@ -31,7 +25,11 @@ export default function Ratings () {
             </div>
 
             <h1 id='reviews-title'>Reviews ({recipe.ratings.length})</h1>
-            {allRatings}
+            {
+                ratingsWithComments.map((rating)=> {
+                    return <ViewRating rating={rating}/>
+                })
+            }
         </div>
     )
 }

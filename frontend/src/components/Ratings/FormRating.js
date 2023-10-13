@@ -24,8 +24,8 @@ export default function FormRating ( {recipeId}) {
         setStarValue(0)
 
         document.getElementById('confirm-submission').className="";
-        document.getElementById('comment-input').className="to-show"
-        document.getElementById('submit-rating-button').className="to-show"
+        document.getElementById('comment-input').className="hide"
+        document.getElementById('submit-rating-button').className="hide"
 
         dispatch(createRating(rating))
         dispatch(fetchRecipe(recipeId));
@@ -71,7 +71,7 @@ export default function FormRating ( {recipeId}) {
             <label>
                 <input type='text' placeholder='Tell us what you think' id='comment-input' value={comment} onChange={(e)=>setComment(e.target.value)} disabled={sessionUser ? false : true}></input>
             </label>
-            <div id='confirm-submission' className='to-show'>
+            <div id='confirm-submission' className='hide'>
                 <h1>Thanks for your feedback, {sessionUser?.name}!</h1>
             </div>
             <div id='submit-rating'>
