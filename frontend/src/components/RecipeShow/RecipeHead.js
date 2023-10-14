@@ -1,11 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { createSave, deleteSave } from "../../store/saved";
 import { getUser } from "../../store/session";
+import { getRecipe } from "../../store/recipe";
 
-export default function RecipeHead ({recipe}) {
+export default function RecipeHead () {
+    const { recipeId } = useParams();
+    const recipe = useSelector(getRecipe(recipeId))
     const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
     const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
+
     const dispatch = useDispatch();
     
     const sessionUser = useSelector(getUser)

@@ -25,7 +25,7 @@ const RecipeShow = () => {
         showPage = (        
         <div id='show'>
             <div id='show-head'>
-                <RecipeHead recipe={recipe} sessionUser={sessionUser}/>
+                <RecipeHead />
                 <div id='show-image'>
                     <img src={recipe.photoUrl} alt='recipe-result'></img>
                 </div>

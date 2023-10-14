@@ -4,15 +4,8 @@ class Api::RatingsController < ApplicationController
     def create
         @rating = Rating.new(rating_params)
         if @rating.save
-            response = {
-                id: @rating.id,
-                comment: @rating.comment,
-                rating: @rating.rating,
-                user: @rating.user,
-                recipe_id: @rating.recipe_id,
-                updated_at: @rating.updated_at
-            }
-            render json: response
+            @recipe = @rating.recipe
+            render 'api/recipes/show'
         else
             render @rating.errors.full_messages
         end
@@ -23,15 +16,8 @@ class Api::RatingsController < ApplicationController
 
         @rating.transaction do
             @rating.update!(rating_params)
-            response = {
-                id: @rating.id,
-                comment: @rating.comment,
-                rating: @rating.rating,
-                user: @rating.user,
-                recipe_id: @rating.recipe_id,
-                updated_at: @rating.updated_at
-            }
-            render json: response
+            @recipe = @rating.recipe
+            render 'api/recipes/show'
         end
     rescue
         render json: { errors: @rating.errors.full_messages }, status: :unprocessable_entity
