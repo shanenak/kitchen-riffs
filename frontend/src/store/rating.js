@@ -1,19 +1,30 @@
-export const RECEIVE_RATING = 'receive/RATING';
-export const EDIT_RATING = 'edit/RATING';
+import csrfFetch from "./csrf";
+import { receiveRecipe } from "./recipe";
 
-
-// actions
-
-const receiveRating = rating => {
-    return {
-        type: RECEIVE_RATING,
-        rating
+// thunks
+export const createRating = rating => async(dispatch) => {
+    const response = await csrfFetch("/api/ratings", {
+        method: "POST",
+        body: JSON.stringify(rating)
+    });
+    if (response.ok) {
+        const payload = await response.json();
+        console.log('createRating',payload)
+        dispatch(receiveRecipe(payload))
+    } else {
+        return response.json();
     }
 }
 
-const editRating = rating => {
-    return {
-        type: EDIT_RATING,
-        rating
+export const updateRating = rating => async(dispatch) => {
+    const response = await csrfFetch(`/api/ratings/${rating.id}`, {
+        method: "PATCH",
+        body: JSON.stringify(rating)
+    });
+    if (response.ok) {
+        const payload = await response.json();
+        dispatch(receiveRecipe(payload))
+    } else {
+        return response.json();
     }
 }

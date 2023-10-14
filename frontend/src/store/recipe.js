@@ -1,19 +1,17 @@
-import csrfFetch from "./csrf";
-
-export const RECEIVE_RECIPE = 'recipe/RECEIVE_RECIPE';
-export const RECEIVE_RECIPES = 'recipe/RECEIVE_RECIPES';
+const RECEIVE_RECIPE = 'recipe/RECEIVE_RECIPE';
+const RECEIVE_RECIPES = 'recipe/RECEIVE_RECIPES';
 
 
 // actions
 
-const receiveRecipe = recipe => {
+export const receiveRecipe = recipe => {
     return {
         type: RECEIVE_RECIPE,
         recipe
     }
 }
 
-const receiveRecipes = recipes => {
+export const receiveRecipes = recipes => {
     return {
         type: RECEIVE_RECIPES,
         recipes
@@ -46,33 +44,6 @@ export const fetchRecipe = recipeId => async(dispatch) => {
         const recipe = await response.json();
         dispatch(receiveRecipe(recipe));
         return recipe
-    }
-}
-
-export const createRating = rating => async(dispatch) => {
-    const response = await csrfFetch("/api/ratings", {
-        method: "POST",
-        body: JSON.stringify(rating)
-    });
-    if (response.ok) {
-        const payload = await response.json();
-        console.log('createRating',payload)
-        dispatch(receiveRecipe(payload))
-    } else {
-        return response.json();
-    }
-}
-
-export const updateRating = rating => async(dispatch) => {
-    const response = await csrfFetch(`/api/ratings/${rating.id}`, {
-        method: "PATCH",
-        body: JSON.stringify(rating)
-    });
-    if (response.ok) {
-        const payload = await response.json();
-        dispatch(receiveRecipe(payload))
-    } else {
-        return response.json();
     }
 }
 

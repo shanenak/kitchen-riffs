@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { createRating, fetchRecipe } from "../../store/recipe";
+import { fetchRecipe } from "../../store/recipe";
+import { createRating } from "../../store/rating";
 
 export default function FormRating ( {recipeId}) {
 
