@@ -1,11 +1,13 @@
 import { useDispatch, useSelector } from "react-redux"
 import { fetchRecipes, getRecipes } from "../../store/recipe";
-import { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useEffect} from "react";
+
 import './RecipeIndex.css'
+import RecipeItem from "./RecipeItem";
+import { useLocation } from "react-router-dom/cjs/react-router-dom";
+import FilterIndex from "./FilterIndex";
 
 const RecipeIndex = () => {
-    let { mealName } = useParams();
 
     const dispatch = useDispatch();
     
@@ -15,68 +17,22 @@ const RecipeIndex = () => {
 
     const recipes = useSelector(getRecipes);
 
-    const [cuisine, setCuisine] = useState(false);
-    const [meal, setMeal] = useState(mealName);
-    const [dish, setDish] = useState(false);
+    const { search } = useLocation();
+    const searchParams = new URLSearchParams(search);
 
     const filtered_recipes = recipes.filter(recipe => {
-        let cuisineCheck = true;
-        let mealCheck = true;
-        let dishCheck = true;
-        if (cuisine) {cuisineCheck = recipe.cuisine === cuisine;}
-        if (meal) {mealCheck = recipe.meal === meal;}
-        if (dish) {dishCheck = recipe.dish === dish}
-        return cuisineCheck && mealCheck && dishCheck
+        return ['cuisine', 'meal', 'dish'].every((category)=>{
+            return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
+        })
     })
-
-    let mealOptions = [];
-    let cuisineOptions = [];
-    let dishOptions = [];
-    recipes.forEach(recipe => {
-        if (!mealOptions.includes(recipe.meal)) {mealOptions.push(recipe.meal)}
-        if (!cuisineOptions.includes(recipe.cuisine)) {cuisineOptions.push(recipe.cuisine)}
-        if (!dishOptions.includes(recipe.dish)) {dishOptions.push(recipe.dish)}
-    })
-
-    const resetSelect = (name) => {
-        const selectElement = document.getElementById(`${name}-select`)
-        selectElement.selectedIndex = 0;
-    }
-
-    const resetFilter = (e) => {
-        setCuisine(false)
-        setMeal(false)
-        setDish(false)
-        resetSelect('cuisine')
-        resetSelect('meal')
-        resetSelect('dish')
-    }
 
     let recipeIndex;
     if (filtered_recipes) {
         recipeIndex = (
         <div id='recipe-list'>
-                {
-                Object.values(filtered_recipes).map(recipe => {
-                    const time = recipe.timeRequired.replace(/[^0-9]/g, '');
-                    const quickTag = (<div id='tag'>
-                                    <p>Quick</p>
-                                </div>)
-                    const tagInclude = (time<30)&(time>3) ? quickTag : <></>;
-                    return(
-                        <div id='recipe-item' key={recipe.id}>
-                            <div id='grid-image'>
-                                <img src={recipe.photoUrl} alt='recipe-result'></img>
-                                {tagInclude}
-                            </div>
-                            <NavLink to={`/recipes/${recipe.id}`}>
-                                {recipe.name}
-                            </NavLink>
-                        </div>
-                        
-                    )
-                })
-                }
+            { Object.values(filtered_recipes).map(recipe => {
+                return <RecipeItem recipe={recipe}/>
+            })}
         </div>)
     } else {
         recipeIndex = (<div>
@@ -90,45 +46,7 @@ const RecipeIndex = () => {
             <div className='page-title'>
                 <h1>Recipes</h1>
             </div>
-            <div id='filter-section'>
-                <div id='filter-title'>
-                    <h3>Filter Results</h3>
-                    <p>{filtered_recipes.length} items</p>
-                </div>
-                <div id='filter-dropdowns'>
-                    <label>
-                        <select onChange={(e)=>setCuisine(e.target.value)} id="cuisine-select" defaultValue={cuisine}>
-                            <option value={false}>Cuisine</option>
-                            {
-                                cuisineOptions.map(cuisineOption=>{
-                                    return <option value={cuisineOption} key={cuisineOption}>{cuisineOption}</option>
-                                })
-                            }
-                        </select>
-                    </label>
-                    <label>
-                        <select onChange={(e)=>setMeal(e.target.value)} id="meal-select" defaultValue={meal}>
-                            <option value={false}>Meal</option>
-                            {
-                                mealOptions.map(mealOption=>{
-                                    return <option value={mealOption} key={mealOption}>{mealOption}</option>
-                                })
-                            }
-                        </select>
-                    </label>
-                    <label>
-                        <select onChange={(e)=>setDish(e.target.value)} id="dish-select" defaultValue={dish}>
-                            <option value={false}>Dish</option>
-                            {
-                                dishOptions.map(dishOption=>{
-                                    return <option value={dishOption} key={dishOption}>{dishOption}</option>
-                                })
-                            }
-                        </select>
-                    </label>
-                    <button onClick={resetFilter}>RESET</button>
-                </div>
-            </div>
+            <FilterIndex filtered_recipes={filtered_recipes}/>
             {recipeIndex}
         </div>
     )
