@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import ViewRating from "./ViewRating";
-
-import './Ratings.css'
 import FormRating from "./FormRating";
+import './Ratings.css'
 
 export default function Ratings ({recipe, sessionUser}) {
 
