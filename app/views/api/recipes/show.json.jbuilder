@@ -8,6 +8,7 @@ json.author @recipe.user.name
 
 json.photoUrl @recipe.photo.attached? ? @recipe.photo.url : nil
 
-json.ratings @recipe.ratings.each do |rating|
+ratings = @recipe.ratings.includes(:user)
+json.ratings ratings.each do |rating|
     json.extract! rating, :id, :comment, :rating, :user, :updated_at
 end
