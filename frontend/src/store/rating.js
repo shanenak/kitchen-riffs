@@ -9,7 +9,6 @@ export const createRating = rating => async(dispatch) => {
     });
     if (response.ok) {
         const payload = await response.json();
-        console.log('createRating',payload)
         dispatch(receiveRecipe(payload))
     } else {
         return response.json();

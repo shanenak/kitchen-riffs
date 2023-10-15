@@ -31,7 +31,6 @@ export default function RecipeHead () {
 
     const handleRemove = () => {
         const saveId = Object.values(sessionUser.savedRecipes).find(save=>save.recipeId===recipe.id).id
-        console.log(saveId)
         dispatch(deleteSave(saveId))
     }
 

@@ -5,7 +5,7 @@ export default function RecipeItem ({recipe}) {
     const quickTag = (<div id='tag'>
                     <p>Quick</p>
                 </div>)
-    const tagInclude = (time<30)&(time>3) ? quickTag : <></>;
+    const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
     return(
         <div id='recipe-item' key={recipe.id}>
             <div id='grid-image'>
