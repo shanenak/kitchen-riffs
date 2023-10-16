@@ -34,10 +34,14 @@ export default function RecipeItem ({recipe}) {
                 {tagInclude}
             </div>
             <div id='recipe-item'>
-                <p onClick={routeRecipeShow}>{recipe.name}</p>
-                <i class="fas fa-edit" onClick={editNotes}></i>
+                <div id='recipe-item-title'>
+                    <p onClick={routeRecipeShow}>{recipe.name}</p>
+                    {saved ? <i class="fas fa-edit" onClick={editNotes}></i> : <></>}
+                </div>
+                <div id='recipe-notes' onClick={editNotes}>
+                    {saved ? <p>{savedRecord.notes}</p> : <></>}
+                </div>
             </div>
-            {saved ? <p>{savedRecord.notes}</p> : <p>"No notes"</p>}
         </div>
     )
 }

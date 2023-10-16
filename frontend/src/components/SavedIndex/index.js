@@ -37,7 +37,6 @@ const SavedIndex = ()=> {
         recipeIndex = (
         <div id='recipe-list'>
             { filtered_recipes.map(recipe => {
-                console.log(recipe)
                 return <RecipeItem recipe={recipe}/>
             })}
         </div>)
