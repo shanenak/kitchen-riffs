@@ -1,15 +1,25 @@
+import { useSelector } from "react-redux";
 import { NavLink, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { getSavedRecipes } from "../../store/session";
 
 export default function RecipeItem ({recipe}) {
     const history = useHistory()
     const saved = window.location.pathname === '/saved'
-    console.log(saved)
+
+    const savedRecipes = useSelector(getSavedRecipes);
 
     const time = recipe.timeRequired.replace(/[^0-9]/g, '');
     const quickTag = (<div id='tag'>
                     <p>Quick</p>
                 </div>)
     const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
+
+    const getNotes = (recipe)=> {
+        return (<p>{Object.values(savedRecipes).filter(record=>{
+                        return record.recipe.id === recipe.id
+                    }).notes}</p>)
+    }
+
     return(
         <div id='recipe-item' key={recipe.id} onClick={()=>history.push(`/recipes/${recipe.id}`)}>
             <div id='grid-image'>
@@ -19,6 +29,8 @@ export default function RecipeItem ({recipe}) {
             <NavLink to={`/recipes/${recipe.id}`}>
                 {recipe.name}
             </NavLink>
+            {/* <i class="fas fa-edit" onClick={()=> }></i> */}
+            {saved ? getNotes(recipe) : <p>"No notes"</p>}
         </div>
     )
 }

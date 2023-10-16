@@ -12,9 +12,13 @@ const SavedIndex = ()=> {
         dispatch(fetchUser())}
         , [dispatch])
 
-    const sessionUser = useSelector(getUser);
-    const recipes = useSelector(getSavedRecipes);
     const { search } = useLocation();
+    const sessionUser = useSelector(getUser);
+    const savedRecipes = useSelector(getSavedRecipes);
+
+    const recipes = Object.values(savedRecipes).map(record=>{
+        return record["recipe"]
+      })
         
     if (!sessionUser) return <Redirect to="/" />;
     // TODO: style if no recipes have been saved
@@ -27,7 +31,6 @@ const SavedIndex = ()=> {
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })
     })
-
 
     let recipeIndex;
     if (filtered_recipes) {
