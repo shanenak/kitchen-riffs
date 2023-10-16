@@ -12,11 +12,12 @@ const SavedIndex = ()=> {
     })
 
     const sessionUser = useSelector(getUser);
-        
     const filtered_recipes = useSelector(getSavedRecipes);
-    console.log(filtered_recipes)
         
     if (!sessionUser) return <Redirect to="/" />;
+    // TODO: style if no recipes have been saved
+    if (!filtered_recipes) return <h1>No recipes have been saved yet.</h1>
+
     let recipeIndex;
     if (filtered_recipes) {
         recipeIndex = (
@@ -36,7 +37,7 @@ const SavedIndex = ()=> {
     return (
         <div id='index'>
             <div className='page-title'>
-                <h1>Recipes</h1>
+                <h1>Saved Recipes</h1>
             </div>
             {sessionUser.savedRecipes ? <FilterIndex filtered_recipes={filtered_recipes}/> : <h1>No Recipes</h1>}
             {recipeIndex}

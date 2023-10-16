@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import { logout } from "../../store/session";
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
 
 
 export default function ProfileButton ({user}) {
@@ -32,13 +33,16 @@ export default function ProfileButton ({user}) {
     return (
         <div className='icon' onClick={openMenu}>
             <i className="fa-solid fa-user"></i>
-            <div className={`dropdown ${showMenu ? 'show' : 'hide'}`} visibility="hidden">
+            <div className={`dropdown ${showMenu ? 'show' : 'hide'}`} id='dropdown-nav' visibility="hidden">
                 <ul>
                     <li>
                         <p>Logged in as {user.name}</p>
                     </li>
                     <li>
-                        <button onClick={handleLogout}>Log Out</button>
+                        <NavLink to='/saved' id='saved-nav'>SAVED RECIPES</NavLink>
+                    </li>
+                    <li >
+                        <button id='logout-nav' onClick={handleLogout}>Log Out</button>
                     </li>
                 </ul>
             </div>

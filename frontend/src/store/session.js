@@ -19,7 +19,7 @@ export const getUser = state => {
 }
 
 export const getSavedRecipes = state => {
-    if (state?.session?.user.savedRecipes) {
+    if (state?.session?.user?.savedRecipes) {
       return Object.values(state.session.user.savedRecipes).map(record=>{
         return record["recipe"]
       })

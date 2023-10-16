@@ -65,9 +65,9 @@ a {
     z-index: 10;
 }
 
-#nav-links a {
+/* #nav-links a {
     margin-right: 20px;
-}
+} */
 
 #nav-links .show {
     display: block;
@@ -97,14 +97,15 @@ a {
     padding: 10px;
 }
 
-.dropdown button {
+#dropdown-nav button, a {
     background-color: #000;
     color: white;
     border-width: 2px;
     border-style: solid;
     border-color: #000;
     font-weight: bold;
-    margin: 10px;
+    margin: 5px;
+    font-family: inherit;
 }
 
 .dropdown p {
