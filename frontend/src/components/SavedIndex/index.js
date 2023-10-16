@@ -1,10 +1,15 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import FilterIndex from "../RecipeIndex/FilterIndex"
-import { getSavedRecipes, getUser } from "../../store/session";
+import { fetchUser, getSavedRecipes, getUser } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom";
 import RecipeItem from "../RecipeIndex/RecipeItem";
+import { useEffect } from "react";
 
 const SavedIndex = ()=> {
+    const dispatch = useDispatch();
+    useEffect(()=>{
+        dispatch(fetchUser())
+    })
 
     const sessionUser = useSelector(getUser);
         
