@@ -84,15 +84,28 @@
     font-weight: 500;
 }
 
+#save {
+    display: flex; 
+    flex-direction: row;
+    margin: 40px 0px 20px 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
 #recipe-save {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0px 20px 0px;
-    padding: 10px;
     background-color: lightgray;
     font-weight: 600;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    padding: 10px;
+}
+
+#open-save {
+    position: relative;
+    top: 15px;
+    left: 10px;
     cursor: pointer;
 }
 
@@ -102,6 +115,14 @@
 
 #recipe-save p {
     padding: 5px;
+}
+
+#recipes-notes {
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-family: "Source Serif Pro", serif;
+    letter-spacing: 0.02em;
+    line-height: 24px;
 }
 
 .disable {
