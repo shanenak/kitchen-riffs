@@ -5,11 +5,13 @@ import { Navigation } from "./components/Navigation";
 import RecipeIndex from "./components/RecipeIndex";
 import RecipeShow from "./components/RecipeShow";
 import SavedIndex from "./components/SavedIndex";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
     <>
       <Navigation />
+      <Modal />
         <Switch>
           <Route path="/login">
             <LoginFormPage />

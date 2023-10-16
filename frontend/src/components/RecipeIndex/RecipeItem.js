@@ -1,9 +1,11 @@
-import { useSelector } from "react-redux";
-import { NavLink, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { getSavedRecipes } from "../../store/session";
+import { openModal } from "../../store/modal";
 
 export default function RecipeItem ({recipe}) {
-    const history = useHistory()
+    const history = useHistory();
+    const dispatch = useDispatch();
     const saved = window.location.pathname === '/saved'
 
     const savedRecipes = useSelector(getSavedRecipes);
@@ -20,15 +22,19 @@ export default function RecipeItem ({recipe}) {
                     }).notes}</p>)
     }
 
+    const routeRecipeShow = () => {
+       return history.push(`/recipes/${recipe.id}`)
+    }
+
     return(
-        <div id='index-item' key={recipe.id} onClick={()=>history.push(`/recipes/${recipe.id}`)}>
-            <div id='grid-image'>
+        <div id='index-item' key={recipe.id}>
+            <div id='grid-image' onClick={routeRecipeShow}>
                 <img src={recipe.photoUrl} alt='recipe-result'></img>
                 {tagInclude}
             </div>
             <div id='recipe-item'>
-                <p>{recipe.name}</p>
-                <i class="fas fa-edit"></i>
+                <p onClick={routeRecipeShow}>{recipe.name}</p>
+                <i class="fas fa-edit" onClick={()=>dispatch(openModal('form'))}></i>
             </div>
             {saved ? getNotes(recipe) : <p>"No notes"</p>}
         </div>

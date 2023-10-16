@@ -2,10 +2,12 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import sessionReducer from './session';
 import recipesReducer from './recipe';
+import modalReducer from './modal';
 
 const rootReducer = combineReducers({
     session: sessionReducer,
     recipes: recipesReducer,
+    modal: modalReducer
 })
 
 let enhancer;
