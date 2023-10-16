@@ -9,6 +9,9 @@ export default function RecipeItem ({recipe}) {
     const saved = window.location.pathname === '/saved'
 
     const savedRecipes = useSelector(getSavedRecipes);
+    const savedRecord = Object.values(savedRecipes).find(record=>{
+            return record.recipe.id === recipe.id
+        })
 
     const time = recipe.timeRequired.replace(/[^0-9]/g, '');
     const quickTag = (<div id='tag'>
@@ -16,10 +19,8 @@ export default function RecipeItem ({recipe}) {
                 </div>)
     const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
 
-    const getNotes = (recipe)=> {
-        return (<p>{Object.values(savedRecipes).filter(record=>{
-                        return record.recipe.id === recipe.id
-                    }).notes}</p>)
+    const editNotes = () => {
+        dispatch(openModal("saved", savedRecord.id))
     }
 
     const routeRecipeShow = () => {
@@ -34,9 +35,9 @@ export default function RecipeItem ({recipe}) {
             </div>
             <div id='recipe-item'>
                 <p onClick={routeRecipeShow}>{recipe.name}</p>
-                <i class="fas fa-edit" onClick={()=>dispatch(openModal('form'))}></i>
+                <i class="fas fa-edit" onClick={editNotes}></i>
             </div>
-            {saved ? getNotes(recipe) : <p>"No notes"</p>}
+            {saved ? <p>{savedRecord.notes}</p> : <p>"No notes"</p>}
         </div>
     )
 }

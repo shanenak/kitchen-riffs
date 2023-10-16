@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import SavedForm from "./SavedForm";
+import SavedForm from "../SavedIndex/SavedForm";
 import { closeModal } from "../../store/modal";
 
 import './Modal.css'
@@ -13,8 +13,8 @@ export default function Modal () {
     }
 
     let component;
-    switch (modal) {
-        case 'form':
+    switch (modal?.form) {
+        case 'saved':
             component = <SavedForm />;
             break;
         case 'other':

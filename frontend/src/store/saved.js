@@ -29,7 +29,7 @@ export const createSave = save => async(dispatch) => {
 }
 
 export const updateSave = save => async(dispatch) => {
-    const response = await csrfFetch(`/api/saved_recipes/${save.id}`, {
+    const response = await csrfFetch(`/api/saved_recipes/${save.save.id}`, {
         method: "PATCH",
         body: JSON.stringify(save)
     });
