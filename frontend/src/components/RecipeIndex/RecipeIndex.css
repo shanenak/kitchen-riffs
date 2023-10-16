@@ -117,16 +117,30 @@
     object-fit: cover;
 }
 
+#photo-icons {
+    position: relative;
+    bottom: 95%;
+}
+
 #tag {
+    display: inline-block;
     background-color: rgb(255, 218, 8);
     border-radius: 20px;
-    width: fit-content;
     padding: 15px;
-    position: relative;
+    width: min-content;
+    position: absolute;
     left: 10%;
-    bottom: 95%;
 }
 
 #tag p {
     font-weight: 500;
+    width:fit-content;
+}
+
+.fa-x {
+    position: absolute;
+    color: black;
+    font-size: large;
+    left: 90%;
+    top:5px;
 }

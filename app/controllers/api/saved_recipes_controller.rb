@@ -30,9 +30,7 @@ class Api::SavedRecipesController < ApplicationController
 
     def destroy
         @saved = SavedRecipe.find(params[:id])
-        if @saved.destroy
-            render json: {id: @saved.id}
-        else
+        if !@saved.destroy
             render @saved.errors.full_messages
         end
     end

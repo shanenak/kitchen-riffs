@@ -53,7 +53,6 @@ export default function RecipeHead () {
             <div id='recipe-time'>
                 <p>{recipe.timeRequired}</p>
             </div>
-            {/* TODO: ADD OPTION IF ALREADY SAVED */}
             <div id='save'>
                 <div id='recipe-save' onClick={saved ? handleRemove : handleSave} className={signedIn ? "" : "disable"}>
                     <i className={saved ? "fa fa-bookmark" : "fa-regular fa-bookmark"}></i>

@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { getSavedRecipes } from "../../store/session";
 import { openModal } from "../../store/modal";
+import { deleteSave } from "../../store/saved";
 
 export default function RecipeItem ({recipe}) {
     const history = useHistory();
@@ -13,16 +14,24 @@ export default function RecipeItem ({recipe}) {
             return record.recipe.id === recipe.id
         })
 
-    const time = recipe.timeRequired.replace(/[^0-9]/g, '');
-    const quickTag = (<div id='tag'>
-                    <p>Quick</p>
-                </div>)
-    const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
 
     const editNotes = () => {
         dispatch(openModal("saved", savedRecord.id))
     }
 
+    const deleteNotes = () => {
+        dispatch(deleteSave(savedRecord.id))
+    }
+
+    const time = recipe.timeRequired.replace(/[^0-9]/g, '');
+    const quickTag = (<div id='tag'>
+                        <p>Quick</p>
+                    </div>)
+    const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
+    const imageIcons = (<div id='photo-icons'>
+                            {tagInclude}
+                            {saved ? <i class="fa-solid fa-x" onClick={deleteNotes}></i> : <></>}
+                        </div>)
     const routeRecipeShow = () => {
        return history.push(`/recipes/${recipe.id}`)
     }
@@ -31,7 +40,7 @@ export default function RecipeItem ({recipe}) {
         <div id='index-item' key={recipe.id}>
             <div id='grid-image' onClick={routeRecipeShow}>
                 <img src={recipe.photoUrl} alt='recipe-result'></img>
-                {tagInclude}
+                {imageIcons}
             </div>
             <div id='recipe-item'>
                 <div id='recipe-item-title'>
