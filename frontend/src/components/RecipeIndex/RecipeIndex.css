@@ -79,6 +79,13 @@
     justify-content: center;
 }
 
+#recipe-item a {
+    font-family: inherit;
+    border: 0px none rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
 #grid-image {
     height: 80%;
     width: 100%;

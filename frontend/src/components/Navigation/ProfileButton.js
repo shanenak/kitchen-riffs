@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import { logout } from "../../store/session";
-import { NavLink } from "react-router-dom/cjs/react-router-dom";
+import { NavLink, Redirect } from "react-router-dom/cjs/react-router-dom";
 
 
 export default function ProfileButton ({user}) {
@@ -39,7 +39,7 @@ export default function ProfileButton ({user}) {
                         <p>Logged in as {user.name}</p>
                     </li>
                     <li>
-                        <NavLink to='/saved' id='saved-nav'>SAVED RECIPES</NavLink>
+                        <NavLink to='/saved'>SAVED RECIPES</NavLink>
                     </li>
                     <li >
                         <button id='logout-nav' onClick={handleLogout}>Log Out</button>
