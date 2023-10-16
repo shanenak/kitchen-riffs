@@ -69,21 +69,27 @@
     margin-top: 40px;
 }
 
+#index-item {
+    cursor: pointer;
+}
+
 #recipe-item {
     height: inherit;
     width: inherit;
     border-bottom: 1px solid rgb(215, 215, 215);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
-#recipe-item a {
+#recipe-item p {
     font-family: inherit;
     border: 0px none rgb(0, 0, 0);
     font-weight: 600;
     letter-spacing: 0.03em;
+    margin-right: 10px;
 }
 
 #grid-image {
@@ -99,7 +105,7 @@
 
 #tag {
     background-color: rgb(255, 218, 8);
-    border-radius: 15px;
+    border-radius: 20px;
     width: fit-content;
     padding: 15px;
     position: relative;
@@ -107,8 +113,6 @@
     bottom: 95%;
 }
 
-#recipe-list a {
-    background-color: inherit;
-    color: black;
-    padding: 20px;
+#tag p {
+    font-weight: 500;
 }

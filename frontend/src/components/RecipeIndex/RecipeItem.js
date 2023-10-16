@@ -21,15 +21,15 @@ export default function RecipeItem ({recipe}) {
     }
 
     return(
-        <div id='recipe-item' key={recipe.id} onClick={()=>history.push(`/recipes/${recipe.id}`)}>
+        <div id='index-item' key={recipe.id} onClick={()=>history.push(`/recipes/${recipe.id}`)}>
             <div id='grid-image'>
                 <img src={recipe.photoUrl} alt='recipe-result'></img>
                 {tagInclude}
             </div>
-            <NavLink to={`/recipes/${recipe.id}`}>
-                {recipe.name}
-            </NavLink>
-            {/* <i class="fas fa-edit" onClick={()=> }></i> */}
+            <div id='recipe-item'>
+                <p>{recipe.name}</p>
+                <i class="fas fa-edit"></i>
+            </div>
             {saved ? getNotes(recipe) : <p>"No notes"</p>}
         </div>
     )
