@@ -10,7 +10,7 @@ export const fetchSaves = () => async(dispatch) => {
 }
 
 export const fetchSave = saveId => async(dispatch) => {
-    const response = await fetch (`/api/saved_recipes/${saveId}`)
+    const response = await fetch(`/api/saved_recipes/${saveId}`)
     if (response.ok) {
         dispatch(fetchUser())
     }

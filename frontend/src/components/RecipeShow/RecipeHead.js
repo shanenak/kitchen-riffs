@@ -15,7 +15,7 @@ export default function RecipeHead () {
     const sessionUser = useSelector(getUser)
 
     const signedIn = sessionUser ? true : false;
-    const saved = (signedIn && sessionUser.savedRecipes) ? Object.values(sessionUser?.savedRecipes).find(save=>save.recipeId===recipe.id) : false;
+    const saved = (signedIn && sessionUser.savedRecipes) ? Object.values(sessionUser?.savedRecipes).find(save=>save.recipe.id===recipe.id) : false;
 
     const handleSave = () => {
         const payload = {
@@ -30,7 +30,7 @@ export default function RecipeHead () {
     }
 
     const handleRemove = () => {
-        const saveId = Object.values(sessionUser.savedRecipes).find(save=>save.recipeId===recipe.id).id
+        const saveId = Object.values(sessionUser.savedRecipes).find(save=>save.recipe.id===recipe.id).id
         dispatch(deleteSave(saveId))
     }
 

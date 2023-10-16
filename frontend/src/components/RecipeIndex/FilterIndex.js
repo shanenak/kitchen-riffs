@@ -2,9 +2,6 @@ import { useLocation } from "react-router-dom/cjs/react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function FilterIndex({filtered_recipes}) {
-
-    console.log(filtered_recipes)
-
     const history = useHistory();
     const { search } = useLocation();
     const searchParams = new URLSearchParams(search);
@@ -21,11 +18,13 @@ export default function FilterIndex({filtered_recipes}) {
     }
 
     const resetFilter = (e) => {
-        Object.keys(filters).forEach((category)=>{
-            searchParams.delete(category)
-            resetSelect(category)
-        })
-        history.replace({ search: searchParams.toString() });
+        if (Object.keys(filters)) {
+            Object.keys(filters).forEach((category)=>{
+                searchParams.delete(category)
+                resetSelect(category)
+            })
+            history.replace({ search: searchParams.toString() });
+        }
     }
 
     const options = {};

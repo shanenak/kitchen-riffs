@@ -18,6 +18,13 @@ export const getUser = state => {
     return state?.session ? state.session.user : null
 }
 
+export const getSavedRecipes = state => {
+    if (state?.session?.user.savedRecipes) {
+      return Object.values(state.session.user.savedRecipes).map(record=>{
+        return record["recipe"]
+      })
+     } else return [];
+}
 
 // set storage
 

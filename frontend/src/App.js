@@ -4,6 +4,7 @@ import SignupFormPage from "./components/SignupFormPage";
 import { Navigation } from "./components/Navigation";
 import RecipeIndex from "./components/RecipeIndex";
 import RecipeShow from "./components/RecipeShow";
+import SavedIndex from "./components/SavedIndex";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
           <Route exact path="/recipes/:recipeId">
             <RecipeShow />
           </Route>
-          <Route path="/meal/:mealName">
-            <RecipeIndex />
+          <Route path="/saved">
+            <SavedIndex />
           </Route>
           <Route path="/">
             <RecipeIndex />
