@@ -30,7 +30,7 @@ export default function RecipeItem ({recipe}) {
         tagInclude = (<div id='tag'>
                         <p>Quick</p>
                     </div>)
-    } else if(savedRecord?.tag){
+    } else if(savedRecord?.tag && saved){
         tagInclude = (<div id='tag'>
             <p>{savedRecord.tag}</p>
         </div>)
