@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(248, 248, 248);
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     font-size: 48px;
-    margin: 48px;
+    margin: 30px;
     text-align: center;
     width: inherit;
 }
@@ -39,21 +39,21 @@
     font-weight:400;
 }
 
-#filter-dropdowns select, button {
+.filter-inputs select, button {
     margin: 16px;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    font-size: 16px;
+    font-size: 12px;
 }
 
-#filter-dropdowns button {
+#filter-dropdowns > button {
     background-color: black;
     color: white;
 }
 
-#filter-dropdowns button:hover {
+#filter-dropdowns > button:hover {
     text-decoration: underline;
     color: rgb(255, 218, 8);
     cursor: pointer;
@@ -100,7 +100,7 @@
 
 #recipe-notes {
     font-size: 16px;
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Radley', serif;
     letter-spacing: 0.02em;
     text-align: left;
     color: rgb(102, 102, 102);

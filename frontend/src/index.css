@@ -7,13 +7,13 @@
 }
 
 .credentials h1 {
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-style: normal;
     line-break: auto;
     letter-spacing: 0.13em;
     font-size: 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
     display: block;
     /* margin-block-start: 0.83em; */
     /* margin-block-end: 0.83em; */
@@ -25,11 +25,11 @@
 }
 
 .form-card label {
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     line-break: auto;
     line-height: 1.25em;
     font-size: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     font-weight: normal;
     overflow-wrap: normal;
     color: rgb(102, 102, 102);
@@ -37,7 +37,7 @@
 }
 
 .form-card input {
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     line-break: auto;
     line-height: 1.4em;
     font-size: 16px;
@@ -63,7 +63,7 @@
     border-color: #000;
     line-height: 2em;
     letter-spacing: 0.13em;
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     color: #fff;
     font-size: 14px;
     font-weight: 500;

@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(248, 248, 248);
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    font-weight:400;
     color: black;
     box-sizing: border-box;
 }
@@ -53,7 +54,9 @@
     text-transform: uppercase;
     padding: 16px;
     font-size: 16px;
-    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
     margin-top: 40px;
 }
 
@@ -67,15 +70,16 @@
     font-size: 42px;
     font-weight: 600;
     text-align: center;
-    letter-spacing: 0.03em;
-    margin: 30px;
+    letter-spacing: 0.05em;
+    line-height: 48px;
+    margin: 10px 30px 10px 30px;
 }
 
 #recipe-author {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     margin: 15px;
 }
 
@@ -120,7 +124,7 @@
 #recipes-notes {
     color: rgb(102, 102, 102);
     font-size: 16px;
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Radley', serif;
     letter-spacing: 0.02em;
     line-height: 24px;
 }
@@ -178,7 +182,7 @@
     margin: 60px 0px 20px 0px;
     font-weight: 600;
     letter-spacing: 0.05em;
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 #servings {
@@ -223,7 +227,7 @@ td {
 
 p.body-text  {
     font-size: 16px;
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Radley', serif;
     letter-spacing: 0.02em;
     line-height: 24px;
 }

@@ -49,7 +49,7 @@ export default function FilterIndex({filtered_recipes}) {
             <div id='filter-dropdowns'>
                 {Object.keys(filters).map(category=> {
                     return (
-                        <label>
+                        <label className="filter-inputs">
                             <select name={category} onChange={setSearchParams} id={`${category}-select`} defaultValue={category}>
                                 <option value={"reset"}>{category}</option>
                                 {

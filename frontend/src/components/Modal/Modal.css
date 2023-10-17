@@ -29,7 +29,7 @@
 
 #saved-form {
     padding: 60px;
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    /* font-family: "Source Serif Pro", serif; */
+    /* font-family: 'Radley', serif; */
     text-align: left;
 }
 

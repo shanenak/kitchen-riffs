@@ -2,19 +2,18 @@ ul {
     list-style: none;
 }
 a {
-    background-color: #000;
+    text-decoration: none;
+    /* background-color: #000;
     border-width: 3px;
     border-style: solid;
     border-color: #000;
-    font-family: FuturaPT, helvetica, sans-serif;
+    font-family: 'Urbanist', sans-serif;
     color: #fff;
     font-size: 16px;
-    /* font-weight: bold; */
-    text-decoration: none;
     margin-left: 10px;
     margin-right: 5px;
     border-radius: 4px;
-    padding: 2px;
+    padding: 2px; */
 }
 
 #nav-links a:hover {
@@ -43,7 +42,7 @@ a {
 }
 
 #kitchen-riffs a {
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Radley', serif;
     color: white;
     font-size: 32px;
     letter-spacing: 0.08em;
@@ -71,9 +70,9 @@ a {
     z-index: 10;
 }
 
-/* #nav-links a {
+#nav-links a {
     margin-right: 20px;
-} */
+}
 
 #nav-links .show {
     display: block;

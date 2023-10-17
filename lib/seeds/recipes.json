@@ -1620,14 +1620,14 @@
       "ingredients": [
         ["chicken_breasts", "500", "grams, cut into bite-sized pieces"],
         ["cornstarch", "1/2", "cup"],
-        ["vegetable_oil", "for frying", ""],
+        ["vegetable_oil", "", "for frying"],
         ["ginger", "1", "tablespoon, minced"],
         ["garlic", "4", "cloves, minced"],
         ["dried_red_chilies", "6", "pieces"],
         ["green_onions", "4", "stalks, chopped"],
-        ["sesame_seeds", "for garnish", ""],
-        ["cooked_rice", "for serving", ""],
-        ["salt", "to taste", ""]
+        ["sesame_seeds", "", "for garnish"],
+        ["cooked_rice", "", "for serving"],
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a bowl, coat the chicken pieces with cornstarch.",
@@ -1655,7 +1655,7 @@
         ["cornstarch", "1", "tablespoon, mixed with water to form a slurry"],
         ["ginger", "1", "teaspoon, grated"],
         ["green_onions", "2", "stalks, chopped"],
-        ["salt", "to taste", ""]
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a pot, heat chicken broth over medium heat.",
@@ -1689,8 +1689,8 @@
         ["oyster_sauce", "2", "tablespoons"],
         ["sesame_oil", "1", "tablespoon"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["sesame_seeds", "for garnish", ""]
+        ["salt", "", "to taste"],
+        ["sesame_seeds", "", "for garnish"]
       ],
       "directions": [
         "In a wok or large skillet, heat vegetable oil over medium-high heat.",
@@ -1724,7 +1724,7 @@
         ["cornstarch", "1", "tablespoon, mixed with water to form a slurry"],
         ["vegetable_oil", "2", "tablespoons"],
         ["Szechuan_peppercorns", "1", "tablespoon"],
-        ["salt", "to taste", ""]
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a wok, heat vegetable oil over medium heat.",
@@ -1758,7 +1758,7 @@
         ["sesame_oil", "1", "tablespoon"],
         ["salt", "1/2", "teaspoon"],
         ["round_dumpling_wrappers", "30"],
-        ["water", "for sealing", ""]
+        ["water", "", "for sealing"]
       ],
       "directions": [
         "In a large bowl, mix ground pork, chopped cabbage, chopped green onions, minced ginger, minced garlic, soy sauce, sesame oil, and salt.",
@@ -1789,8 +1789,8 @@
         ["soy_sauce", "3", "tablespoons"],
         ["sesame_oil", "1", "tablespoon"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["pepper", "", "to taste"]
       ],
       "directions": [
         "In a wok, heat vegetable oil over medium heat.",
@@ -1825,8 +1825,8 @@
         ["pine_nuts", "2", "tablespoons"],
         ["fresh_parsley", "1/4", "cup, chopped"],
         ["extra_virgin_olive_oil", "1/4", "cup"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a pan, heat extra virgin olive oil and sauté chopped onion and chopped celery until softened.",
@@ -1859,13 +1859,13 @@
         ["cardamom_pod", "2"],
         ["rock_sugar", "2", "tablespoons"],
         ["fish_sauce", "3", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["bean_sprouts", "for garnish", ""],
-        ["lime", "wedges for serving", ""],
-        ["fresh_basil_leaves", "for garnish", ""],
-        ["fresh_mint_leaves", "for garnish", ""],
-        ["fresh_cilantro_leaves", "for garnish", ""],
-        ["jalapeno", "sliced for garnish", ""]
+        ["salt", "", "to taste"],
+        ["bean_sprouts", "", "for garnish"],
+        ["lime", "", "wedges for serving"],
+        ["fresh_basil_leaves", "", "for garnish"],
+        ["fresh_mint_leaves", "", "for garnish"],
+        ["fresh_cilantro_leaves", "", "for garnish"],
+        ["jalapeno", "", "sliced for garnish"]
       ],
       "directions": [
         "In a large pot, add beef bones and cover with water. Bring to a boil and let it boil for 5-10 minutes. Discard the water and rinse the bones under cold water.",
@@ -1898,8 +1898,8 @@
         ["bean_sprouts", "1", "cup"],
         ["fresh_mint_leaves", "32", ""],
         ["fresh_cilantro_leaves", "32", ""],
-        ["hoisin_sauce", "for dipping", ""],
-        ["peanut_hoisin_dipping_sauce", "for dipping", ""]
+        ["hoisin_sauce", "", "for dipping"],
+        ["peanut_hoisin_dipping_sauce", "", "for dipping"]
       ],
       "directions": [
         "Prepare a shallow bowl of warm water.",
@@ -1928,10 +1928,10 @@
         ["fish_sauce", "4", "tablespoons"],
         ["sugar", "3", "tablespoons"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["black_pepper", "to taste", ""],
-        ["green_onions", "for garnish", ""],
-        ["fresh_cilantro_leaves", "for garnish", ""],
-        ["red_chilies", "sliced for garnish", ""]
+        ["black_pepper", "", "to taste"],
+        ["green_onions", "", "for garnish"],
+        ["fresh_cilantro_leaves", "", "for garnish"],
+        ["red_chilies", "", "sliced for garnish"]
       ],
       "directions": [
         "In a pan, heat vegetable oil and sauté sliced shallots until golden brown.",
@@ -1964,8 +1964,8 @@
         ["soy_sauce", "4", "tablespoons"],
         ["sesame_oil", "2", "tablespoons"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["cilantro", "for garnish", ""]
+        ["salt", "", "to taste"],
+        ["cilantro", "", "for garnish"]
       ],
       "directions": [
         "Rinse the chicken inside and out. Rub the outside with salt. Rinse again and pat dry.",
@@ -2000,8 +2000,8 @@
         ["green_chilies", "4", "sliced"],
         ["egg", "1"],
         ["vegetable_oil", "4", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["coriander_leaves", "for garnish", ""]
+        ["salt", "", "to taste"],
+        ["coriander_leaves", "", "for garnish"]
       ],
       "directions": [
         "In a wok, heat vegetable oil and sauté minced garlic and minced ginger until fragrant.",
@@ -2034,8 +2034,8 @@
         ["turmeric_powder", "1/2", "teaspoon"],
         ["soy_sauce", "1", "tablespoon"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["fresh_coriander_leaves", "for garnish", ""],
-        ["salt", "to taste", ""]
+        ["fresh_coriander_leaves", "", "for garnish"],
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a bowl, mix all-purpose flour with water to form a smooth dough. Cover and let it rest for 30 minutes.",
@@ -2068,8 +2068,8 @@
         ["turmeric_powder", "1/2", "teaspoon"],
         ["chili_powder", "1", "teaspoon"],
         ["mustard_oil", "2", "tablespoons"],
-        ["fresh_coriander_leaves", "for garnish", ""],
-        ["salt", "to taste", ""],
+        ["fresh_coriander_leaves", "", "for garnish"],
+        ["salt", "", "to taste"],
         ["water", "2", "cups"]
       ],
       "directions": [
@@ -2102,8 +2102,8 @@
         ["cheese", "4", "slices"],
         ["mayonnaise", "4", "tablespoons"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "Divide the ground beef into 4 equal portions and shape them into burger patties.",
@@ -2138,8 +2138,8 @@
         ["rice_vinegar", "2", "tablespoons"],
         ["soy_sauce", "2", "tablespoons"],
         ["wasabi", "1", "teaspoon"],
-        ["pickled_ginger", "for garnish", ""],
-        ["sesame_seeds", "for garnish", ""]
+        ["pickled_ginger", "", "for garnish"],
+        ["sesame_seeds", "", "for garnish"]
       ],
       "directions": [
         "In a large mixing bowl, combine cooked sushi rice and rice vinegar. Mix well to season the rice.",
@@ -2170,8 +2170,8 @@
         ["green_onions", "4", "stalks, chopped"],
         ["sesame_seeds", "2", "tablespoons"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a bowl, mix miso paste, maple syrup, soy sauce, minced garlic, and grated ginger to create the glaze.",
@@ -2201,7 +2201,7 @@
         ["mayonnaise", "2", "tablespoons"],
         ["green_onions", "2", "stalks, chopped"],
         ["sesame_seeds", "1", "tablespoon"],
-        ["salt", "to taste", ""]
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a skillet, melt 1 tablespoon of butter over medium heat.",
@@ -2233,7 +2233,7 @@
         ["lime", "2", "cut into wedges"],
         ["sesame_seeds", "1", "tablespoon"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""]
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "In a skillet, heat vegetable oil over medium-high heat.",
@@ -2266,7 +2266,7 @@
         ["green_onions", "2", "stalks, chopped"],
         ["sesame_seeds", "1", "tablespoon"],
         ["vegetable_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""]
+        ["salt", "", "to taste"]
       ],
       "directions": [
         "Preheat the oven to the highest setting (usually around 475°F or 245°C).",
@@ -2297,11 +2297,11 @@
         ["carrots", "2", "medium, sliced"],
         ["celery", "2", "stalks, sliced"],
         ["onion", "1", "medium, chopped"],
-        ["dill", "a handful, chopped"],
-        ["parsley", "a handful, chopped"],
+        ["dill", "", "a handful, chopped"],
+        ["parsley", "", "a handful, chopped"],
         ["garlic", "2", "cloves, minced"],
-        ["salt", "to taste", ""],
-        ["pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["pepper", "", "to taste"]
       ],
       "directions": [
         "In a bowl, mix the matzo ball mix with eggs according to package instructions. Refrigerate for 30 minutes.",
@@ -2335,8 +2335,8 @@
         ["olive_oil", "2", "tablespoons"],
         ["rosemary", "1", "tablespoon, chopped"],
         ["thyme", "1", "tablespoon, chopped"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "Preheat oven to 325°F (165°C).",
@@ -2371,7 +2371,7 @@
         ["raisins", "1/2", "cup"],
         ["apricot_preserves", "1/4", "cup"],
         ["egg", "1", "for egg wash"],
-        ["powdered_sugar", "for dusting", ""]
+        ["powdered_sugar", "", "for dusting"]
       ],
       "directions": [
         "In a bowl, mix cream cheese and unsalted butter until smooth.",
@@ -2405,7 +2405,7 @@
         ["palm_sugar", "1/2", "cup"],
         ["salt", "1/4", "teaspoon"],
         ["sesame_seeds", "2", "tablespoons, toasted"],
-        ["mint_leaves", "for garnish", ""]
+        ["mint_leaves", "", "for garnish"]
       ],
       "directions": [
         "Soak the sticky rice in water for at least 4 hours or overnight.",
@@ -2434,7 +2434,7 @@
         ["sugar", "1/4", "cup"],
         ["all-purpose_flour", "1/4", "cup"],
         ["vanilla_extract", "1", "teaspoon"],
-        ["cocoa_powder", "for dusting", ""]
+        ["cocoa_powder", "", "for dusting"]
       ],
       "directions": [
         "Preheat the oven to 425°F (220°C). Grease and flour 4 ramekins.",
@@ -2468,7 +2468,7 @@
         ["strawberries", "1 1/2", "cups, sliced"],
         ["strawberry_jam", "1/4", "cup"],
         ["lemon_juice", "1", "tablespoon"],
-        ["mint_leaves", "for garnish", ""]
+        ["mint_leaves", "", "for garnish"]
       ],
       "directions": [
         "In a bowl, mix graham cracker crumbs and melted butter until the crumbs are evenly coated.",
@@ -2503,7 +2503,7 @@
         ["butter", "2", "tablespoons, melted"],
         ["vanilla_extract", "1", "teaspoon"],
         ["salt", "1/2", "teaspoon"],
-        ["maple_syrup", "for serving", ""]
+        ["maple_syrup", "", "for serving"]
       ],
       "directions": [
         "In a large mixing bowl, whisk together all-purpose flour, sugar, baking powder, and salt.",
@@ -2532,10 +2532,10 @@
         ["cherry_tomatoes", "1/2", "cup, halved"],
         ["red_chili_flakes", "1/2", "teaspoon"],
         ["lime", "1", "juiced"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"],
         ["olive_oil", "2", "tablespoons"],
-        ["fresh_parsley", "for garnish", ""]
+        ["fresh_parsley", "", "for garnish"]
       ],
       "directions": [
         "Toast the whole grain bread slices to your liking.",
@@ -2564,7 +2564,7 @@
         ["blueberries", "1/4", "cup"],
         ["almonds", "2", "tablespoons, chopped"],
         ["coconut_flakes", "1", "tablespoon"],
-        ["mint_leaves", "for garnish", ""]
+        ["mint_leaves", "", "for garnish"]
       ],
       "directions": [
         "In a glass or bowl, layer Greek yogurt, granola, and a drizzle of honey.",
@@ -2594,9 +2594,9 @@
         ["maple_syrup", "1", "tablespoon"],
         ["cinnamon", "1/2", "teaspoon"],
         ["nutmeg", "1/4", "teaspoon"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""],
-        ["fresh_parsley", "for garnish", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"],
+        ["fresh_parsley", "", "for garnish"]
       ],
       "directions": [
         "In a large pot, heat olive oil over medium heat. Add chopped onion, carrot, and minced garlic. Sauté until the vegetables are softened.",
@@ -2627,7 +2627,7 @@
         ["brown_sugar", "1/2", "cup"],
         ["butter", "1/2", "cup, cold, cut into cubes"],
         ["salt", "1/4", "teaspoon"],
-        ["vanilla_ice_cream", "for serving", ""]
+        ["vanilla_ice_cream", "", "for serving"]
       ],
       "directions": [
         "Preheat the oven to 375°F (190°C).",
@@ -2663,8 +2663,8 @@
         ["bay_leaves", "2"],
         ["flour", "1/4", "cup"],
         ["olive_oil", "2", "tablespoons"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a bowl, toss beef stew meat with flour, salt, and black pepper to coat.",
@@ -2695,9 +2695,9 @@
         ["parmesan_cheese", "1/2", "cup, grated"],
         ["butter", "4", "tablespoons"],
         ["olive_oil", "2", "tablespoons"],
-        ["fresh_parsley", "for garnish", ""],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["fresh_parsley", "", "for garnish"],
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a saucepan, heat vegetable broth and keep it warm over low heat.",
@@ -2732,8 +2732,8 @@
         ["dried_rosemary", "1", "teaspoon"],
         ["dried_thyme", "1", "teaspoon"],
         ["pie_crust", "2", "store-bought or homemade"],
-        ["salt", "to taste", ""],
-        ["pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["pepper", "", "to taste"]
       ],
       "directions": [
         "In a skillet, cook ground pork and ground beef over medium heat until browned. Drain excess fat.",
@@ -2767,8 +2767,8 @@
         ["butter", "2", "tablespoons"],
         ["thyme", "2", "sprigs"],
         ["bay_leaf", "1"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a large pot, melt butter and cook the bacon until crispy.",
@@ -2803,8 +2803,8 @@
         ["thyme", "1", "teaspoon, dried"],
         ["basil", "1", "teaspoon, dried"],
         ["oregano", "1/2", "teaspoon, dried"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "Preheat the oven to 375°F (190°C).",
@@ -2833,8 +2833,8 @@
         ["all-purpose_flour", "1", "tablespoon"],
         ["milk", "1", "cup"],
         ["nutmeg", "1/4", "teaspoon"],
-        ["salt", "to taste", ""],
-        ["black_pepper", "to taste", ""]
+        ["salt", "", "to taste"],
+        ["black_pepper", "", "to taste"]
       ],
       "directions": [
         "In a saucepan, melt butter over medium heat.",
