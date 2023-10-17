@@ -24,14 +24,21 @@ export default function RecipeItem ({recipe}) {
     }
 
     const time = recipe.timeRequired.replace(/[^0-9]/g, '');
-    const quickTag = (<div id='tag'>
+
+    let tagInclude;
+    if ((time<30)&(time>=5) && (!saved)) {
+        tagInclude = (<div id='tag'>
                         <p>Quick</p>
                     </div>)
-    const tagInclude = (time<30)&(time>=5) ? quickTag : <></>;
+    } else if(savedRecord?.tag){
+        tagInclude = (<div id='tag'>
+            <p>{savedRecord.tag}</p>
+        </div>)
+    }else {<></>};
     const imageIcons = (<div id='photo-icons'>
                             {tagInclude}
-                            {saved ? <i class="fa-solid fa-x" onClick={deleteNotes}></i> : <></>}
-                        </div>)
+                            {saved ? <i class="fa-solid fa-circle-xmark" onClick={deleteNotes}></i> : <></>}
+                        </div>)// fa-solid fa-x
     const routeRecipeShow = () => {
        return history.push(`/recipes/${recipe.id}`)
     }
