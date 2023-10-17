@@ -43,7 +43,7 @@ export default function RecipeHead () {
     return (
         <div id='show-description'>
             <div id='recipe-meal'>
-                <NavLink to={`/meal/${recipe.meal}`}>{recipe.meal}</NavLink>
+                <NavLink to={`/?meal=${recipe.meal}`}>{recipe.meal}</NavLink>
             </div>
             <div id='recipe-name'>
                 <h1>{recipe.name}</h1>
