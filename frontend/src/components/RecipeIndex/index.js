@@ -21,9 +21,13 @@ const RecipeIndex = () => {
     const searchParams = new URLSearchParams(search);
 
     const filtered_recipes = recipes.filter(recipe => {
-        return ['cuisine', 'meal', 'dish'].every((category)=>{
+        const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })
+        const searchText = searchParams.get('search')
+        const searchIngredientCheck = searchText ? recipe['ingredients'].some(ingredient=>ingredient.name.includes(searchText.toLowerCase())) : true
+        const searchNameCheck = searchText ? recipe.name.toLowerCase().includes(searchText.toLowerCase()) : true
+        return categoryCheck && (searchIngredientCheck || searchNameCheck)
     })
 
     let recipeIndex;

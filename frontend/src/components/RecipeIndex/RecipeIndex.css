@@ -39,14 +39,34 @@
     font-weight:400;
 }
 
-.filter-inputs select, button {
-    margin: 16px;
+#filter-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+.filter-inputs select, button, input {
+    /* margin: 16px; */
     padding: 12px;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 0.03em;
     font-size: 12px;
 }
+
+#filter-dropdowns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 65%;
+    box-sizing: inherit;
+    width: 100%;
+    justify-content: space-around;
+}
+
 
 #filter-dropdowns > button {
     background-color: black;
@@ -57,6 +77,52 @@
     text-decoration: underline;
     color: rgb(255, 218, 8);
     cursor: pointer;
+}
+
+#filter-text {
+    width:30%;
+    box-sizing: inherit;
+    position: static;
+}
+
+#filter-text form {
+    display:flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+#search-icon{
+    position: relative;
+}
+
+#search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#search-icon i {
+    width: 10px;
+    height: auto;
+}
+
+.input-box {
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#hidden-submit {
+    display:none;
+    position: absolute;
 }
 
 #recipe-list {
