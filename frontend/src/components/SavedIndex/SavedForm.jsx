@@ -5,6 +5,8 @@ import { useState } from "react";
 import '../Modal/Modal.css'
 import { deleteSave, updateSave } from "../../store/saved";
 import { closeModal } from "../../store/modal";
+import Ingredients from "../RecipeShow/Ingredients";
+import Preparation from "../RecipeShow/Preparation";
 
 export default function SavedForm() {
     const {form, id} = useSelector(state=> state.modal)
@@ -16,6 +18,8 @@ export default function SavedForm() {
 
     const [notes, setNotes] = useState(savedRecord.notes);
     const [tag, setTag] = useState(savedRecord.tag);
+
+    const tagOptions = [...new Set(Object.values(savedRecipes).map(recipe => recipe['tag']))];
 
     const handleSubmit = (e)=>{
         dispatch(updateSave({save:{...savedRecord, notes, tag}}))
@@ -32,19 +36,25 @@ export default function SavedForm() {
             <form id='saved-form'>
                 <h3> {savedRecord.recipe.name} </h3>
                 <div id='saved-notes'>
-                    <label for='notes'>Notes</label>
+                    <label htmlFor='notes'>Notes</label>
                     <textarea name="notes" id="notes" cols="30" rows="10" value={notes} onChange={(e)=>setNotes(e.target.value)}></textarea>
                 </div>
-                {/* TODO: Add logic for tags */}
                 <div id='saved-tags'>
-                    <label for='tag'>Tag</label>
-                    <select>
-                        <option>Default</option>
-                    </select>
+                    <label htmlFor='tags'>Tag</label>
+                    <input type="text" list="tags" onChange={(e)=>setTag(e.target.value)}/>
+                    <datalist id="tags">
+                        {tagOptions.map((tag)=>{
+                            return <option>{tag}</option>
+                        })}
+                    </datalist>
                 </div>
-                <button type="submit" onClick={handleSubmit}>Update</button>
-                <button onClick={handleDelete}>Remove from Saved Recipes</button>
+                <button type="submit" onClick={handleSubmit}>Save</button>
+                <button onClick={handleDelete}>Delete</button>
             </form>
+            <div id='saved-summary'>
+                <Ingredients recipe={savedRecord.recipe}/>
+                <Preparation recipe={savedRecord.recipe}/>
+            </div>
         </div>
     )
 }

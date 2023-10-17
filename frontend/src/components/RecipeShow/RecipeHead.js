@@ -4,6 +4,7 @@ import { createSave, deleteSave } from "../../store/saved";
 import { fetchUser, getUser } from "../../store/session";
 import { getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
+import { openModal } from "../../store/modal";
 
 export default function RecipeHead () {
     const { recipeId } = useParams();

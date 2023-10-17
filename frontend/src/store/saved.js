@@ -1,4 +1,5 @@
 import csrfFetch from "./csrf";
+import { openModal } from "./modal";
 import { fetchUser } from "./session";
 
 
@@ -22,7 +23,12 @@ export const createSave = save => async(dispatch) => {
         body: JSON.stringify(save)
     });
     if (response.ok) {
-        dispatch(fetchUser())
+        const savedRecord = await response.json()
+        console.log(savedRecord)
+        dispatch(fetchUser()).then(()=>{
+            dispatch(openModal("saved", savedRecord.id))
+        })
+        return savedRecord
     } else {
         return response.json();
     }
