@@ -66,10 +66,10 @@ recipes.each do |row|
   t.save!
 end
 
-Recipe.all.each.with_index do |recipe, id|
+Recipe.all.each do |recipe|
   recipe.photo.attach(
-    io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{(id+1).to_s}.webp"),
-    filename: "recipe_#{(id+1).to_s}.webp"
+    io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{(recipe.id).to_s}.webp"),
+    filename: "recipe_#{(recipe.id).to_s}.webp"
   )
 end
 
