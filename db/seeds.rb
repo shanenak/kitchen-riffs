@@ -20,15 +20,19 @@ end
 puts "Destroying tables..."
 # Unnecessary if using `rails db:seed:replant`
 Ingredient.destroy_all
+Rating.destroy_all
+SavedRecipe.destroy_all
 Recipe.destroy_all
 User.destroy_all
 
-puts "Resetting primary keys..."
-# For easy testing, so that after seeding, the first `User` has `id` of 1
-ApplicationRecord.connection.reset_pk_sequence!('users')
-ApplicationRecord.connection.reset_pk_sequence!('recipes')
-ApplicationRecord.connection.reset_pk_sequence!('ingredients')
-
+# puts "Resetting primary keys..."
+# # For easy testing, so that after seeding, the first `User` has `id` of 1
+# ActiveRecord::Base.connection.reset_pk_sequence!('users')
+# ActiveRecord::Base.connection.reset_pk_sequence!('recipes')
+# ActiveRecord::Base.connection.reset_pk_sequence!('ingredients')
+# ActiveRecord::Base.connection.reset_pk_sequence!('ratings')
+# ActiveRecord::Base.connection.reset_pk_sequence!('saved_recipes')
+# puts "Reset all primary keys"
 
 # Read from CSVs (reference: https://warrenniu.medium.com/how-to-seed-a-rails-database-with-a-csv-file-6ac24e2bbd90)
 puts "Creating users..."
@@ -62,10 +66,10 @@ recipes.each do |row|
   t.save!
 end
 
-Recipe.all.each_with_index do |recipe, id|
+Recipe.all.each.with_index do |recipe, id|
   recipe.photo.attach(
-    io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{id}.webp"),
-    filename: "recipe_#{id}.webp"
+    io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{(id+1).to_s}.webp"),
+    filename: "recipe_#{(id+1).to_s}.webp"
   )
 end
 
@@ -97,6 +101,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!('users')
 ActiveRecord::Base.connection.reset_pk_sequence!('recipes')
 ActiveRecord::Base.connection.reset_pk_sequence!('ingredients')
 ActiveRecord::Base.connection.reset_pk_sequence!('ratings')
+ActiveRecord::Base.connection.reset_pk_sequence!('saved_recipes')
 
 puts "Creating demo user to sign in..."
 # Create one user with an easy to remember username, email, and password:
