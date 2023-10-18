@@ -12,9 +12,9 @@ const RecipeIndex = () => {
     const dispatch = useDispatch();
     
     // UNCOMMENT WHEN READY TO SEE RECIPES
-    useEffect(()=> {
-        dispatch(fetchRecipes());
-    }, [dispatch]);
+    // useEffect(()=> {
+    //     dispatch(fetchRecipes());
+    // }, [dispatch]);
 
     const recipes = useSelector(getRecipes);
 
@@ -22,18 +22,11 @@ const RecipeIndex = () => {
     const searchParams = new URLSearchParams(search);
 
     const filtered_recipes = recipes.filter(recipe => {
-        // const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
-        //     return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
-        // })
-        // const searchText = searchParams.get('search')
-        // const searchIngredientCheck = searchText ? recipe['ingredients'].some(ingredient=>ingredient.name.includes(searchText.toLowerCase())) : true
-        // const searchNameCheck = searchText ? recipe.name.toLowerCase().includes(searchText.toLowerCase()) : true
-        // return categoryCheck && (searchIngredientCheck || searchNameCheck)
         const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })
-
-        const ingredientOrNameCheck = searchParams.getAll('search').every(searchText=>{
+        // return early if first check returns false
+        const ingredientOrNameCheck = !categoryCheck || searchParams.getAll('search').every(searchText=>{
             const ingredCheck = recipe['ingredients'].some(ingredient=>{
                 return ingredient.name.toLowerCase().includes(searchText.toLowerCase())
             })
@@ -65,7 +58,7 @@ const RecipeIndex = () => {
             </div>
             <FilterIndex filtered_recipes={filtered_recipes}/>
             {/* UNCOMMENT when you want recipes to load! */}
-            {recipeIndex}
+            {/* {recipeIndex} */}
         </div>
     )
 }
