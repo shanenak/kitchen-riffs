@@ -22,13 +22,25 @@ const RecipeIndex = () => {
     const searchParams = new URLSearchParams(search);
 
     const filtered_recipes = recipes.filter(recipe => {
+        // const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
+        //     return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
+        // })
+        // const searchText = searchParams.get('search')
+        // const searchIngredientCheck = searchText ? recipe['ingredients'].some(ingredient=>ingredient.name.includes(searchText.toLowerCase())) : true
+        // const searchNameCheck = searchText ? recipe.name.toLowerCase().includes(searchText.toLowerCase()) : true
+        // return categoryCheck && (searchIngredientCheck || searchNameCheck)
         const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })
-        const searchText = searchParams.get('search')
-        const searchIngredientCheck = searchText ? recipe['ingredients'].some(ingredient=>ingredient.name.includes(searchText.toLowerCase())) : true
-        const searchNameCheck = searchText ? recipe.name.toLowerCase().includes(searchText.toLowerCase()) : true
-        return categoryCheck && (searchIngredientCheck || searchNameCheck)
+
+        const ingredientOrNameCheck = searchParams.getAll('search').every(searchText=>{
+            const ingredCheck = recipe['ingredients'].some(ingredient=>{
+                return ingredient.name.toLowerCase().includes(searchText.toLowerCase())
+            })
+            const nameCheck = recipe['name'].toLowerCase().includes(searchText.toLowerCase())
+            return (ingredCheck || nameCheck)
+        })
+        return categoryCheck && ingredientOrNameCheck
     })
 
     let recipeIndex;

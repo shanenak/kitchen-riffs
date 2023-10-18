@@ -39,9 +39,10 @@ export default function FilterIndex({filtered_recipes}) {
         if (e.target.name==="reset") {
             searchParams.delete(e.target.name)
         } else if (e.target.name==="search") {
-            searchParams.set(e.target.name, searchText)
+            searchParams.append(e.target.name, searchText)
+            setSearchText("")
         } else {
-            searchParams.set(e.target.name, e.target.value)
+            searchParams.append(e.target.name, e.target.value)
         }
         history.replace({ search: searchParams.toString() });
     }      
@@ -49,8 +50,14 @@ export default function FilterIndex({filtered_recipes}) {
     const deleteText = (e) => {
         e.preventDefault();
         setSearchText("")
+    }
+
+    const deleteSelection = (e) => {
+        console.log(e.currentTarget.getAttribute('name'))
+        const prev = searchParams.getAll('search').filter((param)=>param!==e.currentTarget.getAttribute('name'))
         searchParams.delete("search")
-        history.replace({ search: searchParams.toString() });
+        prev.forEach((param)=>searchParams.append('search', param))
+        history.replace({ search: searchParams.toString() })
     }
 
     return (
@@ -89,6 +96,18 @@ export default function FilterIndex({filtered_recipes}) {
                         <button id='hidden-submit' type='submit' className="hide"></button>
                     </form>
                 </div>
+            </div>
+            <div id='filter-selections'>
+                {searchParams.getAll('search').map((text)=>{
+                    return (
+                        <div className='ingred-selection-container'>
+                            <p className='ingred-selection-box'>{text}</p>
+                            <div className='delete-icon' onClick={deleteSelection} name={text}>
+                                <i className="fa-solid fa-x"></i>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

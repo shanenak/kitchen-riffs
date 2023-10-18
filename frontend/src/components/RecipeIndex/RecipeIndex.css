@@ -99,10 +99,6 @@
     width: 100%;
 }
 
-#search-icon{
-    position: relative;
-}
-
 #search-icon {
     position: absolute;
     right: 15px;
@@ -112,6 +108,35 @@
 
 #search-icon i {
     width: 10px;
+    height: auto;
+}
+
+#filter-selections {
+    display: flex;
+    justify-content: end;
+}
+
+.ingred-selection-container {
+    position: relative;
+    display: inline-block;
+    padding: 8px 24px 8px 8px;
+    margin: 5px 0px 5px 5px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+
+
+.delete-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.delete-icon i {
+    width: 8px;
     height: auto;
 }
 
