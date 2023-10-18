@@ -37,7 +37,7 @@ export default function RecipeItem ({recipe}) {
     }else {<></>};
     const imageIcons = (<div id='photo-icons'>
                             {tagInclude}
-                            {saved ? <i class="fa-solid fa-circle-xmark" onClick={deleteNotes}></i> : <></>}
+                            {saved ? <i className="fa-solid fa-circle-xmark" onClick={deleteNotes}></i> : <></>}
                         </div>)// fa-solid fa-x
     const routeRecipeShow = () => {
        return history.push(`/recipes/${recipe.id}`)
@@ -52,7 +52,7 @@ export default function RecipeItem ({recipe}) {
             <div id='recipe-item'>
                 <div id='recipe-item-title'>
                     <p onClick={routeRecipeShow}>{recipe.name}</p>
-                    {saved ? <i class="fas fa-edit" onClick={editNotes}></i> : <></>}
+                    {saved ? <i className="fas fa-edit" onClick={editNotes}></i> : <></>}
                 </div>
                 <div id='recipe-notes' onClick={editNotes}>
                     {saved ? <p>{savedRecord.notes}</p> : <></>}

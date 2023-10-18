@@ -9,6 +9,7 @@ import csrfFetch from './store/csrf';
 import * as sessionActions from './store/session';
 import * as recipeActions from './store/recipe';
 import * as savedActions from './store/saved';
+import * as ideaActions from './store/idea'
 
 const store = configureStore();
 
@@ -18,6 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
   window.sessionActions = sessionActions;
   window.recipeActions = recipeActions;
   window.savedActions = savedActions;
+  window.ideaActions = ideaActions;
 }
 
 function Root() {

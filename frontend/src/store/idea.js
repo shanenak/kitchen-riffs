@@ -27,8 +27,14 @@ export const getIdeas = state => {
 
 // thunks
 
-export const fetchIdeas = (prefix) => async(dispatch) => {
-    const url = 'https://tasty.p.rapidapi.com/recipes/auto-complete?prefix=chicken%20soup';
+export const fetchIdeas = prefix => async(dispatch) => {
+    const url = 'https://tasty.p.rapidapi.com/recipes/auto-complete';
+
+    const params = new URLSearchParams();
+    params.set("prefix", prefix)
+
+    const urlWithParams = url + '?' + params.toString();
+
     const options = {
         method: 'GET',
         headers: {
@@ -36,10 +42,23 @@ export const fetchIdeas = (prefix) => async(dispatch) => {
             'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
         }
     };
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-    } catch (error) {
-        console.error(error)
+    const response = await fetch(urlWithParams, options);
+    if (response.ok) {
+        const ideas = await response.json();
+        console.log(ideas)
+        dispatch(receiveIdeas(ideas))
+    } else {
+        console.log(response.json())
     }
 }
+
+const ideasReducer = (state={}, action) => {
+    switch (action.type) {
+        case RECEIVE_IDEAS:
+            return {...action.ideas};
+        default:
+            return state;
+    }
+}
+
+export default ideasReducer

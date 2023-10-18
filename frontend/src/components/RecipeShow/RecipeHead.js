@@ -9,8 +9,6 @@ import { openModal } from "../../store/modal";
 export default function RecipeHead () {
     const { recipeId } = useParams();
     const recipe = useSelector(getRecipe(recipeId))
-    const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
-    const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
 
     const dispatch = useDispatch();
 
@@ -40,8 +38,12 @@ export default function RecipeHead () {
         dispatch(deleteSave(saveId))
     }
 
-    return (
-        <div id='show-description'>
+    let pageRender = <></>;
+    if (recipe?.ratings) {
+        const sumRating = recipe.ratings.reduce((curr, acc)=> curr+acc.rating, 0);
+        const avgRating = (sumRating/recipe.ratings.length).toFixed(1);
+        pageRender = (
+             <div id='show-description'>
             <div id='recipe-meal'>
                 <NavLink to={`/?meal=${recipe.meal}`}>{recipe.meal}</NavLink>
             </div>
@@ -83,6 +85,10 @@ export default function RecipeHead () {
                 <h3 id='num-rating'>({recipe.ratings.length})</h3>
             </div>
         </div>
+        )
+    }
 
+    return (
+       pageRender
     )
 }

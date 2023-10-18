@@ -83,7 +83,7 @@ export default function FilterIndex({filtered_recipes}) {
                         <div className='input-container'>
                             <input className='input-box' type='text' onChange={(e)=>setSearchText(e.target.value)} placeholder='Search' value={searchText}></input>
                             <div id='search-icon'>
-                                {searchText ? <i onClick={deleteText} class="fa-solid fa-x"></i> : <i class="fas fa-search"></i>}
+                                {searchText ? <i onClick={deleteText} className="fa-solid fa-x"></i> : <i className="fas fa-search"></i>}
                             </div>
                         </div>
                         <button id='hidden-submit' type='submit' className="hide"></button>

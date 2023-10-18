@@ -11,6 +11,7 @@ const RecipeIndex = () => {
 
     const dispatch = useDispatch();
     
+    // UNCOMMENT WHEN READY TO SEE RECIPES
     useEffect(()=> {
         dispatch(fetchRecipes());
     }, [dispatch]);
@@ -51,6 +52,7 @@ const RecipeIndex = () => {
                 <h1>Recipes</h1>
             </div>
             <FilterIndex filtered_recipes={filtered_recipes}/>
+            {/* UNCOMMENT when you want recipes to load! */}
             {recipeIndex}
         </div>
     )
