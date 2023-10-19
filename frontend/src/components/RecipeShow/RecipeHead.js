@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { createSave, deleteSave } from "../../store/saved";
 import { fetchUser, getUser } from "../../store/session";
-import { getRecipe } from "../../store/recipe";
+import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
 import { openModal } from "../../store/modal";
 
@@ -14,6 +14,7 @@ export default function RecipeHead () {
 
     useEffect(()=>{
         dispatch(fetchUser())
+        dispatch(fetchRecipe(recipeId));
     }, [dispatch])
     
     const sessionUser = useSelector(getUser)

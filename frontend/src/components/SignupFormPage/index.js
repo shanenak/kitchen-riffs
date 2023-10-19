@@ -41,7 +41,7 @@ export default function SignupFormPage () {
             <div className='credentials'>
                 <h1>SIGN UP</h1>
                 <form onSubmit={handleSubmit}>
-                    <ul>
+                    <ul className='error-list'>
                         {errors.map(error=><li key={error}>{error}</li>)}
                     </ul>
                     <div className='form-card'>

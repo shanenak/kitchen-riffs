@@ -54,7 +54,7 @@ export default function LoginFormPage () {
             <div className='credentials'>
                 <h1>LOG IN</h1>
                 <form onSubmit={handleSubmit}>
-                    <ul className='errors'>
+                    <ul className='error-list'>
                         {errors.map(error=><li key={error}>{error}</li>)}
                     </ul>
                     <div className='form-card'>

@@ -47,6 +47,8 @@
     display: block;
     margin: 0.5rem 0px 0.75rem;
     width: 100%;
+    text-transform: none;
+    box-sizing: border-box;
 }
 
 .form-card-button {
@@ -70,4 +72,11 @@
     width: 50%;
     margin-top: 0.5rem;
     border-radius: 5px;
+}
+
+.error-list {
+    font-family: 'Urbanist', sans-serif;
+    color: rgb(139, 0, 0);
+    text-align: center;
+    font-weight: 600;
 }
