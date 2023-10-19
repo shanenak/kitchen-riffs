@@ -27,11 +27,12 @@ export const getIdeas = state => {
 
 // thunks
 
+// additional recipes provided by https://rapidapi.com/apidojo/api/tasty
 export const fetchIdeas = ingredients => async(dispatch) => {
     const url = 'https://tasty.p.rapidapi.com/recipes/list';
 
     const params = new URLSearchParams();
-    params.set("size", 6);
+    params.set("size", 3);
     params.set("q", ingredients.join(', '));
     const urlWithParams = url + '?' + params.toString();
     const options = {

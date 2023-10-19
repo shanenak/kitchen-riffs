@@ -1,7 +1,6 @@
 #idea-page {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
     text-align: center;
     margin-top: 20px;
 }
@@ -9,9 +8,67 @@
 #idea-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 400px;
+    /* grid-auto-rows: 400px; */
     grid-gap: 20px;
     width: inherit;
     text-align: center;
     margin-top: 40px;
 } 
+
+#idea-intro {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* #idea-list div {
+    height: 100%;
+} */
+
+#idea-item {
+    height: 25%;
+    width: inherit;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+#idea-item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#idea-item-title p {
+    font-family: inherit;
+    border: 0px none rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-right: 10px;
+}
+
+#idea-notes {
+    font-size: 16px;
+    font-family: 'Radley', serif;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgb(102, 102, 102);
+}
+
+#idea-image {
+    height: 300px;
+    width: 100%;
+}
+
+#idea-image img {
+    height: 100%;
+    width: inherit;
+    object-fit: cover;
+}
+
+#direction {
+    text-align: left;
+}
