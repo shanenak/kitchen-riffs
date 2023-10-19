@@ -1,0 +1,74 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 8rem;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#footer-kitchen-riffs {
+    font-size: 24px;
+    letter-spacing: 0.08rem;
+    margin: 0px 0px 15px 0px;
+}
+
+#footer-description {
+    max-width: 40%;
+}
+
+#footer-description-text {
+    letter-spacing: 0.02em;
+    line-height: 20px;
+}
+
+.footer h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#footer-links a {
+    color: white;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 12px;
+}
+
+#footer-links a:hover {
+    color: rgb(255, 218, 8);
+    text-decoration: underline;
+}
+
+
+#footer-links li {
+    margin-bottom: 5px;
+}
+
+#footer-contact {
+    letter-spacing: 0.03em;
+    max-width: 20%;
+    text-align: center;
+}
+
+#footer-contact-links {
+    display: flex;
+    justify-content: center;
+
+}
+
+#footer-contact-links i {
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+}
+

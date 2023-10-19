@@ -6,12 +6,14 @@ import RecipeIndex from "./components/RecipeIndex";
 import RecipeShow from "./components/RecipeShow";
 import SavedIndex from "./components/SavedIndex";
 import Modal from "./components/Modal/Modal";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Navigation />
-      <Modal />
+    <div id='page-container'>
+      <div id='content-wrap'>
+        <Navigation />
+        <Modal />
         <Switch>
           <Route path="/login">
             <LoginFormPage />
@@ -29,7 +31,9 @@ function App() {
             <RecipeIndex />
           </Route>
         </Switch>
-    </>
+      </div>
+      <Footer />
+    </div>
   );
 }
 

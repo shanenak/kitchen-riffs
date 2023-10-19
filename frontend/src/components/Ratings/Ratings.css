@@ -29,6 +29,7 @@ form {
     border: 1px solid gray;
     font-family: 'Urbanist', sans-serif;
     letter-spacing: 0.03em;
+    text-transform: none;
 }
 
 #submit-rating {
