@@ -1,4 +1,4 @@
-saved_recipes = @user.saved_recipes.includes(:recipe, :ingredients)
+saved_recipes = @user.saved_recipes.includes(:recipe)
 
 json.user do
   json.extract! @user, :id, :email, :name,:created_at, :updated_at

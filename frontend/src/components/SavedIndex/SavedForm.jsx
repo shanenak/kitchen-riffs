@@ -56,5 +56,5 @@ export default function SavedForm() {
                 <Preparation recipe={savedRecord.recipe}/>
             </div>
         </div>
-    )
-}
+        )
+    }
