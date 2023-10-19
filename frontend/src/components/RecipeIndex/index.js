@@ -6,26 +6,21 @@ import './RecipeIndex.css'
 import RecipeItem from "./RecipeItem";
 import { useLocation } from "react-router-dom/cjs/react-router-dom";
 import FilterIndex from "./FilterIndex";
+import Idea from "../Idea";
 
 const RecipeIndex = () => {
 
     const dispatch = useDispatch();
-    
-    // UNCOMMENT WHEN READY TO SEE RECIPES
-    // useEffect(()=> {
-    //     dispatch(fetchRecipes());
-    // }, [dispatch]);
-
-    const recipes = useSelector(getRecipes);
-
     const { search } = useLocation();
     const searchParams = new URLSearchParams(search);
-
-    const filtered_recipes = recipes.filter(recipe => {
+    
+    const recipes = useSelector(getRecipes);
+    
+    const filteredRecipes = recipes.filter(recipe => {
         const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })
-        // return early if first check returns false
+
         const ingredientOrNameCheck = !categoryCheck || searchParams.getAll('search').every(searchText=>{
             const ingredCheck = recipe['ingredients'].some(ingredient=>{
                 return ingredient.name.toLowerCase().includes(searchText.toLowerCase())
@@ -36,29 +31,32 @@ const RecipeIndex = () => {
         return categoryCheck && ingredientOrNameCheck
     })
 
+    useEffect(()=> {
+        dispatch(fetchRecipes());
+    }, [dispatch]);
+    
     let recipeIndex;
-    if (filtered_recipes) {
+    if (filteredRecipes.length) {
         recipeIndex = (
         <div id='recipe-list'>
-            { Object.values(filtered_recipes).map(recipe => {
+            { Object.values(filteredRecipes).map(recipe => {
                 return <RecipeItem recipe={recipe}/>
             })}
         </div>)
+    } else if (searchParams.getAll('search').length) {
+        recipeIndex = <Idea ingredients={searchParams.getAll('search')}/>
     } else {
-        recipeIndex = (<div>
-            <h1>Loading</h1>
-        </div>
-        )
+        recipeIndex = <h1>No results</h1>
     }
+    
 
     return (
         <div id='index'>
             <div className='page-title'>
                 <h1>Recipes</h1>
             </div>
-            <FilterIndex filtered_recipes={filtered_recipes}/>
-            {/* UNCOMMENT when you want recipes to load! */}
-            {/* {recipeIndex} */}
+            <FilterIndex filteredRecipes={filteredRecipes}/>
+            {recipeIndex}
         </div>
     )
 }

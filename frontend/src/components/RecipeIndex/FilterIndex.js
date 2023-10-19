@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom/cjs/react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function FilterIndex({filtered_recipes}) {
+export default function FilterIndex({filteredRecipes}) {
     const history = useHistory();
     const { search } = useLocation();
     const searchParams = new URLSearchParams(search);
@@ -29,11 +29,6 @@ export default function FilterIndex({filtered_recipes}) {
         }
     }
 
-    const options = {};
-    ['cuisine', 'meal', 'dish'].forEach((category)=>{
-        options[category] = [...new Set(filtered_recipes.map(recipe => recipe[category].toLowerCase()))];
-    })
-
     const setSearchParams = (e) => {
         e.preventDefault();
         if (e.target.name==="reset") {
@@ -53,18 +48,24 @@ export default function FilterIndex({filtered_recipes}) {
     }
 
     const deleteSelection = (e) => {
-        console.log(e.currentTarget.getAttribute('name'))
         const prev = searchParams.getAll('search').filter((param)=>param!==e.currentTarget.getAttribute('name'))
         searchParams.delete("search")
         prev.forEach((param)=>searchParams.append('search', param))
         history.replace({ search: searchParams.toString() })
     }
 
-    return (
-        <div id='filter-section'>
+    const options = {};
+    let renderPage = <></>
+    if (filteredRecipes) {
+        ['cuisine', 'meal', 'dish'].forEach((category)=>{
+            options[category] = [...new Set(filteredRecipes.map(recipe => recipe[category].toLowerCase()))];
+        })
+
+        renderPage = (
+            <div id='filter-section'>
             <div id='filter-title'>
                 <h3>Filter Results</h3>
-                <p>{filtered_recipes.length} items</p>
+                <p>{filteredRecipes.length} items</p>
             </div>
             <div id='filter-body'>
                 <div id='filter-dropdowns'>
@@ -110,5 +111,12 @@ export default function FilterIndex({filtered_recipes}) {
                 })}
             </div>
         </div>
+        )
+
+    }
+
+
+    return (
+        renderPage
     )
 }

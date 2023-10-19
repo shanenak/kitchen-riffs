@@ -27,26 +27,24 @@ export const getIdeas = state => {
 
 // thunks
 
-export const fetchIdeas = prefix => async(dispatch) => {
-    const url = 'https://tasty.p.rapidapi.com/recipes/auto-complete';
+export const fetchIdeas = ingredients => async(dispatch) => {
+    const url = 'https://tasty.p.rapidapi.com/recipes/list';
 
     const params = new URLSearchParams();
-    params.set("prefix", prefix)
-
+    params.set("size", 6);
+    params.set("q", ingredients.join(', '));
     const urlWithParams = url + '?' + params.toString();
-
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '2ef454ecc2msh631bcc09204bdfep1b4530jsnb8d5d2cb302d',
+            'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
             'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
         }
     };
     const response = await fetch(urlWithParams, options);
     if (response.ok) {
         const ideas = await response.json();
-        console.log(ideas)
-        dispatch(receiveIdeas(ideas))
+        dispatch(receiveIdeas(ideas['results']))
     } else {
         console.log(response.json())
     }

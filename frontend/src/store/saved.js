@@ -24,7 +24,6 @@ export const createSave = save => async(dispatch) => {
     });
     if (response.ok) {
         const savedRecord = await response.json()
-        console.log(savedRecord)
         dispatch(fetchUser()).then(()=>{
             dispatch(openModal("saved", savedRecord.id))
         })
