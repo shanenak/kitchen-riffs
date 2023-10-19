@@ -4,8 +4,9 @@ import { fetchUser, getSavedRecipes, getUser } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom";
 import RecipeItem from "../RecipeIndex/RecipeItem";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
+import './SavedIndex.css'
 const SavedIndex = ()=> {
     const dispatch = useDispatch();
     useEffect(()=>{
@@ -21,8 +22,6 @@ const SavedIndex = ()=> {
       })
         
     if (!sessionUser) return <Redirect to="/" />;
-    // TODO: style if no recipes have been saved
-    if (!recipes) return <h1>No recipes have been saved yet.</h1>
 
     const searchParams = new URLSearchParams(search);
 
@@ -47,12 +46,19 @@ const SavedIndex = ()=> {
         )
     }
 
+    const noRecipeRender = (
+        <div id='no-saved'>
+            <h1 id='no-saved-text'>No recipes have been saved</h1>
+            <NavLink id='no-saved-nav' to='/'>Back to Recipes</NavLink>
+        </div>
+    )
+
     return (
         <div id='index'>
             <div className='page-title'>
                 <h1>Saved Recipes</h1>
             </div>
-            {sessionUser.savedRecipes ? <FilterIndex filtered_recipes={filtered_recipes}/> : <h1>No Recipes</h1>}
+            {sessionUser.savedRecipes ? <FilterIndex filtered_recipes={filtered_recipes}/> : noRecipeRender}
             {recipeIndex}
         </div>
     )

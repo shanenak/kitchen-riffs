@@ -9,7 +9,7 @@ export default function ProfileButton ({user}) {
 
     const dispatch = useDispatch();
     const handleLogout = async (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         dispatch(logout())
     }
 
@@ -18,34 +18,43 @@ export default function ProfileButton ({user}) {
         setShowMenu(true);
     }
 
-    useEffect(()=>{
-        if (!showMenu) return;
+    // useEffect(()=>{
+    //     if (!showMenu) return;
 
-        const closeMenu = () => {
-            setShowMenu(false);
-        }
+    //     const closeMenu = () => {
+    //         setShowMenu(false);
+    //     }
         
-        document.addEventListener('click', closeMenu);
+    //     document.addEventListener('click', closeMenu);
 
-        return ()=> document.removeEventListener('click', closeMenu);
-    }, [showMenu])
+    //     return ()=> document.removeEventListener('click', closeMenu);
+    // }, [showMenu])
 
     return (
-        <div className='icon' onClick={openMenu}>
-            <i className="fa-solid fa-user"></i>
-            <div className={`dropdown ${showMenu ? 'show' : 'hide'}`} id='dropdown-nav' visibility="hidden">
-                <ul>
-                    <li>
-                        <p>Logged in as {user.name}</p>
-                    </li>
-                    <li>
-                        <NavLink to='/saved'>SAVED RECIPES</NavLink>
-                    </li>
-                    <li >
-                        <button id='logout-nav' onClick={handleLogout}>Log Out</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <>
+                <li>
+                    <NavLink to='/saved'>SAVED RECIPES</NavLink>
+                </li>
+                <li>
+                    <a onClick={handleLogout}>LOG OUT</a>
+                </li>
+            </>
+
+        // <div className='icon' onClick={openMenu}>
+        //     <i className="fa-solid fa-user"></i>
+        //     <div className={`dropdown ${showMenu ? 'show' : 'hide'}`} id='dropdown-nav' visibility="hidden">
+        //         <ul>
+        //             <li>
+        //                 <p>Logged in as {user.name}</p>
+        //             </li>
+        //             <li>
+        //                 <NavLink to='/saved'>SAVED RECIPES</NavLink>
+        //             </li>
+        //             <li >
+        //                 <button id='logout-nav' onClick={handleLogout}>Log Out</button>
+        //             </li>
+        //         </ul>
+        //     </div>
+        // </div>
     )
 }

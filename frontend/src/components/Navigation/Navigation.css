@@ -3,6 +3,7 @@ ul {
 }
 a {
     text-decoration: none;
+    color: black;
     /* background-color: #000;
     border-width: 3px;
     border-style: solid;
@@ -16,11 +17,6 @@ a {
     padding: 2px; */
 }
 
-#nav-links a:hover {
-    text-decoration: underline;
-    color:rgb(255, 218, 8);
-    cursor: pointer;
-}
 
 #nav {
     background-color: black;
@@ -61,17 +57,23 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-family: 'Urbanist', sans-serif;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
     padding: 5px;
     z-index: 10;
 }
 
 #nav-links a {
     margin-right: 20px;
+    color: rgb(255, 218, 8);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    font-family: 'Urbanist', sans-serif;
+}
+
+#nav-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
 }
 
 #nav-links .show {
@@ -82,7 +84,7 @@ a {
     display: none;
 }
 
-#nav-links .dropdown {
+/* #nav-links .dropdown {
     min-width: 2.5rem;
     position: absolute;
     right: 0px;
@@ -91,7 +93,6 @@ a {
 
 #dropdown-nav li {
     text-align: left;
-    /* padding: 15px; */
     max-width: 30vw;
     display: flex;
     justify-content: center;
@@ -125,4 +126,4 @@ a {
     text-decoration: underline;
     color: rgb(255, 218, 8);
     cursor: pointer;
-}
+} */

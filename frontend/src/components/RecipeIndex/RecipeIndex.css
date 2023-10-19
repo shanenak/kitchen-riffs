@@ -30,13 +30,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin: 14px;
+    letter-spacing: 0.03em;
 }
 
 #filter-title p {
-    font-weight:400;
+    font-weight:300;
 }
 
 #filter-body {
@@ -48,12 +49,12 @@
     overflow:hidden;
 }
 
-.filter-inputs select, button, input {
+.filter-inputs select, button, input, option {
     /* margin: 16px; */
     padding: 12px;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.07em;
     font-size: 12px;
 }
 
@@ -61,10 +62,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 35pc;
+    max-width: 60%;
     box-sizing: inherit;
     width: 100%;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 
