@@ -23,7 +23,7 @@ export default function Ratings ({recipe, sessionUser}) {
             <h1 id='reviews-title'>Reviews ({recipe.ratings.length})</h1>
             {
                 ratingsWithComments.map((rating)=> {
-                    return <ViewRating rating={rating}/>
+                    return <ViewRating rating={rating} key={rating.id}/>
                 })
             }
         </div>

@@ -71,7 +71,7 @@ export default function FilterIndex({filteredRecipes}) {
                 <div id='filter-dropdowns'>
                     {Object.keys(filters).map(category=> {
                         return (
-                            <label className="filter-inputs">
+                            <label className="filter-inputs" key={category}>
                                 <select name={category} onChange={setSearchParams} id={`${category}-select`} defaultValue={category}>
                                     <option name={'reset'} value={"reset"}>{category}</option>
                                     {
@@ -101,7 +101,7 @@ export default function FilterIndex({filteredRecipes}) {
             <div id='filter-selections'>
                 {searchParams.getAll('search').map((text)=>{
                     return (
-                        <div className='ingred-selection-container'>
+                        <div className='ingred-selection-container' key={text}>
                             <p className='ingred-selection-box'>{text}</p>
                             <div className='delete-icon' onClick={deleteSelection} name={text}>
                                 <i className="fa-solid fa-x"></i>

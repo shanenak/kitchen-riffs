@@ -74,9 +74,9 @@ export default function RecipeHead () {
                     {
                         [1, 2, 3, 4, 5].map((i)=> {
                             if (i <= avgRating) {
-                                return <p className="fa fa-star"></p>
+                                return <p className="fa fa-star" key={i}></p>
                             } else {
-                                return <p className="fa-regular fa-star"></p> 
+                                return <p className="fa-regular fa-star" key={i}></p> 
                             }
                             
                         })
