@@ -11,7 +11,7 @@ export default function FilterIndex({filteredRecipes}) {
     const filters = {};
 
     ['cuisine', 'meal', 'dish'].forEach((category)=>{
-        filters[category] = searchParams.has("cuisine") ? searchParams.get("cuisine").toLowerCase() : null 
+        filters[category] = searchParams.has(category) ? searchParams.get(category).toLowerCase() : null 
     });
     
     const resetSelect = (name) => {
@@ -72,7 +72,7 @@ export default function FilterIndex({filteredRecipes}) {
                     {Object.keys(filters).map(category=> {
                         return (
                             <label className="filter-inputs" key={category}>
-                                <select name={category} onChange={setSearchParams} id={`${category}-select`} defaultValue={category}>
+                                <select name={category} onChange={setSearchParams} id={`${category}-select`} defaultValue={filters[category] ? filters[category] : category}>
                                     <option name={'reset'} value={"reset"}>{category}</option>
                                     {
                                         options[category].map(categoryOption=>{
