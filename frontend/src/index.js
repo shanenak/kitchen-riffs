@@ -10,6 +10,7 @@ import * as sessionActions from './store/session';
 import * as recipeActions from './store/recipe';
 import * as savedActions from './store/saved';
 import * as ideaActions from './store/idea'
+import ScrollToTop from './components/ScrollToTop/scrollToTop';
 
 const store = configureStore();
 
@@ -26,6 +27,7 @@ function Root() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        <ScrollToTop />
         <App />
       </BrowserRouter>
     </Provider>
