@@ -111,27 +111,18 @@ form {
 
 #rating-footer h3 {
     vertical-align: middle;
-    margin-right: 10px
+    margin-right: 10px;
+    text-align: center;
+    height: 100%;
+    line-height: normal;
 }
 
-#edit-button {
+#delete-review {
     font-size: 14px;
-    padding: 7px;
+    padding: 5px;
     margin: 0px 0px 0px 10px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    border: 0px none white;
-    background-color: transparent;
     cursor: pointer;
 }
-
-#edit-button:hover {
-    font-weight: 600;
-}
-
-/* .fa-star {
-    color: rgb(255, 218, 8);
-} */
 
 /* star input inspired from https: //codepen.io/neilpomerleau/pen/wzxzQM */
 .rating {

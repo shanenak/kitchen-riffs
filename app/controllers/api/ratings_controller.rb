@@ -24,9 +24,10 @@ class Api::RatingsController < ApplicationController
     end
 
     def destroy
-        id = params[:id]
-        Rating.destroy(id)
-        render json: { id: id.to_i }
+        @rating = Rating.find(params[:id])
+        @recipe = @rating.recipe
+        @rating.destroy
+        render 'api/recipes/show'
     end
 
     private

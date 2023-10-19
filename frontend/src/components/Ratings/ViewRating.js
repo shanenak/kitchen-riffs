@@ -1,8 +1,17 @@
-import { useSelector } from "react-redux"
-
+import { useDispatch, useSelector } from "react-redux"
+import { deleteRating } from "../../store/rating";
 
 export default function ViewRating ({rating}) {
     const sessionUser = useSelector(state => state.session.user)
+    const dispatch = useDispatch();
+
+    const handleDelete = (e) => {
+        dispatch(deleteRating(rating))
+        document.getElementById('confirm-submission').className="hide";
+        document.getElementById('comment-input').className=""
+        document.getElementById('submit-rating-button').className=""
+    }
+
     return (
             <div id='rating-wrapper' key={rating.id}>
                 <div id='comment'>
@@ -22,9 +31,7 @@ export default function ViewRating ({rating}) {
                                 })
                             }
                         </div>
-                    </div>
-                    <div>
-                        <button id='edit-button' className={sessionUser?.id===rating.user.id ? "show" : "hide"}>Edit</button>
+                        <i id='delete-review' class={`fa-solid fa-trash ${sessionUser?.id===rating.user.id ? "show" : "hide"}`} onClick={handleDelete}></i>
                     </div>
                 </div>
             </div>

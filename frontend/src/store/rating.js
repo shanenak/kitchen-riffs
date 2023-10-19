@@ -27,3 +27,15 @@ export const updateRating = rating => async(dispatch) => {
         return response.json();
     }
 }
+
+export const deleteRating = rating => async(dispatch) => {
+    const response = await csrfFetch(`/api/ratings/${rating.id}`, {
+        method: "DELETE"
+    });
+    if (response.ok) {
+        const payload = await response.json();
+        dispatch(receiveRecipe(payload))
+    } else {
+        return response.json();
+    }
+}

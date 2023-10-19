@@ -8,8 +8,7 @@ export default function FormRating ( {recipeId}) {
     const dispatch = useDispatch();
     const [comment, setComment] = useState('');
     const [starValue, setStarValue] = useState(0);
-
-    const sessionUser = useSelector(state => state.session.user)
+    const sessionUser = useSelector(state => state.session.user);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,13 +21,13 @@ export default function FormRating ( {recipeId}) {
             }
         }
         setComment("")
-        setStarValue(0)
+        // setStarValue(1)
 
         document.getElementById('confirm-submission').className="";
         document.getElementById('comment-input').className="hide"
         document.getElementById('submit-rating-button').className="hide"
 
-        dispatch(createRating(rating))
+        dispatch(createRating(rating));
         dispatch(fetchRecipe(recipeId));
     }
     const clickStar = (e)=>{
