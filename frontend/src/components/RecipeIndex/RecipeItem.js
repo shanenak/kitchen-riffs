@@ -13,7 +13,7 @@ export default function RecipeItem ({recipe}) {
     }else {<></>};
     const imageIcons = (<div id='photo-icons'>
                             {tagInclude}
-                        </div>)// fa-solid fa-x
+                        </div>)
     const routeRecipeShow = () => {
        return history.push(`/recipes/${recipe.id}`)
     }

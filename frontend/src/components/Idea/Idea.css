@@ -9,7 +9,6 @@
 #idea-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-auto-rows: 400px; */
     grid-gap: 20px;
     width: inherit;
     text-align: center;
@@ -23,10 +22,6 @@
     letter-spacing: 0.03em;
     cursor: auto;
 }
-
-/* #idea-list div {
-    height: 100%;
-} */
 
 #idea-item {
     height: 25%;

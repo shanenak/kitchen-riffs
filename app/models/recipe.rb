@@ -36,11 +36,4 @@ class Recipe < ApplicationRecord
     class_name: :SavedRecipe,
     foreign_key: :recipe_id
 
-    # before_save :attach_image
-
-    # def attach_image
-    #     file = File.open("#{Rails.root}/public/static/images/recipe_#{self.id}.webp")
-    #     self.photo.attach(io: file, filename: "recipe_#{self.id}.webp")
-    # end
-
 end
