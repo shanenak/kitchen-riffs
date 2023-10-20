@@ -1,14 +1,14 @@
 class Api::SavedRecipesController < ApplicationController
 
     def index
-        @saved = SavedRecipe.all 
+        @user = User.find(current_user.id)
         render :index
     end
     
     def create
         @saved = SavedRecipe.new(saved_params)
         if @saved.save
-            render json: @saved
+            render :show
         else
             render @saved.errors.full_messages
         end
@@ -16,13 +16,13 @@ class Api::SavedRecipesController < ApplicationController
 
     def show
         @saved = SavedRecipe.find(params[:id])
-        render json: @saved
+        render :show
     end
 
     def update
         @saved = SavedRecipe.find(params[:id])
         if @saved.update(saved_params)
-            render json: @saved
+            render :show
         else
             render @saved.errors.full_messages
         end

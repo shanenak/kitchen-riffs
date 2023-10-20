@@ -25,7 +25,7 @@ export const getRecipe = recipeId => state => {
 }
 
 export const getRecipes = state => {
-    return state?.recipes ? Object.values(state.recipes) : [];
+    return state?.recipes ? state.recipes : [];
 }
 
 // thunks

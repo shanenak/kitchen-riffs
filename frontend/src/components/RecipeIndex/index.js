@@ -16,7 +16,7 @@ const RecipeIndex = () => {
     
     const recipes = useSelector(getRecipes);
     
-    const filteredRecipes = recipes.filter(recipe => {
+    const filteredRecipes = Object.values(recipes).filter(recipe => {
         const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
             return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
         })

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { createSave, deleteSave } from "../../store/saved";
+import { createSave, deleteSave, getSaves } from "../../store/saved";
 import { fetchUser, getUser } from "../../store/session";
 import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
@@ -8,19 +8,20 @@ import { openModal } from "../../store/modal";
 
 export default function RecipeHead () {
     const { recipeId } = useParams();
-    const recipe = useSelector(getRecipe(recipeId))
-
+    const recipe = useSelector(getRecipe(recipeId));
+    
     const dispatch = useDispatch();
-
+    
     useEffect(()=>{
         dispatch(fetchUser())
         dispatch(fetchRecipe(recipeId));
     }, [dispatch])
     
+    const savedRecipes = useSelector(getSaves);
     const sessionUser = useSelector(getUser)
 
     const signedIn = sessionUser ? true : false;
-    const saved = (signedIn && sessionUser.savedRecipes) ? Object.values(sessionUser?.savedRecipes).find(save=>save.recipe.id===recipe.id) : false;
+    const saved = (signedIn && savedRecipes) ? Object.values(savedRecipes).find(save=>save.recipe.id===recipe.id) : false;
 
     const handleSave = () => {
         const payload = {
@@ -35,8 +36,7 @@ export default function RecipeHead () {
     }
 
     const handleRemove = () => {
-        const saveId = Object.values(sessionUser.savedRecipes).find(save=>save.recipe.id===recipe.id).id
-        dispatch(deleteSave(saveId))
+        dispatch(deleteSave(saved.id))
     }
 
     let pageRender = <></>;
@@ -66,9 +66,6 @@ export default function RecipeHead () {
                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </div>) : <></> }
             </div>
-            {/* <div id='recipes-notes'>
-                {saved ? <p>Notes: {saved.notes}</p> : <></>}
-            </div> */}
             <div id='recipe-ave-rating'>
                 <h1 id='ave-rating'>{avgRating}</h1>
                 <div id='stars'>

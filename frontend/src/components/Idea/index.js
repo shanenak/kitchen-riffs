@@ -11,7 +11,6 @@ export default function Idea({ingredients}) {
 
     const ideas = useSelector(getIdeas)
 
-    console.log('inside component', ideas)
     let renderPage = <></>;
     if(ideas){
         renderPage = ideas.map((idea)=>{

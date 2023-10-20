@@ -1,50 +1,59 @@
 import { useDispatch, useSelector } from "react-redux"
 import FilterIndex from "../RecipeIndex/FilterIndex"
-import { fetchUser, getSavedRecipes, getUser } from "../../store/session";
+import { getUser } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom";
 import RecipeItem from "../RecipeIndex/RecipeItem";
 import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { fetchSaves, getSaves } from "../../store/saved";
+import { getRecipes } from "../../store/recipe";
 
 import './SavedIndex.css'
+
 const SavedIndex = ()=> {
     const dispatch = useDispatch();
+
     useEffect(()=>{
-        dispatch(fetchUser())}
+        dispatch(fetchSaves())}
         , [dispatch])
 
     const { search } = useLocation();
-    const sessionUser = useSelector(getUser);
-    const savedRecipes = useSelector(getSavedRecipes);
+    const savedRecipes = useSelector(getSaves);
+    console.log(savedRecipes)
+    const sessionUser = useSelector(getUser)
+    const allRecipes = useSelector(getRecipes)
+    console.log('allRecipes', allRecipes)
 
     const recipes = Object.values(savedRecipes).map(record=>{
         return record["recipe"]
-      })
+    })
+    console.log('recipes', recipes)
         
     if (!sessionUser) return <Redirect to="/" />;
 
     const searchParams = new URLSearchParams(search);
 
-    const filtered_recipes = recipes.filter(recipe => {
-        return ['cuisine', 'meal', 'dish'].every((category)=>{
-            return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
+    let recipeIndex, filtered_recipes;
+    if (recipes.length) {
+        filtered_recipes = recipes.filter(recipe => {
+            return ['cuisine', 'meal', 'dish'].every((category)=>{
+                return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
+            })
         })
-    })
-
-    let recipeIndex;
-    if (filtered_recipes) {
-        recipeIndex = (
-        <div id='recipe-list'>
-            { filtered_recipes.map(recipe => {
-                return <RecipeItem recipe={recipe} key={recipe.id}/>
-            })}
-        </div>)
-    } else {
-        recipeIndex = (<div>
-            <h1>Loading</h1>
-        </div>
-        )
-    }
+        if (filtered_recipes.length) {
+            recipeIndex = (
+            <div id='recipe-list'>
+                { filtered_recipes.map(save => {
+                    return <RecipeItem recipe={save} key={save.id}/>
+                })}
+            </div>)
+        } else {
+            recipeIndex = (<div>
+                <h1>Loading</h1>
+            </div>
+            )
+        }
+    }  
 
     const noRecipeRender = (
         <div id='no-saved'>
@@ -58,7 +67,7 @@ const SavedIndex = ()=> {
             <div className='page-title'>
                 <h1>Saved Recipes</h1>
             </div>
-            {sessionUser.savedRecipes ? <FilterIndex filtered_recipes={filtered_recipes}/> : noRecipeRender}
+            {savedRecipes ? <FilterIndex filtered_recipes={filtered_recipes}/> : noRecipeRender}
             {recipeIndex}
         </div>
     )

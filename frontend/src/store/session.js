@@ -18,10 +18,6 @@ export const getUser = state => {
     return state?.session ? state.session.user : null
 }
 
-export const getSavedRecipes = state => {
-    return state?.session?.user?.savedRecipes ? state.session.user.savedRecipes : [];
-}
-
 // set storage
 
 const storeCSRFToken = response => {
