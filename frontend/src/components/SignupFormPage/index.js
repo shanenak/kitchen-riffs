@@ -8,6 +8,7 @@ export default function SignupFormPage () {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
+    const [name, setName] = useState("");
 
     const [errors, setErrors] = useState([]);
     const dispatch = useDispatch();
@@ -19,7 +20,7 @@ export default function SignupFormPage () {
         e.preventDefault();
         if (password === passwordConfirm) {
         setErrors([]);
-        return dispatch(signup({ email, password }))
+        return dispatch(signup({ email, password, name }))
             .catch(async (res) => {
             let data;
             try {
@@ -50,6 +51,16 @@ export default function SignupFormPage () {
                                 type="text" 
                                 value={email} 
                                 onChange={e=> setEmail(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div className='form-card'>
+                        <label>Name
+                            <input 
+                                type="text" 
+                                value={name} 
+                                onChange={e=> setName(e.target.value)}
                                 required
                             />
                         </label>

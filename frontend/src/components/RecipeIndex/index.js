@@ -44,7 +44,8 @@ const RecipeIndex = () => {
             })}
         </div>)
     } else if (searchParams.getAll('search').length) {
-        recipeIndex = <Idea ingredients={searchParams.getAll('search')}/>
+        const combined = searchParams.getAll('search').concat(searchParams.getAll('cuisine'), searchParams.getAll('meal'), searchParams.getAll('dish'))
+        recipeIndex = <Idea ingredients={combined}/>
     } else {
         recipeIndex = <h1>No results</h1>
     }

@@ -50,7 +50,6 @@
 }
 
 .filter-inputs select, button, input, option {
-    /* margin: 16px; */
     padding: 12px;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
@@ -146,6 +145,7 @@
     padding-right: 30px;
     width: 100%;
     box-sizing: border-box;
+    text-transform: none;
 }
 
 #hidden-submit {

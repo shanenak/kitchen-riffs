@@ -35,7 +35,7 @@ export const getSave = saveId => state => {
 } 
 
 export const getSaves = state => {
-    return state?.savedRecipes ? state.savedRecipes : null;
+    return state?.savedRecipes && Object.keys(state.savedRecipes).length ? state.savedRecipes : null;
 }
 
 // thunks

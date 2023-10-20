@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+    cursor: auto;
 }
 
 #idea-list {
@@ -13,12 +14,14 @@
     width: inherit;
     text-align: center;
     margin-top: 40px;
+    cursor:auto;
 } 
 
 #idea-intro {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.03em;
+    cursor: auto;
 }
 
 /* #idea-list div {
@@ -32,6 +35,7 @@
     padding: 20px;
     box-sizing: border-box;
     overflow: scroll;
+    cursor: auto;
 }
 
 #idea-item-title {
@@ -40,6 +44,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    cursor: auto;
 }
 
 #idea-item-title p {
@@ -48,6 +53,7 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     margin-right: 10px;
+    cursor: auto;
 }
 
 #idea-notes {
@@ -56,17 +62,20 @@
     letter-spacing: 0.02em;
     text-align: left;
     color: rgb(102, 102, 102);
+    cursor: auto;
 }
 
 #idea-image {
     height: 300px;
     width: 100%;
+    cursor: auto;
 }
 
 #idea-image img {
     height: 100%;
     width: inherit;
     object-fit: cover;
+    cursor: auto;
 }
 
 #direction {

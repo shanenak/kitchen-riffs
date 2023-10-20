@@ -2,10 +2,10 @@ import { useDispatch, useSelector } from "react-redux"
 import FilterIndex from "../RecipeIndex/FilterIndex"
 import { getUser } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom";
-import RecipeItem from "../RecipeIndex/RecipeItem";
 import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { fetchSaves, getSaves } from "../../store/saved";
+import SavedRecipeItem from "./SavedRecipeItem";
 
 import './SavedIndex.css'
 
@@ -20,16 +20,15 @@ const SavedIndex = ()=> {
     const savedRecipes = useSelector(getSaves);
     const sessionUser = useSelector(getUser)
 
-    const recipes = Object.values(savedRecipes).map(record=>{
-        return record["recipe"]
-    })
-        
     if (!sessionUser) return <Redirect to="/" />;
 
     const searchParams = new URLSearchParams(search);
 
     let recipeIndex, filtered_recipes;
-    if (recipes.length) {
+    if (savedRecipes) {
+        const recipes = Object.values(savedRecipes).map(record=>{
+            return record["recipe"]
+        })
         filtered_recipes = recipes.filter(recipe => {
             return ['cuisine', 'meal', 'dish'].every((category)=>{
                 return !searchParams.get(category) || (searchParams.get(category).toLowerCase() === recipe[category].toLowerCase());
@@ -39,7 +38,7 @@ const SavedIndex = ()=> {
             recipeIndex = (
             <div id='recipe-list'>
                 { filtered_recipes.map(save => {
-                    return <RecipeItem recipe={save} key={save.id}/>
+                    return <SavedRecipeItem recipe={save} key={save.id}/>
                 })}
             </div>)
         } else {
