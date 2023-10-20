@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { openModal } from "../../store/modal";
 import { deleteSave, getSaves } from "../../store/saved";
 
@@ -7,13 +7,10 @@ export default function RecipeItem ({recipe}) {
     const history = useHistory();
     const dispatch = useDispatch();
     const saved = window.location.pathname === '/saved'
-    // console.log('recipeitem', recipe)
     const savedRecipes = useSelector(getSaves);
-    // console.log('savedRecipes',Object.values(savedRecipes))
     const savedRecord = Object.values(savedRecipes).find(record=>{
             return record['recipe'].id === recipe.id
         })
-    // console.log('savedRecord', savedRecord)
 
     const editNotes = () => {
         dispatch(openModal("saved", savedRecord.id))
@@ -21,7 +18,6 @@ export default function RecipeItem ({recipe}) {
 
     const deleteNotes = () => {
         const currentUrl = window.location.href
-        // console.log(currentUrl)
         dispatch(deleteSave(savedRecord.id))
         window.location.href = currentUrl
     }

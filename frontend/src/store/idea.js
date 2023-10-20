@@ -47,7 +47,7 @@ export const fetchIdeas = ingredients => async(dispatch) => {
         const ideas = await response.json();
         dispatch(receiveIdeas(ideas['results']))
     } else {
-        console.log(response.json())
+        return response.json()
     }
 }
 

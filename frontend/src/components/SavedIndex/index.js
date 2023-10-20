@@ -6,7 +6,6 @@ import RecipeItem from "../RecipeIndex/RecipeItem";
 import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { fetchSaves, getSaves } from "../../store/saved";
-import { getRecipes } from "../../store/recipe";
 
 import './SavedIndex.css'
 
@@ -19,15 +18,11 @@ const SavedIndex = ()=> {
 
     const { search } = useLocation();
     const savedRecipes = useSelector(getSaves);
-    console.log(savedRecipes)
     const sessionUser = useSelector(getUser)
-    const allRecipes = useSelector(getRecipes)
-    console.log('allRecipes', allRecipes)
 
     const recipes = Object.values(savedRecipes).map(record=>{
         return record["recipe"]
     })
-    console.log('recipes', recipes)
         
     if (!sessionUser) return <Redirect to="/" />;
 
