@@ -5,4 +5,4 @@ set -o errexit
 
 npm run build
 bundle install
-rails db:migrate db:seed:replant
+rails db:migrate db:seed
