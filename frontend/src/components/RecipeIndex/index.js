@@ -40,7 +40,7 @@ const RecipeIndex = () => {
         recipeIndex = (
         <div id='recipe-list'>
             { Object.values(filteredRecipes).map(recipe => {
-                return <RecipeItem recipe={recipe} key={recipe.id}/>
+                return <RecipeItem recipe={recipe} key={recipe.name}/>
             })}
         </div>)
     } else if (searchParams.getAll('search').length) {

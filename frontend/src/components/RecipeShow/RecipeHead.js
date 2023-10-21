@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { createSave, deleteSave, getSaves } from "../../store/saved";
+import { createSave, deleteSave, fetchSave, fetchSaves, getSaves } from "../../store/saved";
 import { fetchUser, getUser } from "../../store/session";
 import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
@@ -12,8 +12,9 @@ export default function RecipeHead () {
     const dispatch = useDispatch();
     
     useEffect(()=>{
-        dispatch(fetchUser())
+        dispatch(fetchUser());
         dispatch(fetchRecipe(recipeId));
+        dispatch(fetchSaves());
     }, [dispatch])
     
     const savedRecipes = useSelector(getSaves);

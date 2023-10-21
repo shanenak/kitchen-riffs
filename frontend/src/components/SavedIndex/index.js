@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import FilterIndex from "../RecipeIndex/FilterIndex"
-import { getUser } from "../../store/session";
+import { fetchUser, getUser } from "../../store/session";
 import { Redirect } from "react-router-dom/cjs/react-router-dom";
 import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom/cjs/react-router-dom.min";
@@ -13,8 +13,9 @@ const SavedIndex = ()=> {
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        dispatch(fetchSaves())}
-        , [dispatch])
+        dispatch(fetchSaves());
+        dispatch(fetchUser());
+    }, [dispatch])
 
     const { search } = useLocation();
     const savedRecipes = useSelector(getSaves);

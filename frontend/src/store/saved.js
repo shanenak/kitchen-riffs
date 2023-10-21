@@ -110,7 +110,7 @@ const savedReducer = (state={}, action) => {
             delete nextState[action.saveId];
             return nextState;
         default:
-            return state
+            return state;
     }
 }
 

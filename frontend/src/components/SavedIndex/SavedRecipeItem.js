@@ -1,11 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { openModal } from "../../store/modal";
-import { deleteSave, getSaves } from "../../store/saved";
+import { deleteSave, fetchSaves, getSaves } from "../../store/saved";
+import { useEffect } from "react";
 
 export default function SavedRecipeItem ({recipe}) {
     const history = useHistory();
     const dispatch = useDispatch();
+
+    useEffect(()=>{
+        dispatch(fetchSaves());
+    }, [dispatch]);
+
     const savedRecipes = useSelector(getSaves);
     const savedRecord = Object.values(savedRecipes).find(record=>{
             return record['recipe'].id === recipe.id
