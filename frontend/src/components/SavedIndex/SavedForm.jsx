@@ -38,7 +38,7 @@ export default function SavedForm() {
                 </div>
                 <div id='saved-tags'>
                     <label htmlFor='tags'>Tag</label>
-                    <input type="text" list="tags" onChange={(e)=>setTag(e.target.value)} value={tag} maxlength="10"/>
+                    <input type="text" list="tags" onChange={(e)=>setTag(e.target.value)} value={tag} maxLength="10"/>
                     <datalist id="tags">
                         {tagOptions.map((tag)=>{
                             return <option key={tag}>{tag}</option>
