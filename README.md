@@ -30,9 +30,13 @@ This recipe website aims to help use up ingredients that are left in the fridge 
 - Search for multiple ingredients at a time
 - Filter recipes based on cuisines, meals, and dishes
 - If no recipes match the filters, inspiration for recipes will be displayed using an external API (Tasty)
+  ![recipe-index](https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/IndexExample.png "Recipe Index")
+
 - View recipe ingredients, directions, and ratings
+  ![recipe-details](https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/RecipeExample.png "Recipe Example")
 - Review recipes with a 5 star rating and a comment
 - Delete reviews
+  ![recipe-reviews](https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/ReviewExample.png "Review Example")
 - Save recipes with notes and tags
 - Update and delete saved recipes
 
