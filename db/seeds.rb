@@ -40,7 +40,6 @@ recipes = read_CSV('recipes')
 ingredients = read_CSV('ingredients')
 
 users.each do |user_row|
-  puts user_row['name']
   user_information = {
     # id: user_row['user_id'],
     name: user_row['name'],
@@ -69,14 +68,10 @@ users.each do |user_row|
       }
       new_recipe = Recipe.create(recipe_information)
 
-      if new_recipe.name == "Vibrant Green Detox Smoothie"
-        puts recipe_row
-      end
-
-      # new_recipe.photo.attach(
-      #   io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{(recipe_row['recipe_id']).to_s}.webp"),
-      #   filename: "recipe_#{(recipe_row['recipe_id']).to_s}.webp"
-      # )
+      new_recipe.photo.attach(
+        io: URI.open("https://kitchen-riffs-seeds.s3.us-west-1.amazonaws.com/recipe_#{(recipe_row['recipe_id']).to_s}.webp"),
+        filename: "recipe_#{(recipe_row['recipe_id']).to_s}.webp"
+      )
 
       ingredients.each do |ingredient_row|
         if ingredient_row['recipe_id'] == recipe_row['recipe_id']

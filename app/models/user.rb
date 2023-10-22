@@ -20,7 +20,8 @@ class User < ApplicationRecord
 
   before_validation :ensure_session_token
 
-  has_many :ratings
+  has_many :ratings, 
+  dependent: :destroy
 
   has_many :recipes,
   dependent: :destroy
