@@ -25,9 +25,8 @@ class Recipe < ApplicationRecord
     has_many :ratings, 
     dependent: :destroy
 
-    belongs_to :user,
-    dependent: :destroy
-
+    belongs_to :user
+    
     has_one_attached :photo
 
     has_many :saved_by,
