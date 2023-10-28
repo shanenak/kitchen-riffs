@@ -47,7 +47,7 @@ const RecipeIndex = () => {
         const combined = searchParams.getAll('search').concat(searchParams.getAll('cuisine'), searchParams.getAll('meal'), searchParams.getAll('dish'))
         recipeIndex = <Idea ingredients={combined}/>
     } else {
-        recipeIndex = <h1>No results</h1>
+        recipeIndex = <h1 className='recipes-on-load'>Opening up the recipe books</h1>
     }
     
 

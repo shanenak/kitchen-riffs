@@ -21,6 +21,10 @@
     width: inherit;
 }
 
+.recipes-on-load {
+    margin-top: 30px;
+}
+
 #filter-section {
     margin: 0px;
     width: inherit;
