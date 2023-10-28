@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom/cjs/react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function FilterIndex({filteredRecipes}) {
+export default function FilterIndex({ filteredRecipes, filterOptions }) {
     const history = useHistory();
     const { search } = useLocation();
     const searchParams = new URLSearchParams(search);
@@ -54,13 +54,8 @@ export default function FilterIndex({filteredRecipes}) {
         history.replace({ search: searchParams.toString() })
     }
 
-    const options = {};
     let renderPage = <></>
     if (filteredRecipes) {
-        ['cuisine', 'meal', 'dish'].forEach((category)=>{
-            options[category] = [...new Set(filteredRecipes.map(recipe => recipe[category].toLowerCase()))];
-        })
-
         renderPage = (
             <div id='filter-section'>
             <div id='filter-title'>
@@ -75,7 +70,7 @@ export default function FilterIndex({filteredRecipes}) {
                                 <select name={category} onChange={setSearchParams} id={`${category}-select`} defaultValue={filters[category] ? filters[category] : category}>
                                     <option name={'reset'} value={"reset"}>{category}</option>
                                     {
-                                        options[category].map(categoryOption=>{
+                                        filterOptions[category].map(categoryOption=>{
                                             return <option value={categoryOption} key={categoryOption}>{categoryOption}</option>
                                         })
                                     }

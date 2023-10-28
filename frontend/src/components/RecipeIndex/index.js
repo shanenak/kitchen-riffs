@@ -15,6 +15,11 @@ const RecipeIndex = () => {
     const searchParams = new URLSearchParams(search);
     
     const recipes = useSelector(getRecipes);
+
+    const filterOptions = {};
+    ['cuisine', 'meal', 'dish'].forEach((category) => {
+        filterOptions[category] = [...new Set(Object.values(recipes).map(recipe => recipe[category].toLowerCase()))];
+    })
     
     const filteredRecipes = Object.values(recipes).filter(recipe => {
         const categoryCheck = ['cuisine', 'meal', 'dish'].every((category)=>{
@@ -47,7 +52,7 @@ const RecipeIndex = () => {
         const combined = searchParams.getAll('search').concat(searchParams.getAll('cuisine'), searchParams.getAll('meal'), searchParams.getAll('dish'))
         recipeIndex = <Idea ingredients={combined}/>
     } else {
-        recipeIndex = <h1 className='recipes-on-load'>Opening up the recipe books</h1>
+        recipeIndex = <h1 className='recipes-on-load'>{Object.values(recipes).length ? "No recipes found. Search for an ingredient to generate recipe inspiration." : "Opening up the recipe books"}</h1>
     }
     
 
@@ -56,7 +61,7 @@ const RecipeIndex = () => {
             <div className='page-title'>
                 <h1>Recipes</h1>
             </div>
-            <FilterIndex filteredRecipes={filteredRecipes}/>
+            <FilterIndex filteredRecipes={filteredRecipes} filterOptions={filterOptions}/>
             {recipeIndex}
         </div>
     )
