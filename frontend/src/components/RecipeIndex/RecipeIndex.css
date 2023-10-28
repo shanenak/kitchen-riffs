@@ -118,7 +118,7 @@
 
 #filter-selections {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .ingred-selection-container {

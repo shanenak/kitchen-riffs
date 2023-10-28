@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { createSave, deleteSave, fetchSave, fetchSaves, getSaves } from "../../store/saved";
+import { createSave, deleteSave, fetchSaves, getSaves } from "../../store/saved";
 import { fetchUser, getUser } from "../../store/session";
 import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
@@ -8,6 +8,8 @@ import { useEffect } from "react";
 export default function RecipeHead () {
     const { recipeId } = useParams();
     const recipe = useSelector(getRecipe(recipeId));
+    const savedRecipes = useSelector(getSaves);
+    const sessionUser = useSelector(getUser)
     
     const dispatch = useDispatch();
     
@@ -15,10 +17,7 @@ export default function RecipeHead () {
         dispatch(fetchUser());
         dispatch(fetchRecipe(recipeId));
         dispatch(fetchSaves());
-    }, [dispatch])
-    
-    const savedRecipes = useSelector(getSaves);
-    const sessionUser = useSelector(getUser)
+    }, [dispatch, savedRecipes?.length, recipeId])
 
     const signedIn = sessionUser ? true : false;
     const saved = (signedIn && savedRecipes) ? Object.values(savedRecipes).find(save=>save.recipe.id===recipe.id) : false;

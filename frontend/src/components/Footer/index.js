@@ -25,7 +25,7 @@ export default function Footer() {
             <div id='footer-contact'>
                 <h3>Contact</h3>
                 {/* <p>Thanks for visiting</p> */}
-                <div id='footer-contact-links'>
+                <div className='contact-links'>
                     <a href="https://github.com/shanenak/kitchen-riffs"><i className="fa-brands fa-square-github"></i></a>
                     <a href="https://www.linkedin.com/in/shannonnmillar/"><i className="fa-brands fa-linkedin"></i></a>
                 </div>

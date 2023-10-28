@@ -95,8 +95,6 @@
     display: flex; 
     flex-direction: row;
     margin: 40px 0px 20px 0px;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 #recipe-save {
@@ -149,7 +147,7 @@
 #stars {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
 }
 
 #ave-rating {

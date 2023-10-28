@@ -60,19 +60,19 @@
     text-align: center;
 }
 
-#footer-contact-links {
+.contact-links {
     display: flex;
     justify-content: center;
-
+    z-index: 10;
 }
 
-#footer-contact-links i {
+.contact-links i {
     font-size: 30px;
     padding: 5px;
     color: white;
 }
 
-#footer-contact-links i:hover {
+.contact-links i:hover {
     color: rgb(255, 218, 8);
 }
 
