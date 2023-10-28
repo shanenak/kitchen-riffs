@@ -20,23 +20,23 @@ export default function Idea({ingredients}) {
                         <img src={idea.thumbnail_url} alt='recipe-result'></img>
                     </div>
                     <div id='idea-item'>
-                        <div id='idea-item-title'>
+                        <div id='idea-item-title' >
                             <p>{idea.name}</p>
                         </div>
                         <div id='idea-notes'>
                             <p>{idea.description}</p>
                         </div>
-                        {/* <div id='direction'>
-                            <h2 className='section-title'>Directions</h2>
+                        <div id='direction'>
+                            <h2 className='idea-direction-title'>Directions</h2>
                             { Object.values(idea.instructions).map((step, index)=> {
                                 return (
-                                    <div id='step-wrapper' key={index}>
-                                        <h3 className='step-title'>Step {index+1}</h3>
-                                        <p className='body-text'>{step['display_text']}</p>
+                                    <div className='idea-step-wrapper' key={index}>
+                                        <h3 className='idea-step-title'>Step {index+1}</h3>
+                                        <p className='idea-body-text'>{step['display_text']}</p>
                                     </div>
                                 )
                             })}
-                        </div> */}
+                        </div>
                     </div>
                 </div>
                 )
