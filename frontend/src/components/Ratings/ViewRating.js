@@ -31,7 +31,7 @@ export default function ViewRating ({rating}) {
                                 })
                             }
                         </div>
-                        <i id='delete-review' class={`fa-solid fa-trash ${sessionUser?.id===rating.user.id ? "show" : "hide"}`} onClick={handleDelete}></i>
+                        <i id='delete-review' className={`fa-solid fa-trash ${sessionUser?.id===rating.user.id ? "show" : "hide"}`} onClick={handleDelete}></i>
                     </div>
                 </div>
             </div>

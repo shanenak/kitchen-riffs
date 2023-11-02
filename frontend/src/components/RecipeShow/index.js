@@ -18,35 +18,28 @@ const RecipeShow = () => {
     useEffect(()=> {
         dispatch(fetchRecipe(recipeId));
     }, [dispatch, recipeId])
-
-    let showPage;
-    if (recipe) {
-        showPage = (        
-        <div id='show'>
-            <div id='show-head'>
-                <RecipeHead recipe={recipe}/>
-                <div id='show-image'>
-                    <img src={recipe.photoUrl} alt='recipe-result'></img>
+    
+    return ( recipe ? 
+        (
+            <div id='show'>
+                <div id='show-head'>
+                    <RecipeHead recipe={recipe} />
+                    <div id='show-image'>
+                        <img src={recipe.photoUrl} alt='recipe-result'></img>
+                    </div>
                 </div>
+                <div id='show-body'>
+                    <Ingredients recipe={recipe} />
+                    <Preparation recipe={recipe} />
+                </div>
+                <Ratings recipe={recipe} sessionUser={sessionUser} />
             </div>
-            <div id='show-body'>
-                <Ingredients recipe={recipe}/>
-                <Preparation recipe={recipe}/>
-            </div>
-            <Ratings recipe={recipe} sessionUser={sessionUser}/>
-        </div>
 
-        )
-    } else {
-        showPage = (
+        ) : (
             <div>
                 <h1>Loading</h1>
             </div>
         )
-    }
-    
-    return (
-        showPage
     )
 
 }
