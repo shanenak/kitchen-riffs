@@ -1,8 +1,12 @@
 class Api::SavedRecipesController < ApplicationController
 
     def index
-        @user = User.find(current_user.id)
-        render :index
+        if current_user
+            @user = User.find(current_user.id)
+            render :index
+        else
+            render json: {}
+        end
     end
     
     def create
