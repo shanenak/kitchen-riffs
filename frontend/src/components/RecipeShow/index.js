@@ -12,20 +12,19 @@ import RecipeHead from "./RecipeHead";
 const RecipeShow = () => {
     const { recipeId } = useParams();
     const dispatch = useDispatch();
+    const recipe = useSelector(getRecipe(recipeId));
+    const sessionUser = useSelector(state => state.session.user)
     
     useEffect(()=> {
         dispatch(fetchRecipe(recipeId));
     }, [dispatch, recipeId])
-    
-    const sessionUser = useSelector(state => state.session.user)
-    const recipe = useSelector(getRecipe(recipeId));
 
     let showPage;
     if (recipe) {
         showPage = (        
         <div id='show'>
             <div id='show-head'>
-                <RecipeHead />
+                <RecipeHead recipe={recipe}/>
                 <div id='show-image'>
                     <img src={recipe.photoUrl} alt='recipe-result'></img>
                 </div>

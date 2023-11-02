@@ -5,22 +5,18 @@ import { fetchUser, getUser } from "../../store/session";
 import { fetchRecipe, getRecipe } from "../../store/recipe";
 import { useEffect } from "react";
 
-export default function RecipeHead () {
-    const { recipeId } = useParams();
-    const recipe = useSelector(getRecipe(recipeId));
+export default function RecipeHead ({recipe}) {
+
     const savedRecipes = useSelector(getSaves);
     const sessionUser = useSelector(getUser)
     
     const dispatch = useDispatch();
     
     useEffect(()=>{
-        dispatch(fetchUser());
-        dispatch(fetchRecipe(recipeId));
         dispatch(fetchSaves());
-    }, [dispatch, savedRecipes?.length, recipeId])
+    }, [dispatch, savedRecipes?.length, recipe.id])
 
-    const signedIn = sessionUser ? true : false;
-    const saved = (signedIn && savedRecipes) ? Object.values(savedRecipes).find(save=>save.recipe.id===recipe.id) : false;
+    const saved = (sessionUser && savedRecipes) ? Object.values(savedRecipes).find(save=>save.recipe.id===recipe.id) : false;
 
     const handleSave = () => {
         const payload = {
@@ -57,11 +53,11 @@ export default function RecipeHead () {
                 <p>{recipe.timeRequired}</p>
             </div>
             <div id='save'>
-                <div id='recipe-save' onClick={saved ? handleRemove : handleSave} className={signedIn ? "" : "disable"}>
+                    <div id='recipe-save' onClick={saved ? handleRemove : handleSave} className={sessionUser ? "" : "disable"}>
                     <i className={saved ? "fa fa-bookmark" : "fa-regular fa-bookmark"}></i>
-                    <p>{signedIn ? (saved ? "SAVED" : "SAVE RECIPE") : "SIGN IN TO SAVE RECIPE"}</p>
+                        <p>{sessionUser ? (saved ? "SAVED" : "SAVE RECIPE") : "SIGN IN TO SAVE RECIPE"}</p>
                 </div>
-                { signedIn ? (<div onClick={()=>window.open('/saved')} id='open-save'>
+                    {sessionUser ? (<div onClick={()=>window.open('/saved')} id='open-save'>
                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </div>) : <></> }
             </div>
